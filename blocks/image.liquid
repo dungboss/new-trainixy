@@ -1,0 +1,158 @@
+{% liquid
+  assign image_to_render = block.settings.image
+
+  if image_to_render == blank and block.settings.use_product_image_fallback and product
+    assign product_image_media = product.media | where: 'media_type', 'image' | first
+
+    if product_image_media != blank
+      assign image_to_render = product_image_media.preview_image
+    elsif product.featured_media
+      assign image_to_render = product.featured_media.preview_image
+    endif
+  endif
+%}
+
+<div
+  class="product-info__image-block product-info__image-block--mobile-alignment"
+  style="
+    --image-width:{{ block.settings.width }}%;
+    --image-alignment:{{ block.settings.alignment }};
+    --mobile-image-alignment:{{ block.settings.mobile_alignment }};
+    --border-radius:{{ block.settings.border_radius | divided_by: 10.0 }}rem;
+    margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;
+    margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;
+  "
+>
+  {% if image_to_render != blank %}
+    <div
+      class="media media--transparent ratio"
+      style="--ratio-percent: {{ 1 | divided_by: image_to_render.aspect_ratio | times: 100 }}%"
+    >
+      {% assign width_decimal = block.settings.width | divided_by: 100.0 %}
+      {% assign desktop_width = 12 %}
+      {% assign mobile_width = 12 %}
+      {%- capture sizes -%}
+        (min-width: {{ settings.page_width }}px) calc({{ settings.page_width | divided_by: 12.0 | times: desktop_width }}px * {{ width_decimal }}),
+        (min-width: 750px) calc((100vw - 30px) / 12 * {{ desktop_width }} * {{ width_decimal }}), calc((100vw - 30px) / 4 * {{ mobile_width }} * {{ width_decimal }})
+      {%- endcapture -%}
+      {{
+        image_to_render
+        | image_url: width: 1500
+        | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1250, 1500'
+      }}
+    </div>
+  {% else %}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Image",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_product_image_fallback",
+      "label": "Use current product image when no image is selected",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Width",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "mobile_alignment",
+      "label": "Mobile alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Corner radius",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Margins"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top",
+      "min": 0,
+      "max": 45,
+      "step": 3,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom",
+      "min": 0,
+      "max": 45,
+      "step": 3,
+      "unit": "px",
+      "default": 15,
+      "visible_if": "{{ section.settings.image_1_visibility != 'mobile-hidden' and section.settings.image_1_visibility != 'always-display' }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
