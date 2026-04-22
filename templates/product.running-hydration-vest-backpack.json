@@ -55,8 +55,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Non-Slip Platform — Maximum Stability</strong>",
-            "icon_1": "verified",
+            "text_1": "<strong>Ultra-Lightweight — Barely Feel It Moving</strong>",
+            "icon_1": "air",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -95,7 +95,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Rubber feet grip any surface — hardwood, tile, or carpet",
+            "text_1": "Under 200g empty — runs, hikes, and rides without weighing you down",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -135,8 +135,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Burn 200+ Calories — In Just 30 Minutes</strong>",
-            "icon_1": "nest_clock_farsight_analog",
+            "text_1": "<strong>Hands-Free Hydration — Drink Without Slowing Down</strong>",
+            "icon_1": "water_drop",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -175,7 +175,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Step-based cardio burns fat faster than walking or jogging",
+            "text_1": "Compatible with 1.5L–2L bladders — sip mid-stride without stopping or fumbling",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -215,8 +215,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Tones Legs, Glutes & Core — All At Once</strong>",
-            "icon_1": "fitness_center",
+            "text_1": "<strong>Front Phone Pocket — Access In Seconds</strong>",
+            "icon_1": "smartphone",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -255,7 +255,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Full lower-body workout without a single gym machine",
+            "text_1": "Front zip pocket holds phones up to 6.7\" — one-hand access while moving",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -295,8 +295,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Compact Design — Fits Any Home</strong>",
-            "icon_1": "home",
+            "text_1": "<strong>Adjustable Fit — Zero Bounce At Any Pace</strong>",
+            "icon_1": "tune",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -335,7 +335,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Slides flat under your bed or sofa when not in use",
+            "text_1": "Dual chest straps with bungee system — locked in place, no shifting at any speed",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -561,7 +561,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "Why Choose The Rock Stepper",
+            "heading": "Why Choose This Hydration Vest",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -597,7 +597,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Most gym memberships cost $50/month and require you to commute — only for machines that sit empty half the time.</p><p>The Rock Stepper changes all of that. Its textured non-slip surface and adjustable height levels give you a complete lower-body cardio workout in just 30 minutes — right in your living room.</p><p>No membership fees. No commute. No excuses. Just leaner legs, a tighter core, and a stronger you — starting day one.</p>",
+            "content": "<p>Carrying a water bottle means stopping to drink, losing rhythm, and dealing with it sloshing in your hand. A regular backpack sits heavy on your back, heats up your spine, and bounces with every stride.</p><p>This hydration vest fixes all of that. It sits close to your chest, distributes weight evenly, and lets you sip from the bladder hose mid-stride — without breaking pace for a single second.</p><p>Phone, keys, gels, cards — everything stays accessible in front pockets while your hands stay completely free.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -608,7 +608,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "What Workouts Can I Do With It",
+            "heading": "What Can I Carry In It",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -644,7 +644,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>The Rock Stepper works with any routine you love:</p><ul><li>Basic step cardio</li><li>HIIT step intervals</li><li>Lateral step training</li><li>Step & squat combos</li><li>Dance cardio routines<br/><br/>Pro tip: Add ankle weights for extra resistance and faster results — especially for glutes and inner thighs.</li></ul>",
+            "content": "<p>Designed for everything you need on the move:</p><ul><li><strong>Main compartment</strong> — fits 1.5L or 2L hydration bladder (not included)</li><li><strong>Front phone pocket</strong> — fits smartphones up to 6.7\", with touch-screen transparent window</li><li><strong>Side mesh pockets</strong> — energy gels, small snacks, earphone cables</li><li><strong>Small front zip pocket</strong> — keys, cards, cash<br/><br/>Pro tip: Pre-freeze your bladder halfway for ice-cold water on hot long runs — it thaws gradually as you go.</li></ul>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -691,7 +691,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Step 1: Set your desired height (3 adjustable levels)<br/>Step 2: Place on any flat surface — rubber feet lock it in place<br/>Step 3: Step for 20–30 minutes at your own pace and enjoy results</p><p>Cleaning: Wipe down with a damp cloth after each session. The non-porous surface resists sweat and odor buildup.</p>",
+            "content": "<p>Step 1: Slide your hydration bladder into the back compartment and route the hose clip to your shoulder strap<br/>Step 2: Put the vest on like a jacket and pull both chest straps snug<br/>Step 3: Adjust the bungee cord on each side until the vest sits flat against your chest with zero bounce<br/>Step 4: Load your phone, gels, and keys into the front pockets — you're ready to go</p><p>Cleaning: Rinse the bladder compartment with warm water after use. Machine wash the vest on a gentle cycle, air dry.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -966,7 +966,7 @@
         "text_cLnqTc": {
           "type": "text",
           "settings": {
-            "title": "Non-Slip Platform • Burns 200+ Calories • Adjustable Height • Tones Legs & Glutes • All Fitness Levels • Silent Operation • Compact & Easy Storage"
+            "title": "Ultra-Lightweight • Hands-Free Hydration • Front Phone Pocket • Zero Bounce • Running, Hiking & Cycling • Adjustable Fit • BPA-Free Bladder Compatible"
           }
         }
       },
@@ -1091,7 +1091,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "<strong>See The Rock Stepper In Action</strong>",
+        "title": "<strong>See It In Action On The Trail</strong>",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1192,7 +1192,7 @@
             "heading_CBkdVX": {
               "type": "heading",
               "settings": {
-                "title": "Why Fitness Lovers Love It",
+                "title": "Why Runners & Hikers Love It",
                 "title_highlight_1": "solid-color",
                 "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
                 "title_highlight_1_bg-color": "#F9EFFF",
@@ -1242,7 +1242,7 @@
             "text_jQj3hy": {
               "type": "text",
               "settings": {
-                "text": "<p>The stepper that transforms your home workouts</p>",
+                "text": "<p>The vest that keeps you moving without stopping</p>",
                 "alignment": "center",
                 "mobile_alignment": "mobile-center",
                 "text_size": 14,
@@ -1290,9 +1290,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Non-Slip Safety",
+                "title": "Zero Bounce",
                 "icon_heading_size": "h3",
-                "text": "<p>Rubber feet grip any surface — no sliding, no injuries</p>",
+                "text": "<p>Dual-strap bungee system locks the vest firm at any pace</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1311,9 +1311,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "200+ Calories in 30 Min",
+                "title": "Hands-Free Hydration",
                 "icon_heading_size": "h3",
-                "text": "<p>Effective cardio that fits into any busy schedule</p>",
+                "text": "<p>Sip mid-stride from the bladder hose — never stop running</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1385,7 +1385,7 @@
             "icon_with_content_MrnXLK": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "fitness_center",
+                "icon": "smartphone",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1394,9 +1394,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Tones Legs & Glutes",
+                "title": "Phone & Gear Access",
                 "icon_heading_size": "h3",
-                "text": "<p>Every step activates your calves, thighs, and glutes</p>",
+                "text": "<p>Front pocket gives one-hand phone access while running</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1406,7 +1406,7 @@
             "icon_with_content_Yk6MEy": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "home",
+                "icon": "directions_run",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1415,9 +1415,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Fits Any Space",
+                "title": "All Activities",
                 "icon_heading_size": "h3",
-                "text": "<p>Compact and silent — perfect for apartments and small rooms</p>",
+                "text": "<p>Running, hiking, cycling, marathon — one vest does it all</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1472,7 +1472,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "22h ago",
-            "post_text": "<p>i have literally tried every home workout thing — resistance bands, jump rope, yoga mats. nothing stuck. bought the rock stepper on a whim and i've been doing 30 mins every morning for 3 weeks. i've lost 6 lbs and my jeans actually fit again. the fact that i can do it while watching netflix is a game changer. no gym, no commute, no excuses. i'm obsessed 😭</p>",
+            "post_text": "<p>ran my first half marathon last month and this vest was the reason i didn't have to stop at every water station. filled the bladder the night before, froze it halfway, and had cold water the entire race. phone sat in the front pocket the whole time — used it at mile 9 to text my wife my pace. zero bouncing. literally forgot i was wearing it. shaved 4 minutes off my expected time because i never had to stop. ordering a second one for my training partner.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "1.2k",
@@ -1494,7 +1494,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "1 Day ago",
-            "post_text": "<p>cancelled my $60/month gym membership after getting this. was skeptical stepping in place could do anything but after 3 weeks my legs are noticeably more toned and i'm down 8 lbs. neighbor knocked on my door thinking something was wrong because it's completely silent lol. does NOT creak, does NOT slide. just works. already ordered one for my wife</p>",
+            "post_text": "<p>i do trail hiking every weekend and used to carry a heavy pack that destroyed my back on long climbs. switched to this vest and the difference is insane. everything i need is right there — water from the hose, phone in the front, gels in the side pockets. weighs almost nothing. the chest straps keep it tight so it doesn't swing when i'm scrambling over rocks. my hiking group has all seen it and three of them have already bought one.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "2.4k",
@@ -1516,7 +1516,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "5h ago",
-            "post_text": "<p>my doctor told me i needed low-impact cardio after my knee surgery. was terrified of hurting myself again. tried the rock stepper — no impact, no joint pain, just smooth stepping. i did 20 minutes on day one and felt fine. now i'm up to 40 minutes and my physio is genuinely shocked at my recovery speed. this thing is quiet enough to use while my baby sleeps. cannot recommend it enough.</p>",
+            "post_text": "<p>cycle commute 18km each way every day. used to have a regular backpack and it made my back sweaty and sore by the time i got to work. tried this vest and it's a completely different experience — sits on the chest, back stays dry, hands totally free for signals and braking. the phone pocket is a bonus i use constantly for google maps at intersections. pack it in 2 minutes, wear it all day if i need to. best cycling upgrade i've made this year.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "987",
@@ -1628,10 +1628,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is this good for beginners?",
+            "heading": "Does it come with a hydration bladder?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Absolutely. The Rock Stepper has 3 adjustable height levels so you can start low and increase intensity as your stamina builds. Perfect for all fitness levels — from complete beginners to seasoned athletes looking for daily cardio.</p>",
+            "row_content": "<p>The hydration bladder is not included. The vest is designed to fit standard 1.5L and 2L bladders from major brands (Osprey, CamelBak, Platypus, etc.). This keeps the price lower while letting you choose a bladder that suits your preference.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1640,10 +1640,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "How many calories will I burn?",
+            "heading": "Will my phone fit in the pocket?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>150–400 calories per 30-minute session depending on your pace, intensity, and body weight. Consistent daily sessions combined with a moderate diet lead to visible results in 2–4 weeks.</p>",
+            "row_content": "<p>Yes. The front phone pocket fits smartphones up to 6.7 inches including iPhone Pro Max, Samsung Galaxy Ultra, and similar large-screen models. The pocket has a transparent TPU window so you can use touch-screen features without removing your phone.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1652,10 +1652,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What is the maximum weight capacity?",
+            "heading": "Does it bounce while running?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>The Rock Stepper supports up to 120 kg / 265 lbs. Built from high-density HDPE with reinforced corners for long-term durability.</p>",
+            "row_content": "<p>No, when adjusted correctly. The dual chest straps and bungee adjustment system compress the vest flat against your chest. Once tightened to your body, there is no side-to-side or up-and-down movement — even at sprint pace.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1664,10 +1664,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Will it damage my floors?",
+            "heading": "Is it unisex? Does it fit all body types?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>No. The non-slip rubber feet protect any floor surface including hardwood, tile, laminate, and carpet. The stepper stays firmly in place and leaves zero marks.</p>",
+            "row_content": "<p>Yes, it is unisex and fully adjustable. The chest straps expand and compress to fit chest sizes from 30\" to 50\". Both men and women use it comfortably. If you have a narrower or larger frame, the bungee adjustment lets you dial in the exact fit.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1676,10 +1676,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Does it make noise? Safe for apartments?",
+            "heading": "Is it suitable for cycling?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Nearly silent. The solid platform construction eliminates creaking and clunking entirely. Safe to use in apartments, condos, or while others are sleeping in the same home.</p>",
+            "row_content": "<p>Yes. The chest-mounted design keeps your back free and cool — unlike a traditional backpack that traps heat and restricts movement. The bungee straps stay secure even in an aerodynamic cycling position. Many cyclists use it for road rides, mountain biking, and commuting.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1691,7 +1691,7 @@
             "heading": "What is it made of?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>High-density HDPE (high-density polyethylene) platform with non-slip rubber accents. The same material used in professional gym equipment — built to withstand years of daily use without cracking or warping.</p>",
+            "row_content": "<p>Lightweight ripstop nylon outer shell with breathable mesh lining against the body. The straps are reinforced with high-tensile webbing rated for long-term use. The bladder compartment is waterproof-lined and BPA-free compatible with all standard bladder brands.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1703,7 +1703,7 @@
             "heading": "What if I'm not satisfied?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>We offer a 90-day money-back guarantee — no questions asked. Most customers see results within 3 weeks. But if it's not the right fit, just reach out and we'll make it right.</p>",
+            "row_content": "<p>We offer a 90-day money-back guarantee — no questions asked. If the fit doesn't work for your body type or it doesn't meet your expectations on the trail, just reach out and we'll make it right.</p>",
             "page": ""
           },
           "blocks": {}
