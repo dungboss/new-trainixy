@@ -1012,7 +1012,7 @@
         "video_slide_hxCnyh": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/POV 2.mp4",
+            "video": "",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1030,7 +1030,7 @@
         "video_slide_JgrBd7": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/UGC sử dụng sản phẩm 1.mp4",
+            "video": "",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1048,7 +1048,7 @@
         "video_slide_9M8frX": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/UGC sử dụng sản phẩm 2.mp4",
+            "video": "",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1066,7 +1066,7 @@
         "video_slide_fkDcwE": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/POV 3.mp4",
+            "video": "",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
