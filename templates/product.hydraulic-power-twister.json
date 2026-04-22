@@ -55,8 +55,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Non-Slip Platform — Maximum Stability</strong>",
-            "icon_1": "verified",
+            "text_1": "<strong>Adjustable Resistance — 10 to 100 lbs</strong>",
+            "icon_1": "tune",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -95,7 +95,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Rubber feet grip any surface — hardwood, tile, or carpet",
+            "text_1": "Dial in your exact resistance level in seconds — no tools needed",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -135,8 +135,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Burn 200+ Calories — In Just 30 Minutes</strong>",
-            "icon_1": "nest_clock_farsight_analog",
+            "text_1": "<strong>Builds Arms, Chest & Shoulders — All At Once</strong>",
+            "icon_1": "fitness_center",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -175,7 +175,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Step-based cardio burns fat faster than walking or jogging",
+            "text_1": "One motion targets biceps, triceps, forearms, and chest simultaneously",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -215,8 +215,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Tones Legs, Glutes & Core — All At Once</strong>",
-            "icon_1": "fitness_center",
+            "text_1": "<strong>Hydraulic Smooth Action — Zero Noise</strong>",
+            "icon_1": "verified",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -255,7 +255,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Full lower-body workout without a single gym machine",
+            "text_1": "Fluid cylinder gives consistent resistance with no jerking or snapping",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -295,7 +295,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Compact Design — Fits Any Home</strong>",
+            "text_1": "<strong>Compact & Portable — Train Anywhere</strong>",
             "icon_1": "home",
             "filled_icon_1": false,
             "text_2": "",
@@ -335,7 +335,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Slides flat under your bed or sofa when not in use",
+            "text_1": "Fits in a gym bag — train at home, the office, or while traveling",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -561,7 +561,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "Why Choose The Rock Stepper",
+            "heading": "Why Choose The Hydraulic Power Twister",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -597,7 +597,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Most gym memberships cost $50/month and require you to commute — only for machines that sit empty half the time.</p><p>The Rock Stepper changes all of that. Its textured non-slip surface and adjustable height levels give you a complete lower-body cardio workout in just 30 minutes — right in your living room.</p><p>No membership fees. No commute. No excuses. Just leaner legs, a tighter core, and a stronger you — starting day one.</p>",
+            "content": "<p>Dumbbells are expensive, bulky, and only work one resistance level. Resistance bands snap, stretch unevenly, and can't give you controlled, consistent tension.</p><p>The Hydraulic Power Twister changes all of that. Its hydraulic cylinder delivers smooth, progressive resistance from 10 to 100 lbs — targeting your arms, forearms, biceps, chest, shoulders, and abdomen in a single compact tool.</p><p>No gym needed. No setup. No noise. Just real upper-body strength gains — starting from your very first session.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -608,7 +608,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "What Workouts Can I Do With It",
+            "heading": "What Muscle Groups Does It Work",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -644,7 +644,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>The Rock Stepper works with any routine you love:</p><ul><li>Basic step cardio</li><li>HIIT step intervals</li><li>Lateral step training</li><li>Step & squat combos</li><li>Dance cardio routines<br/><br/>Pro tip: Add ankle weights for extra resistance and faster results — especially for glutes and inner thighs.</li></ul>",
+            "content": "<p>The Hydraulic Power Twister activates every major upper-body muscle group:</p><ul><li><strong>Biceps & Triceps</strong> — curl and extend motions build arm definition fast</li><li><strong>Forearms & Grip Strength</strong> — essential for athletes and desk workers alike</li><li><strong>Chest & Pectorals</strong> — chest press motion expands and strengthens the chest</li><li><strong>Shoulders & Deltoids</strong> — overhead and lateral exercises hit all three heads</li><li><strong>Abdomen & Core</strong> — twisting movements engage your obliques and deep core<br/><br/>Pro tip: Slow down the release phase (eccentric) for 2x the muscle activation on every rep.</li></ul>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -691,7 +691,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Step 1: Set your desired height (3 adjustable levels)<br/>Step 2: Place on any flat surface — rubber feet lock it in place<br/>Step 3: Step for 20–30 minutes at your own pace and enjoy results</p><p>Cleaning: Wipe down with a damp cloth after each session. The non-porous surface resists sweat and odor buildup.</p>",
+            "content": "<p>Step 1: Rotate the resistance dial to your desired level (10–100 lbs)<br/>Step 2: Grip both handles firmly with both hands<br/>Step 3: Perform your chosen exercise — curl, press, or twist — for 3 sets of 12–15 reps</p><p>Maintenance: Wipe handles with a damp cloth after each session. The hydraulic cylinder is sealed and requires no maintenance.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -966,7 +966,7 @@
         "text_cLnqTc": {
           "type": "text",
           "settings": {
-            "title": "Non-Slip Platform • Burns 200+ Calories • Adjustable Height • Tones Legs & Glutes • All Fitness Levels • Silent Operation • Compact & Easy Storage"
+            "title": "Adjustable 10–100 lbs • Builds Biceps & Chest • Hydraulic Smooth Action • Arms, Forearms & Abs • All Fitness Levels • Zero Noise • Compact & Portable"
           }
         }
       },
@@ -1091,7 +1091,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "<strong>See The Rock Stepper In Action</strong>",
+        "title": "<strong>See The Power Twister In Action</strong>",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1192,7 +1192,7 @@
             "heading_CBkdVX": {
               "type": "heading",
               "settings": {
-                "title": "Why Fitness Lovers Love It",
+                "title": "Why Strength Athletes Love It",
                 "title_highlight_1": "solid-color",
                 "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
                 "title_highlight_1_bg-color": "#F9EFFF",
@@ -1242,7 +1242,7 @@
             "text_jQj3hy": {
               "type": "text",
               "settings": {
-                "text": "<p>The stepper that transforms your home workouts</p>",
+                "text": "<p>The upper-body trainer that replaces 4 gym machines</p>",
                 "alignment": "center",
                 "mobile_alignment": "mobile-center",
                 "text_size": 14,
@@ -1281,7 +1281,7 @@
             "icon_with_content_iYEqae": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "verified",
+                "icon": "tune",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1290,9 +1290,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Non-Slip Safety",
+                "title": "Adjustable 10–100 lbs",
                 "icon_heading_size": "h3",
-                "text": "<p>Rubber feet grip any surface — no sliding, no injuries</p>",
+                "text": "<p>Set your exact resistance level in seconds — no tools required</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1311,9 +1311,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "200+ Calories in 30 Min",
+                "title": "Full Upper Body",
                 "icon_heading_size": "h3",
-                "text": "<p>Effective cardio that fits into any busy schedule</p>",
+                "text": "<p>Arms, biceps, chest, abs — complete upper body in one tool</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1385,7 +1385,7 @@
             "icon_with_content_MrnXLK": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "fitness_center",
+                "icon": "verified",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1394,9 +1394,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Tones Legs & Glutes",
+                "title": "Smooth Hydraulic Action",
                 "icon_heading_size": "h3",
-                "text": "<p>Every step activates your calves, thighs, and glutes</p>",
+                "text": "<p>Consistent resistance, zero jerking, zero noise — every single rep</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1415,9 +1415,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Fits Any Space",
+                "title": "Train Anywhere",
                 "icon_heading_size": "h3",
-                "text": "<p>Compact and silent — perfect for apartments and small rooms</p>",
+                "text": "<p>Compact enough for home, office desk, or your travel bag</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1472,7 +1472,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "22h ago",
-            "post_text": "<p>i have literally tried every home workout thing — resistance bands, jump rope, yoga mats. nothing stuck. bought the rock stepper on a whim and i've been doing 30 mins every morning for 3 weeks. i've lost 6 lbs and my jeans actually fit again. the fact that i can do it while watching netflix is a game changer. no gym, no commute, no excuses. i'm obsessed 😭</p>",
+            "post_text": "<p>been using this for 6 weeks and my forearms and biceps look completely different. i'm a construction worker so i thought my arms were already strong — but this thing hits angles i never trained before. the resistance dial is legit, not gimmicky. i do 3 sets in the morning while my coffee brews. my grip strength on the job has noticeably improved and my coworkers keep asking what i changed. 100% worth it.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "1.2k",
@@ -1494,7 +1494,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "1 Day ago",
-            "post_text": "<p>cancelled my $60/month gym membership after getting this. was skeptical stepping in place could do anything but after 3 weeks my legs are noticeably more toned and i'm down 8 lbs. neighbor knocked on my door thinking something was wrong because it's completely silent lol. does NOT creak, does NOT slide. just works. already ordered one for my wife</p>",
+            "post_text": "<p>i play tennis competitively and my coach told me i needed stronger forearms and wrist stability. tried this on a whim. two months later my serve speed went up and my backhand is so much more controlled. the adjustable resistance is the key — i started at 20 lbs and i'm now at 60. zero noise, fits in my tennis bag, use it at the court between sets. my doubles partner bought one after seeing my improvement. game changer.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "2.4k",
@@ -1516,7 +1516,7 @@
             "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "5h ago",
-            "post_text": "<p>my doctor told me i needed low-impact cardio after my knee surgery. was terrified of hurting myself again. tried the rock stepper — no impact, no joint pain, just smooth stepping. i did 20 minutes on day one and felt fine. now i'm up to 40 minutes and my physio is genuinely shocked at my recovery speed. this thing is quiet enough to use while my baby sleeps. cannot recommend it enough.</p>",
+            "post_text": "<p>had a shoulder injury that meant i couldn't lift heavy for months. physio recommended low-resistance, high-rep upper body work. started at 10 lbs on this and slowly built up over 8 weeks. i'm now at 40 lbs with zero shoulder pain. my arms and chest are actually more defined than before the injury because i was being so consistent. the smooth hydraulic action means no sudden jerks that could strain the joint. genuinely grateful for this thing.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "987",
@@ -1628,10 +1628,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is this good for beginners?",
+            "heading": "What resistance levels are available?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Absolutely. The Rock Stepper has 3 adjustable height levels so you can start low and increase intensity as your stamina builds. Perfect for all fitness levels — from complete beginners to seasoned athletes looking for daily cardio.</p>",
+            "row_content": "<p>The hydraulic dial adjusts from 10 lbs to 100 lbs (approximately 5–45 kg). You can fine-tune resistance in small increments — making it suitable for beginners starting light and experienced athletes pushing heavy.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1640,10 +1640,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "How many calories will I burn?",
+            "heading": "Is it good for beginners?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>150–400 calories per 30-minute session depending on your pace, intensity, and body weight. Consistent daily sessions combined with a moderate diet lead to visible results in 2–4 weeks.</p>",
+            "row_content": "<p>Yes. Start at the lowest resistance setting (10 lbs) and increase gradually as your strength improves. Most beginners see noticeable arm and grip strength gains within 3–4 weeks of consistent use.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1652,10 +1652,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What is the maximum weight capacity?",
+            "heading": "Which muscles does it work?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>The Rock Stepper supports up to 120 kg / 265 lbs. Built from high-density HDPE with reinforced corners for long-term durability.</p>",
+            "row_content": "<p>The Power Twister targets your entire upper body: biceps, triceps, forearms, wrists, chest (pectorals), shoulders (deltoids), and abdomen/obliques. Different grip positions and angles isolate different muscle groups.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1664,10 +1664,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Will it damage my floors?",
+            "heading": "Can it replace dumbbells or resistance bands?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>No. The non-slip rubber feet protect any floor surface including hardwood, tile, laminate, and carpet. The stepper stays firmly in place and leaves zero marks.</p>",
+            "row_content": "<p>For upper-body strength and muscle toning, yes. The hydraulic resistance provides more consistent and controllable tension than resistance bands, and covers a wider range of exercises than a single dumbbell weight. Many users replace both with the Power Twister for daily training.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1676,10 +1676,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Does it make noise? Safe for apartments?",
+            "heading": "Is it safe to use every day?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Nearly silent. The solid platform construction eliminates creaking and clunking entirely. Safe to use in apartments, condos, or while others are sleeping in the same home.</p>",
+            "row_content": "<p>Yes, for most users. We recommend alternating muscle groups — for example, biceps/chest on one day, forearms/shoulders the next — to allow recovery. The smooth hydraulic action is gentle on joints, making it suitable for rehabilitation and daily use.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1691,7 +1691,7 @@
             "heading": "What is it made of?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>High-density HDPE (high-density polyethylene) platform with non-slip rubber accents. The same material used in professional gym equipment — built to withstand years of daily use without cracking or warping.</p>",
+            "row_content": "<p>Heavy-duty steel spring bar with a sealed hydraulic cylinder and non-slip foam grip handles. The frame is powder-coated for corrosion resistance and rated for long-term daily use. No rubber bands that snap, no loose springs — just solid construction.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1703,7 +1703,7 @@
             "heading": "What if I'm not satisfied?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>We offer a 90-day money-back guarantee — no questions asked. Most customers see results within 3 weeks. But if it's not the right fit, just reach out and we'll make it right.</p>",
+            "row_content": "<p>We offer a 90-day money-back guarantee — no questions asked. Most customers notice grip and arm strength improvements within 2–3 weeks of consistent use. If it's not working for you, just reach out and we'll make it right.</p>",
             "page": ""
           },
           "blocks": {}

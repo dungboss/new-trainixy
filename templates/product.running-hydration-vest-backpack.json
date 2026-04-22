@@ -19,11 +19,11 @@
         "a6eb81db-40e4-43e0-972f-32db010a4a56": {
           "type": "rating-stars",
           "settings": {
-            "rating": 4.8,
+            "rating": 4.9,
             "star_color": "#ffcc00",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
-            "label": "(16,688 Reviews)",
+            "label": "(12,441 Reviews)",
             "size": 16,
             "alignment": "flex-start",
             "scroll_id": "",
@@ -55,8 +55,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>No-Spill Design — Zero Mess</strong>",
-            "icon_1": "target",
+            "text_1": "<strong>Non-Slip Platform — Maximum Stability</strong>",
+            "icon_1": "verified",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -95,7 +95,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Keep floors clean, even with the most enthusiastic lickers",
+            "text_1": "Rubber feet grip any surface — hardwood, tile, or carpet",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -135,7 +135,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>30 Minutes of Calm — Not 5 Seconds</strong>",
+            "text_1": "<strong>Burn 200+ Calories — In Just 30 Minutes</strong>",
             "icon_1": "nest_clock_farsight_analog",
             "filled_icon_1": false,
             "text_2": "",
@@ -175,7 +175,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Rotating ball turns treat time into enrichment time",
+            "text_1": "Step-based cardio burns fat faster than walking or jogging",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -215,8 +215,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Slows Eating — Stops Vomiting</strong>",
-            "icon_1": "pets",
+            "text_1": "<strong>Tones Legs, Glutes & Core — All At Once</strong>",
+            "icon_1": "fitness_center",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -255,7 +255,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "No more gulping and throwing up after meals",
+            "text_1": "Full lower-body workout without a single gym machine",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -295,8 +295,8 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Mental Stimulation — Reduces Boredom</strong>",
-            "icon_1": "sound_detection_dog_barking",
+            "text_1": "<strong>Compact Design — Fits Any Home</strong>",
+            "icon_1": "home",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -335,7 +335,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Keeps dogs busy so they stop destroying your stuff",
+            "text_1": "Slides flat under your bed or sofa when not in use",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -500,7 +500,7 @@
             "border_color": "#B7B7B7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>SPECIAL BUNDLE PRICING:</strong> Lock in the best value with multi-packs. 🔴Bundle pricing ends in <strong>18 hours</strong>.",
+            "text_1": "<strong>SPECIAL BUNDLE PRICING:</strong> Lock in the best value with multi-packs. 🔴 Bundle pricing ends in <strong>18 hours</strong>.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -534,7 +534,7 @@
             "heading_1": "90-Day Money-Back Guarantee",
             "icon_2": "workspace_premium",
             "icon_2_fill": false,
-            "heading_2": "Pharmaceutical-Grade",
+            "heading_2": "Premium Build Quality",
             "icon_3": "local_shipping",
             "icon_3_fill": false,
             "heading_3": "Fast Shipping Worldwide",
@@ -547,7 +547,7 @@
           "type": "image",
           "name": "Image",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-04-02_at_19.21.02.webp",
+            "image": "",
             "width": 100,
             "alignment": "center",
             "mobile_alignment": "center",
@@ -561,7 +561,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "Why Choose Slowpet™ Lick Bowl",
+            "heading": "Why Choose The Rock Stepper",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -597,7 +597,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Traditional bowls are empty in seconds — leaving you with messy floors, a bored dog, and nothing to show for that expensive bone broth.</p><p>Slowpet's built-in rotating ball changes everything. As your dog licks, the ball spins, releasing treats slowly and keeping them engaged for 20-30 minutes instead of 5 seconds.</p><p>No more puddles on your floor. No more gulping and throwing up. No more chewed-up shoes while you're at work. Just a calm, happy dog — and a clean home.</p>",
+            "content": "<p>Most gym memberships cost $50/month and require you to commute — only for machines that sit empty half the time.</p><p>The Rock Stepper changes all of that. Its textured non-slip surface and adjustable height levels give you a complete lower-body cardio workout in just 30 minutes — right in your living room.</p><p>No membership fees. No commute. No excuses. Just leaner legs, a tighter core, and a stronger you — starting day one.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -608,7 +608,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "What Can You Put In It",
+            "heading": "What Workouts Can I Do With It",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -644,7 +644,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Works with any liquid or semi-liquid treat your dog loves:</p><ul><li>Bone broth</li><li>Plain yogurt</li><li>Pumpkin puree</li><li>Peanut butter (xylitol-free)</li><li>Wet dog food<br/><br/>Pro tip: Freeze it for a longer-lasting challenge — perfect for hot days or when you need extra time.</li></ul>",
+            "content": "<p>The Rock Stepper works with any routine you love:</p><ul><li>Basic step cardio</li><li>HIIT step intervals</li><li>Lateral step training</li><li>Step & squat combos</li><li>Dance cardio routines<br/><br/>Pro tip: Add ankle weights for extra resistance and faster results — especially for glutes and inner thighs.</li></ul>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -691,7 +691,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Step 1: Fill the bowl with your dog's favorite treat<br/>Step 2: Place on the floor<br/>Step 3: Relax — your dog is busy for the next 30 minutes</p><p>Cleaning: Dishwasher safe (top rack) or hand wash with soap. The ball pops out for easy cleaning.</p>",
+            "content": "<p>Step 1: Set your desired height (3 adjustable levels)<br/>Step 2: Place on any flat surface — rubber feet lock it in place<br/>Step 3: Step for 20–30 minutes at your own pace and enjoy results</p><p>Cleaning: Wipe down with a damp cloth after each session. The non-porous surface resists sweat and odor buildup.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -745,7 +745,7 @@
           },
           "blocks": {}
         },
-        "variant_picker_link_bowl": {
+        "variant_picker_rock_stepper": {
           "type": "product_product-variant-picker-block",
           "settings": {
             "picker_types": "swatches",
@@ -774,7 +774,7 @@
         "text_with_icon_tCpaB8",
         "text_with_icon_gYCjez",
         "price",
-        "variant_picker_link_bowl",
+        "variant_picker_rock_stepper",
         "kaching_bundles_app_block_mzfMkY",
         "buy_buttons",
         "e0a0b690-50df-4ca4-acfd-ce2980696cce",
@@ -858,7 +858,7 @@
         "galleryinnerheight": 80,
         "galleryinnertext": "5-Star Rated Product",
         "enablegalleryreviewstars": false,
-        "rating": 4.8,
+        "rating": 4.9,
         "star_color2": "#ffcc00",
         "bg_stars_style": "full",
         "bg_star_color2": "#ececec",
@@ -966,7 +966,7 @@
         "text_cLnqTc": {
           "type": "text",
           "settings": {
-            "title": "No-Spill Design • 30 Minutes of Calm • Slows Eating • Reduces Anxiety • All Breeds • BPA-Free • Dishwasher Safe"
+            "title": "Non-Slip Platform • Burns 200+ Calories • Adjustable Height • Tones Legs & Glutes • All Fitness Levels • Silent Operation • Compact & Easy Storage"
           }
         }
       },
@@ -1091,7 +1091,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "<strong>Watch Dogs Go Crazy For It</strong>",
+        "title": "<strong>See The Rock Stepper In Action</strong>",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1192,7 +1192,7 @@
             "heading_CBkdVX": {
               "type": "heading",
               "settings": {
-                "title": "Why Dog Parents Love It",
+                "title": "Why Fitness Lovers Love It",
                 "title_highlight_1": "solid-color",
                 "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
                 "title_highlight_1_bg-color": "#F9EFFF",
@@ -1242,7 +1242,7 @@
             "text_jQj3hy": {
               "type": "text",
               "settings": {
-                "text": "<p>The bowl that solves 4 problems at once</p>",
+                "text": "<p>The stepper that transforms your home workouts</p>",
                 "alignment": "center",
                 "mobile_alignment": "mobile-center",
                 "text_size": 14,
@@ -1281,7 +1281,7 @@
             "icon_with_content_iYEqae": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "target",
+                "icon": "verified",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1290,9 +1290,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "No-Spill Design",
+                "title": "Non-Slip Safety",
                 "icon_heading_size": "h3",
-                "text": "<p>Keeps floors clean, even with the messiest lickers</p>",
+                "text": "<p>Rubber feet grip any surface — no sliding, no injuries</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1311,9 +1311,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "30 Minutes, Not 5 Seconds",
+                "title": "200+ Calories in 30 Min",
                 "icon_heading_size": "h3",
-                "text": "<p>Rotating ball extends treat time from seconds to half an hour</p>",
+                "text": "<p>Effective cardio that fits into any busy schedule</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1348,7 +1348,7 @@
             "image_dTEXhz": {
               "type": "image",
               "settings": {
-                "image": "shopify://shop_images/Gemini_Generated_Image_p7ii7vp7ii7vp7ii.png",
+                "image": "",
                 "width": 100,
                 "alignment": "center",
                 "mobile_alignment": "center",
@@ -1385,7 +1385,7 @@
             "icon_with_content_MrnXLK": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "pets",
+                "icon": "fitness_center",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1394,9 +1394,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Slows Eating, Stops Vomiting",
+                "title": "Tones Legs & Glutes",
                 "icon_heading_size": "h3",
-                "text": "<p>No more gulping food and throwing up minutes later</p>",
+                "text": "<p>Every step activates your calves, thighs, and glutes</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
@@ -1406,7 +1406,7 @@
             "icon_with_content_Yk6MEy": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "sound_detection_dog_barking",
+                "icon": "home",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1415,9 +1415,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#FF0000",
-                "title": "Keeps Them Busy",
+                "title": "Fits Any Space",
                 "icon_heading_size": "h3",
-                "text": "<p>Mental stimulation that stops boredom and destructive behavior</p>",
+                "text": "<p>Compact and silent — perfect for apartments and small rooms</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1469,14 +1469,14 @@
           "type": "column",
           "settings": {
             "post_author": "Sarah Mitchell",
-            "post_author_avatar": "shopify://shop_images/381aaab70e9decd5fac1e9d21500eb89.webp",
+            "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "22h ago",
-            "post_text": "<p>honestly wasn't expecting much. another pet product, right? but my golden literally won't leave this thing alone. i fill it with bone broth before my morning shower and by the time i'm done, he's still going at it. used to come back to a puddle on the floor every single time. not anymore. this little bowl might be the best $29 i've spent on him since his bed 😭</p>",
-            "post_image": "shopify://shop_images/Cho_Labrador.png",
+            "post_text": "<p>i have literally tried every home workout thing — resistance bands, jump rope, yoga mats. nothing stuck. bought the rock stepper on a whim and i've been doing 30 mins every morning for 3 weeks. i've lost 6 lbs and my jeans actually fit again. the fact that i can do it while watching netflix is a game changer. no gym, no commute, no excuses. i'm obsessed 😭</p>",
+            "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "892",
-            "post_comments_text": "415 Comments",
+            "post_reactions_text": "1.2k",
+            "post_comments_text": "384 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1491,14 +1491,14 @@
           "type": "column",
           "settings": {
             "post_author": "Jason Park",
-            "post_author_avatar": "shopify://shop_images/5a4ad2a8-9e68-4394-910b-e2f10850e1d9_-_Copy.png",
+            "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "1 Day ago",
-            "post_text": "<p>ok so my frenchie is the FASTEST eater alive. yogurt? gone before i even stand back up. then 10 min later he pukes on the rug. every. time. tried this bowl yesterday and i literally stood there watching him lick for 22 minutes straight. no puke. i'm not exaggerating when i say i teared up a little lol. ordering a second one for my mom's dog</p>",
-            "post_image": "shopify://shop_images/z7677127121416_94fc7a462cba3bd40cb194ca0484ddfc.jpg",
+            "post_text": "<p>cancelled my $60/month gym membership after getting this. was skeptical stepping in place could do anything but after 3 weeks my legs are noticeably more toned and i'm down 8 lbs. neighbor knocked on my door thinking something was wrong because it's completely silent lol. does NOT creak, does NOT slide. just works. already ordered one for my wife</p>",
+            "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "2.1k",
-            "post_comments_text": "236 Comments",
+            "post_reactions_text": "2.4k",
+            "post_comments_text": "511 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1512,15 +1512,15 @@
         "column_BgX46J": {
           "type": "column",
           "settings": {
-            "post_author": "Emily ChenEmily Chen",
-            "post_author_avatar": "shopify://shop_images/lady_1_prod.webp",
+            "post_author": "Emily Chen",
+            "post_author_avatar": "",
             "post_author_verified": false,
             "post_time": "5h ago",
-            "post_text": "<p>we almost rehomed our dog because of the destruction. shoes, pillows, the couch arm — nothing was safe when we left the house. our trainer said \"he needs mental stimulation not more walks.\" started freezing pumpkin puree in this bowl before we leave. came home today to zero damage for the first time in MONTHS. i literally hugged him and cried. $29 to save my sanity and keep my dog. done.</p>",
-            "post_image": "shopify://shop_images/Gemini_Generated_Image_p7ii7vp7ii7vp7ii.png",
+            "post_text": "<p>my doctor told me i needed low-impact cardio after my knee surgery. was terrified of hurting myself again. tried the rock stepper — no impact, no joint pain, just smooth stepping. i did 20 minutes on day one and felt fine. now i'm up to 40 minutes and my physio is genuinely shocked at my recovery speed. this thing is quiet enough to use while my baby sleeps. cannot recommend it enough.</p>",
+            "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "1.1k",
-            "post_comments_text": "236 Comments",
+            "post_reactions_text": "987",
+            "post_comments_text": "203 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1628,10 +1628,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Will this work for my large/small dog?",
+            "heading": "Is this good for beginners?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Yes! The bowl works for all breeds and sizes — from Chihuahuas to Golden Retrievers. The 180ml capacity is perfect for enrichment sessions. For larger dogs, just refill if needed.</p>",
+            "row_content": "<p>Absolutely. The Rock Stepper has 3 adjustable height levels so you can start low and increase intensity as your stamina builds. Perfect for all fitness levels — from complete beginners to seasoned athletes looking for daily cardio.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1640,10 +1640,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What treats can I put in it?",
+            "heading": "How many calories will I burn?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Bone broth, plain yogurt, pumpkin puree, peanut butter (xylitol-free), wet food — any liquid or semi-liquid treat. Freeze it for a longer-lasting challenge.</p>",
+            "row_content": "<p>150–400 calories per 30-minute session depending on your pace, intensity, and body weight. Consistent daily sessions combined with a moderate diet lead to visible results in 2–4 weeks.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1652,10 +1652,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "How long will it keep my dog busy?",
+            "heading": "What is the maximum weight capacity?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Most dogs stay engaged for 15-30 minutes with liquid treats. Frozen treats can last up to an hour. Way better than the 5 seconds with a regular bowl.</p>",
+            "row_content": "<p>The Rock Stepper supports up to 120 kg / 265 lbs. Built from high-density HDPE with reinforced corners for long-term durability.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1664,10 +1664,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is the rolling ball a choking hazard?",
+            "heading": "Will it damage my floors?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>No. The ball is securely enclosed inside the bowl and cannot be removed during normal use. Always supervise your dog during first use.</p>",
+            "row_content": "<p>No. The non-slip rubber feet protect any floor surface including hardwood, tile, laminate, and carpet. The stepper stays firmly in place and leaves zero marks.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1676,10 +1676,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is it easy to clean?",
+            "heading": "Does it make noise? Safe for apartments?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Dishwasher safe (top rack). The ball pops out for easy hand washing. We recommend cleaning after each use.</p>",
+            "row_content": "<p>Nearly silent. The solid platform construction eliminates creaking and clunking entirely. Safe to use in apartments, condos, or while others are sleeping in the same home.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1691,7 +1691,7 @@
             "heading": "What is it made of?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>100% food-grade silicone, BPA-free and non-toxic. The same material used in baby products and kitchen tools. Completely safe for daily use.</p>",
+            "row_content": "<p>High-density HDPE (high-density polyethylene) platform with non-slip rubber accents. The same material used in professional gym equipment — built to withstand years of daily use without cracking or warping.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1700,10 +1700,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What if my dog doesn't like it?",
+            "heading": "What if I'm not satisfied?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>We offer a 90-day money-back guarantee. But most dogs take to it immediately — try starting with peanut butter, it works every time.</p>",
+            "row_content": "<p>We offer a 90-day money-back guarantee — no questions asked. Most customers see results within 3 weeks. But if it's not the right fit, just reach out and we'll make it right.</p>",
             "page": ""
           },
           "blocks": {}
