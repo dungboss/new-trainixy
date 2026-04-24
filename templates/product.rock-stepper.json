@@ -1259,7 +1259,34 @@
             "vertical_mobile_padding": 14,
             "horizontal_mobile_padding": 14
           },
-          "blocks": {}
+          "blocks": {
+            "video_bJY3qR": {
+              "type": "video",
+              "name": "Video",
+              "settings": {
+                "video": "shopify://files/videos/vid_23.mp4",
+                "loop": true,
+                "muted_autoplay": true,
+                "display_play_btn": false,
+                "btn_animation": false,
+                "btn_color_scheme": "accent-1",
+                "display_sound_btn": false,
+                "sound_btn_color_scheme": "inverse",
+                "display_timeline": false,
+                "timeline_color": "accent-1",
+                "width": 100,
+                "Full_mobile_width": false,
+                "alignment": "center",
+                "border_radius": 20,
+                "margin_top": 15,
+                "margin_bottom": 15
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "video_bJY3qR"
+          ]
         },
         "column_rgMUzg": {
           "type": "column",
