@@ -648,20 +648,6 @@
           },
           "blocks": {}
         },
-        "image_c7AM3h": {
-          "type": "image",
-          "name": "Image",
-          "settings": {
-            "use_product_image_fallback": false,
-            "width": 100,
-            "alignment": "center",
-            "mobile_alignment": "center",
-            "border_radius": 0,
-            "margin_top": 15,
-            "margin_bottom": 21
-          },
-          "blocks": {}
-        },
         "de158e68-5d0d-4819-a625-e2dabdff87d1": {
           "type": "collapsible-row",
           "settings": {
@@ -870,7 +856,6 @@
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
         "text_with_icon_DiUgTb",
         "icon_with_text_bGry86",
-        "image_c7AM3h",
         "de158e68-5d0d-4819-a625-e2dabdff87d1",
         "collapsible_row_p6J4hX",
         "collapsible_row_hDG8fz",
