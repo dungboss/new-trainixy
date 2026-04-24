@@ -1259,24 +1259,7 @@
             "vertical_mobile_padding": 14,
             "horizontal_mobile_padding": 14
           },
-          "blocks": {
-            "image_dTEXhz": {
-              "type": "image",
-              "settings": {
-                "use_product_image_fallback": false,
-                "width": 100,
-                "alignment": "center",
-                "mobile_alignment": "center",
-                "border_radius": 0,
-                "margin_top": 15,
-                "margin_bottom": 15
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "image_dTEXhz"
-          ]
+          "blocks": {}
         },
         "column_rgMUzg": {
           "type": "column",
@@ -1384,9 +1367,11 @@
           "type": "column",
           "settings": {
             "post_author": "Sarah Mitchell",
+            "post_author_avatar": "shopify://shop_images/download.jpg",
             "post_author_verified": false,
             "post_time": "22h ago",
             "post_text": "<p>i have literally tried every home workout thing — resistance bands, jump rope, yoga mats. nothing stuck. bought the rock stepper on a whim and i've been doing 30 mins every morning for 3 weeks. i've lost 6 lbs and my jeans actually fit again. the fact that i can do it while watching netflix is a game changer. no gym, no commute, no excuses. i'm obsessed 😭</p>",
+            "post_image": "shopify://shop_images/rock_review_2.png",
             "post_reactions": "like, love, care",
             "post_reactions_text": "1.2k",
             "post_comments_text": "384 Comments",
@@ -1403,10 +1388,12 @@
         "column_PkLqfV": {
           "type": "column",
           "settings": {
-            "post_author": "Jason Park",
+            "post_author": "Kim Park",
+            "post_author_avatar": "shopify://shop_images/Gyeongbokgung-Palace-in-Seoul-South-Korea-768x615-1.jpg",
             "post_author_verified": false,
             "post_time": "1 Day ago",
             "post_text": "<p>cancelled my $60/month gym membership after getting this. was skeptical stepping in place could do anything but after 3 weeks my legs are noticeably more toned and i'm down 8 lbs. neighbor knocked on my door thinking something was wrong because it's completely silent lol. does NOT creak, does NOT slide. just works. already ordered one for my wife</p>",
+            "post_image": "shopify://shop_images/rock_review_1.jpg",
             "post_reactions": "like, love, care",
             "post_reactions_text": "2.4k",
             "post_comments_text": "511 Comments",
@@ -1423,13 +1410,15 @@
         "column_BgX46J": {
           "type": "column",
           "settings": {
-            "post_author": "Emily Chen",
+            "post_author": "Lily Nguyen",
+            "post_author_avatar": "shopify://shop_images/woman-8894656_1280.jpg",
             "post_author_verified": false,
             "post_time": "5h ago",
             "post_text": "<p>my doctor told me i needed low-impact cardio after my knee surgery. was terrified of hurting myself again. tried the rock stepper — no impact, no joint pain, just smooth stepping. i did 20 minutes on day one and felt fine. now i'm up to 40 minutes and my physio is genuinely shocked at my recovery speed. this thing is quiet enough to use while my baby sleeps. cannot recommend it enough.</p>",
+            "post_image": "shopify://shop_images/rock_review_3.png",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "987",
-            "post_comments_text": "203 Comments",
+            "post_reactions_text": "6k",
+            "post_comments_text": "403 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
