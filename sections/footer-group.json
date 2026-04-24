@@ -33,9 +33,9 @@
         "email_signup_98JYgV": {
           "type": "email_signup",
           "settings": {
-            "heading": "Join 10,000+ Happy Dog Parents",
+            "heading": "Join 10,000+ Happy Fitness Enthusiasts",
             "block_headings_font_size": 1,
-            "subtext": "<p>Enrichment tips, treat recipes, and real stories from pup lovers like you</p><p><strong>Contact us at:</strong></p><p>support@trainixy.com</p>",
+            "subtext": "<p>Training tips, nutrition recipes, and real stories from fitness lovers like you<br/><br/></p><p><strong>Contact us at:</strong></p><p>support@trainixy.com</p>",
             "button_type": "solid",
             "button_label": "Sign up",
             "button_style_secondary": true,
