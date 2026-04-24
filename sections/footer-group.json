@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Policies",
             "block_headings_font_size": 1,
-            "menu": "footer",
+            "menu": "policy",
             "font_size": 16,
             "menu_items_font": "body_bold",
             "width_desktop": 4,
