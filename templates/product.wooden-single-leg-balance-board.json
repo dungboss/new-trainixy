@@ -648,20 +648,6 @@
           },
           "blocks": {}
         },
-        "image_c7AM3h": {
-          "type": "image",
-          "name": "Image",
-          "settings": {
-            "use_product_image_fallback": false,
-            "width": 100,
-            "alignment": "center",
-            "mobile_alignment": "center",
-            "border_radius": 0,
-            "margin_top": 15,
-            "margin_bottom": 21
-          },
-          "blocks": {}
-        },
         "de158e68-5d0d-4819-a625-e2dabdff87d1": {
           "type": "collapsible-row",
           "settings": {
@@ -870,7 +856,6 @@
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
         "text_with_icon_DiUgTb",
         "icon_with_text_bGry86",
-        "image_c7AM3h",
         "de158e68-5d0d-4819-a625-e2dabdff87d1",
         "collapsible_row_p6J4hX",
         "collapsible_row_hDG8fz",
@@ -1463,7 +1448,6 @@
             "post_author_verified": false,
             "post_time": "22h ago",
             "post_text": "<p>bought this for my 5-year-old because she needs movement breaks after school and it has been such a good addition to our playroom. she turns it into a game and tries to beat her own balance time every day. i've noticed better coordination and way more confidence when she plays. simple idea, but she uses it constantly.</p>",
-            "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "1.2k",
             "post_comments_text": "384 Comments",
@@ -1484,7 +1468,6 @@
             "post_author_verified": false,
             "post_time": "1 Day ago",
             "post_text": "<p>i run a small preschool movement group and this has been great for balance stations. the kids line up to try it, and even the ones who are usually hesitant join in after watching a friend do it first. it's an easy way to work on focus, coordination, and taking turns without needing a big setup.</p>",
-            "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "2.4k",
             "post_comments_text": "511 Comments",
@@ -1505,7 +1488,6 @@
             "post_author_verified": false,
             "post_time": "5h ago",
             "post_text": "<p>my son loves obstacle courses, so this fit right in. we use it with stepping stones and cones in the living room when the weather is bad. it's one of the few toys that actually gets him moving without a screen. compact, easy to store, and sturdy enough for everyday play.</p>",
-            "post_image": "",
             "post_reactions": "like, love, care",
             "post_reactions_text": "987",
             "post_comments_text": "203 Comments",
