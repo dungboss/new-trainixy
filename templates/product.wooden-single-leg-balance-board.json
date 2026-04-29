@@ -992,6 +992,7 @@
         "video_slide_hxCnyh": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/hook bb 5.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1009,6 +1010,7 @@
         "video_slide_JgrBd7": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/hook bb 4.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1026,6 +1028,7 @@
         "video_slide_9M8frX": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/Hook BB 1.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1321,13 +1324,23 @@
             "horizontal_mobile_padding": 14
           },
           "blocks": {
-            "image_dTEXhz": {
-              "type": "image",
+            "video_arMm9b": {
+              "type": "video",
+              "name": "Video",
               "settings": {
-                "use_product_image_fallback": false,
+                "video": "shopify://files/videos/magnific_lam-cho-ua-tre-trong-hinh_2887371894.mp4",
+                "loop": true,
+                "muted_autoplay": true,
+                "display_play_btn": false,
+                "btn_animation": false,
+                "btn_color_scheme": "accent-1",
+                "display_sound_btn": false,
+                "sound_btn_color_scheme": "inverse",
+                "display_timeline": false,
+                "timeline_color": "accent-1",
                 "width": 100,
+                "Full_mobile_width": false,
                 "alignment": "center",
-                "mobile_alignment": "center",
                 "border_radius": 0,
                 "margin_top": 15,
                 "margin_bottom": 15
@@ -1336,7 +1349,7 @@
             }
           },
           "block_order": [
-            "image_dTEXhz"
+            "video_arMm9b"
           ]
         },
         "column_rgMUzg": {
