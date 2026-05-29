@@ -23,7 +23,7 @@
             "star_color": "#ffcc00",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
-            "label": "(8,214 Reviews)",
+            "label": "(9,872 Reviews)",
             "size": 16,
             "alignment": "flex-start",
             "scroll_id": "",
@@ -55,7 +55,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Builds Wrist, Forearm & Grip Strength</strong>",
+            "text_1": "<strong>Tones Arms, Shoulders & Biceps With Every Spin</strong>",
             "icon_1": "fitness_center",
             "filled_icon_1": false,
             "text_2": "",
@@ -95,7 +95,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "360° rotation targets wrist flexors, extensors, and rotators for complete forearm development",
+            "text_1": "Uses centrifugal force to target biceps, triceps, and shoulders — sculpting elegant, toned arms with regular use",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -135,8 +135,8 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Full 360° Range Of Motion Training</strong>",
-            "icon_1": "autorenew",
+            "text_1": "<strong>Smart LCD Tracks Every Rep, Calorie & Minute</strong>",
+            "icon_1": "monitor_heart",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -175,7 +175,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Works every angle of rotation so no muscle fiber gets left behind in your training",
+            "text_1": "Built-in display monitors revolutions, calories burned, and workout time across 3 training modes to keep you on track",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -215,8 +215,8 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>For Athletes, Office Workers & Rehab</strong>",
-            "icon_1": "verified",
+            "text_1": "<strong>A Fun Workout That Feels More Like Play</strong>",
+            "icon_1": "autorenew",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -255,7 +255,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Ideal for grip training, wrist injury recovery, tennis elbow prevention, and desk worker relief",
+            "text_1": "Replace boring dumbbells with this dynamic infinity arm cuff — centrifugal spinning momentum makes every session actually enjoyable",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -295,8 +295,8 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Compact - Train At The Gym, Office Or Home</strong>",
-            "icon_1": "home",
+            "text_1": "<strong>Premium Polycarbonate - Built For Daily Use</strong>",
+            "icon_1": "verified",
             "filled_icon_1": false,
             "text_2": "",
             "icon_2": "check_circle",
@@ -335,7 +335,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Slip it in your gym bag or desk drawer and get a full wrist workout in minutes wherever you are",
+            "text_1": "Durable PC construction withstands continuous spinning momentum — safe, long-lasting, and lightweight at just 1.21 lbs",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -383,7 +383,7 @@
             "append": "option_1_label_container",
             "swatches_size": "small",
             "swatches_custom_colors": "custom",
-            "swatches_custom_colors_list": "Blue = #609FDB, Red = #FF0000, Black = #393939, Grey = #808080, Gray = #808080",
+            "swatches_custom_colors_list": "White A = #f5f5f5, White B = #e8e8e8, Pink A = #FFB6C1, Pink B = #FF69B4",
             "full_width_dropdowns": false,
             "breaks_style": "normal",
             "breaks_headline": "BUNDLE & SAVE",
@@ -533,7 +533,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>GREAT FOR ATHLETES & EVERYDAY USERS:</strong> Use it for pre-workout warmups, grip strength training, wrist injury recovery, and reducing forearm fatigue from desk work.",
+            "text_1": "<strong>PERFECT FOR HOME, OFFICE & TRAVEL:</strong> Compact size (30cm x 16cm) fits in any bag. Tone your arms during TV time, work breaks, or whenever you have a spare moment.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -567,7 +567,7 @@
             "heading_1": "90-Day Money-Back Guarantee",
             "icon_2": "workspace_premium",
             "icon_2_fill": false,
-            "heading_2": "Premium Durable Construction",
+            "heading_2": "Premium Polycarbonate Build",
             "icon_3": "local_shipping",
             "icon_3_fill": false,
             "heading_3": "Fast Shipping Worldwide",
@@ -580,7 +580,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "Why Serious Trainers Love The 360° Wrist Trainer",
+            "heading": "Why People Love The 360° Arm Trainer",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -616,7 +616,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Most wrist trainers only work in one plane of motion, leaving half your forearm muscles untrained. The 360° Rotating Wrist & Forearm Trainer changes that by engaging your wrists through a full circular range of motion.</p><p>Whether you're a climber building grip endurance, a tennis player protecting your elbow, an office worker fighting wrist fatigue, or someone recovering from a strain, this trainer gives you complete forearm development in one compact tool.</p><p>Use it at your desk, between sets at the gym, or during warmups to keep your wrists strong and pain-free every day.</p>",
+            "content": "<p>Most arm exercises are either boring or require a lot of space and equipment. The 360° Rotating Wrist & Forearm Trainer is different — its centrifugal spinning motion naturally engages your biceps, triceps, and shoulders while feeling more like play than a workout.</p><p>The built-in LCD display tracks your revolutions, calories burned, and time across 3 modes, so you always know exactly how hard you worked. Whether you use it at home watching TV, at your desk during a break, or while traveling, this compact trainer fits your lifestyle.</p><p>With consistent use, users notice reduced armpit fat, more defined arm muscles, and improved upper body tone — without ever stepping foot in a gym.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -663,7 +663,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>The 360° Rotating Wrist & Forearm Trainer targets the complete forearm muscle chain:</p><ul><li><strong>Wrist Flexors</strong> - the muscles on the inside of your forearm responsible for curling and gripping</li><li><strong>Wrist Extensors</strong> - the muscles on the outside of your forearm that control extension and prevent tennis elbow</li><li><strong>Pronators & Supinators</strong> - the deep rotator muscles that control forearm rotation, critical for throwing, swinging, and lifting</li><li><strong>Grip Muscles</strong> - finger flexors and hand muscles for crushing grip strength</li><li><strong>Forearm Stabilizers</strong> - small stabilizing muscles that protect the wrist joint during heavy lifting</li></ul>",
+            "content": "<p>The 360° rotating motion engages the complete upper arm and shoulder muscle group:</p><ul><li><strong>Biceps</strong> - the front of your upper arm, responsible for the toned look most people want</li><li><strong>Triceps</strong> - the back of the upper arm, the area most prone to stubborn flabbiness</li><li><strong>Shoulders (Deltoids)</strong> - all three heads of the shoulder for rounded, sculpted definition</li><li><strong>Forearm Muscles</strong> - wrist flexors and extensors engaged throughout the rotation movement</li><li><strong>Upper Back Stabilizers</strong> - supporting muscles activated to maintain posture during the exercise</li></ul>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -710,7 +710,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Step 1: Grip the handle firmly with one hand, keeping your elbow at 90 degrees<br/>Step 2: Slowly rotate your wrist in a full 360° circle, maintaining controlled tension throughout the motion<br/>Step 3: Complete 10-15 rotations in each direction, then switch hands</p><p>Use cases: pre-workout warmup, rehab sets, grip endurance training, and desk breaks. Start with light resistance and increase as your strength improves.</p>",
+            "content": "<p>Step 1: Slip the arm cuff onto your wrist or hold it in your hand<br/>Step 2: Select your preferred mode on the LCD display<br/>Step 3: Begin rotating your arm in smooth circular motions, letting the centrifugal force build momentum</p><p>Best used for 5-15 minute sessions, 1-2 times daily. Alternate arms for balanced toning. The LCD will track your progress so you can set daily goals and improve over time.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -844,20 +844,20 @@
         "review_border_color": "#e9ecef",
         "star_color": "#ffc107",
         "username_color": "#000000",
-        "username": "Marcus D.",
+        "username": "Sarah K.",
         "verified_customer": true,
         "verified_icon_color": "#28a745",
         "verified_text_color": "#28a745",
         "verified_text": "Verified Purchase",
         "review_text_color": "#000000",
-        "review_text": "My grip strength shot up in two weeks. Compact enough to keep at my desk and use between calls.",
+        "review_text": "I use this while watching TV every night. My arms look so much more toned after just 3 weeks — and the LCD makes it addictive to beat my daily score!",
         "enablegallerybottomtext": false,
         "galleryinnerbackground": "#000000",
         "galleryinneropacity": 0.8,
         "galleryinnertextcolor": "#ffffff",
         "galleryinnerradius": 8,
         "galleryinnerheight": 80,
-        "galleryinnertext": "Trainer Favorite",
+        "galleryinnertext": "Customer Favorite",
         "enablegalleryreviewstars": false,
         "rating": 4.9,
         "star_color2": "#ffcc00",
@@ -873,7 +873,7 @@
         "text_ticker_wrist": {
           "type": "text",
           "settings": {
-            "title": "Wrist & Forearm Strength • 360° Full Rotation Training • Grip Power Development • Athletes & Rehab • Compact & Portable • Train Anywhere"
+            "title": "Arm Toning & Sculpting • Smart LCD Tracking • Centrifugal Force Training • Biceps & Triceps • Portable & Compact • Tone Arms At Home"
           }
         }
       },
@@ -976,7 +976,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "<strong>See The Wrist Trainer In Action</strong>",
+        "title": "<strong>See The Arm Trainer In Action</strong>",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1077,7 +1077,7 @@
             "heading_wrist_col": {
               "type": "heading",
               "settings": {
-                "title": "Why Athletes Choose It",
+                "title": "Why They Keep Coming Back",
                 "title_highlight_1": "solid-color",
                 "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
                 "title_highlight_1_bg-color": "#f9efff",
@@ -1127,7 +1127,7 @@
             "text_wrist_col": {
               "type": "text",
               "settings": {
-                "text": "<p>A precision rotation trainer that hits every forearm muscle in one tool</p>",
+                "text": "<p>A smarter, more enjoyable way to get toned arms without leaving home</p>",
                 "alignment": "center",
                 "mobile_alignment": "mobile-center",
                 "text_size": 14,
@@ -1163,7 +1163,7 @@
             "horizontal_mobile_padding": 14
           },
           "blocks": {
-            "icon_content_strength": {
+            "icon_content_toning": {
               "type": "icon-with-content",
               "settings": {
                 "icon": "fitness_center",
@@ -1175,19 +1175,19 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Complete Forearm Strength",
+                "title": "Tones & Sculpts Upper Arms",
                 "icon_heading_size": "h3",
-                "text": "<p>Targets flexors, extensors, and rotators that standard training always misses</p>",
+                "text": "<p>Centrifugal rotation targets biceps, triceps, and shoulders to reduce flabbiness and build definition</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
               },
               "blocks": {}
             },
-            "icon_content_levels": {
+            "icon_content_lcd": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "trending_up",
+                "icon": "monitor_heart",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1196,9 +1196,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Works For All Levels",
+                "title": "Smart LCD Progress Tracking",
                 "icon_heading_size": "h3",
-                "text": "<p>From beginner rehab to elite athletic performance, adjustable to your level</p>",
+                "text": "<p>Track revolutions, calories, and time across 3 modes so you can set goals and stay motivated</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1207,8 +1207,8 @@
             }
           },
           "block_order": [
-            "icon_content_strength",
-            "icon_content_levels"
+            "icon_content_toning",
+            "icon_content_lcd"
           ]
         },
         "column_video_wrist": {
@@ -1276,10 +1276,10 @@
             "horizontal_mobile_padding": 14
           },
           "blocks": {
-            "icon_content_portable": {
+            "icon_content_fun": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "verified",
+                "icon": "autorenew",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1288,16 +1288,16 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Premium & Durable Build",
+                "title": "Fun Enough To Actually Do Daily",
                 "icon_heading_size": "h3",
-                "text": "<p>Built to withstand daily training sessions with a smooth, consistent rotation mechanism</p>",
+                "text": "<p>The spinning centrifugal motion feels engaging and playful — not like a chore you dread</p>",
                 "text_size": 14,
                 "margin_top": 0,
                 "margin_bottom": 30
               },
               "blocks": {}
             },
-            "icon_content_anywhere": {
+            "icon_content_portable": {
               "type": "icon-with-content",
               "settings": {
                 "icon": "home",
@@ -1309,9 +1309,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Train At Gym, Home Or Office",
+                "title": "Compact - Use It Anywhere",
                 "icon_heading_size": "h3",
-                "text": "<p>Compact enough for a desk drawer yet powerful enough for a professional training setup</p>",
+                "text": "<p>30cm x 16cm and only 1.21 lbs — fits easily in a bag for home, office, or travel use</p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1320,8 +1320,8 @@
             }
           },
           "block_order": [
-            "icon_content_portable",
-            "icon_content_anywhere"
+            "icon_content_fun",
+            "icon_content_portable"
           ]
         }
       },
@@ -1362,15 +1362,15 @@
         "testimonial_wrist_1": {
           "type": "column",
           "settings": {
-            "post_author": "Jake Merrill",
-            "post_author_avatar": "shopify://shop_images/man-in-suit-on-stairs.jpg",
+            "post_author": "Jessica M.",
+            "post_author_avatar": "shopify://shop_images/download.jpg",
             "post_author_verified": false,
-            "post_time": "18h ago",
-            "post_text": "<p>been using this for 3 weeks and the difference in my grip is insane. i do Brazilian jiu-jitsu and my grip endurance used to die after 10 minutes of sparring. now i can go full rounds without my forearms pumping out. the 360° rotation hits angles i never even knew were weak. absolutely worth it.</p>",
+            "post_time": "14h ago",
+            "post_text": "<p>i've been using this for a month and my arms look completely different. the flabby part under my arm is visibly smaller and i can actually feel muscle there now. i use it while watching netflix every night for like 10-15 minutes. the LCD screen tracking my calories makes it feel like a little game. so addictive in the best way.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "2.1k",
-            "post_comments_text": "447 Comments",
+            "post_reactions_text": "3.2k",
+            "post_comments_text": "618 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1384,15 +1384,15 @@
         "testimonial_wrist_2": {
           "type": "column",
           "settings": {
-            "post_author": "Sandra Nguyen",
-            "post_author_avatar": "shopify://shop_images/download.jpg",
+            "post_author": "Priya S.",
+            "post_author_avatar": "shopify://shop_images/autumn-photographer-taking-picture.jpg",
             "post_author_verified": false,
-            "post_time": "2 Days ago",
-            "post_text": "<p>i'm a physical therapist and i've started recommending this to patients recovering from wrist sprains and tennis elbow. the controlled 360° motion is perfect for progressive rehab. it's gentle enough to start with and challenging enough to build real strength as they recover. i keep one at my desk for my own wrist health.</p>",
+            "post_time": "1 Day ago",
+            "post_text": "<p>bought this after seeing it on social media and honestly it exceeded my expectations. i was skeptical that something this small and fun-looking could actually work, but after 3 weeks i genuinely noticed more definition in my arms. i use it at my desk between meetings. it doesn't take up any space and the pink color is so cute. would 100% recommend.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "3.4k",
-            "post_comments_text": "612 Comments",
+            "post_reactions_text": "2.7k",
+            "post_comments_text": "504 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1406,15 +1406,15 @@
         "testimonial_wrist_3": {
           "type": "column",
           "settings": {
-            "post_author": "Ryan Castillo",
-            "post_author_avatar": "shopify://shop_images/autumn-photographer-taking-picture.jpg",
+            "post_author": "Linda C.",
+            "post_author_avatar": "shopify://shop_images/man-in-suit-on-stairs.jpg",
             "post_author_verified": false,
-            "post_time": "6h ago",
-            "post_text": "<p>software engineer here. typing 8 hours a day destroyed my wrists. a coworker suggested this and i've been using it for 5 minutes every hour as a desk break. the wrist pain is gone and i can actually feel the muscles getting stronger. small thing, huge difference. compact enough to keep right next to my keyboard.</p>",
+            "post_time": "3h ago",
+            "post_text": "<p>gave one to my mom and she loves it. she's 58 and was worried about arm jiggle but didn't want to lift weights. this is perfect for her because it feels gentle but you can still feel it working. she does it for a few minutes while drinking her morning coffee. after 6 weeks her arms look noticeably firmer. buying a second one for myself now.</p>",
             "post_image": "",
             "post_reactions": "like, love, care",
-            "post_reactions_text": "1.7k",
-            "post_comments_text": "329 Comments",
+            "post_reactions_text": "1.9k",
+            "post_comments_text": "371 Comments",
             "comment_1_author": "Comment author",
             "comment_1_author_verified": false,
             "comment_1_time": "2h ago",
@@ -1435,7 +1435,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "What Trainers Are Saying",
+        "title": "What Customers Are Saying",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1522,10 +1522,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What is the 360° Rotating Wrist & Forearm Trainer used for?",
+            "heading": "How does the 360° arm trainer actually work?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>It is designed to strengthen the wrist, forearm, and grip muscles through a full 360° rotation. Athletes use it to improve grip strength and endurance, while office workers and rehab patients use it to reduce wrist pain and recover from overuse injuries.</p>",
+            "row_content": "<p>It uses centrifugal force generated by the rotating mechanism. As you spin the arm cuff in circular motions, the momentum creates resistance that engages your biceps, triceps, and shoulder muscles. The faster and more controlled your rotation, the greater the muscle activation — similar to how a gyroscope creates resistance through inertia.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1534,10 +1534,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is it suitable for beginners or injury recovery?",
+            "heading": "Will this actually help with arm fat and flabbiness?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Yes. The smooth rotation mechanism allows full control over speed and resistance, making it safe for beginners and those in physical therapy. Start with slow, controlled rotations and increase intensity as your strength and comfort improve.</p>",
+            "row_content": "<p>Yes, with consistent daily use. The rotational resistance targets the muscles underneath the fat — primarily the triceps and shoulders — helping to tone and firm the area over time. Most users notice visible differences within 3-6 weeks of regular use. Results improve when combined with a balanced diet.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1546,10 +1546,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What muscles does it target?",
+            "heading": "What do the 3 LCD modes do?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>It targets the complete forearm muscle chain including wrist flexors, wrist extensors, pronators, supinators, grip muscles, and the stabilizing muscles around the wrist joint. This makes it far more comprehensive than standard wrist curls or grip squeezers.</p>",
+            "row_content": "<p>The built-in LCD display tracks your workout data across 3 training modes. Each mode monitors a different combination of revolutions, elapsed time, and estimated calories burned — letting you set goals, track progress, and challenge yourself to improve session by session.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1558,10 +1558,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "How long should I train with it each day?",
+            "heading": "Is it suitable for older adults or beginners?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>For strength training, 2-3 sets of 10-15 rotations per direction per hand is a great starting point. For rehab or desk workers, short 3-5 minute sessions throughout the day are highly effective. Consistency matters more than duration.</p>",
+            "row_content": "<p>Absolutely. The centrifugal motion is low-impact and joint-friendly, making it suitable for a wide age range including seniors. Beginners can start with short 5-minute sessions at a slow pace and gradually increase as they build strength and confidence.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1570,10 +1570,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Can it help with tennis elbow or wrist pain?",
+            "heading": "What are the dimensions and weight?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Many users report significant relief from tennis elbow symptoms and wrist fatigue after consistent use. The extensor-focused rotation helps balance the muscle tension that causes tennis elbow. We recommend consulting your doctor or physical therapist if you have an existing injury.</p>",
+            "row_content": "<p>Size: 30cm x 16cm (11.81\" x 6.3\"). Weight: 1.21 lbs (0.55 kg). It is compact and lightweight enough to use at your desk, on the couch, or pack in a travel bag. Battery: button battery (included).</p>",
             "page": ""
           },
           "blocks": {}
@@ -1582,10 +1582,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "Is it durable for daily heavy training?",
+            "heading": "What colors are available?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>Yes. It is built with a premium rotating mechanism designed for regular daily use. Whether you train lightly for desk health or aggressively for athletic performance, it maintains smooth, consistent rotation through extended use.</p>",
+            "row_content": "<p>Available in White A, White B, Pink A, and Pink B. All variants feature the same premium polycarbonate build and LCD tracking functionality — the difference is in the color finish and style of each option.</p>",
             "page": ""
           },
           "blocks": {}
@@ -1594,10 +1594,10 @@
           "type": "collapsible-row-content",
           "settings": {
             "open": false,
-            "heading": "What if I'm not satisfied?",
+            "heading": "What if I'm not happy with my results?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "<p>We offer a 90-day money-back guarantee. If it does not deliver the results you expected or you are not satisfied for any reason, just reach out and we will make it right.</p>",
+            "row_content": "<p>We offer a 90-day money-back guarantee. If you use it consistently and are not satisfied with your experience for any reason, reach out to our team and we will make it right — no questions asked.</p>",
             "page": ""
           },
           "blocks": {}
