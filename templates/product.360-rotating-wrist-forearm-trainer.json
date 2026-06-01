@@ -928,6 +928,7 @@
         "video_slide_wrist_1": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/7613949982277750030.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -945,6 +946,7 @@
         "video_slide_wrist_2": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/7605048899576827149.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -962,6 +964,7 @@
         "video_slide_wrist_3": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/7616848410418711839.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -1239,22 +1242,15 @@
             "horizontal_mobile_padding": 14
           },
           "blocks": {
-            "video_wrist_demo": {
-              "type": "video",
-              "name": "Video",
+            "image_gdMie6": {
+              "type": "image",
+              "name": "Image",
               "settings": {
-                "loop": true,
-                "muted_autoplay": true,
-                "display_play_btn": false,
-                "btn_animation": false,
-                "btn_color_scheme": "accent-1",
-                "display_sound_btn": false,
-                "sound_btn_color_scheme": "inverse",
-                "display_timeline": false,
-                "timeline_color": "accent-1",
+                "image": "shopify://shop_images/daf280c2-1c22-474d-bce4-b6b323110fa6.webp",
+                "use_product_image_fallback": false,
                 "width": 100,
-                "Full_mobile_width": false,
                 "alignment": "center",
+                "mobile_alignment": "center",
                 "border_radius": 0,
                 "margin_top": 15,
                 "margin_bottom": 15
@@ -1263,7 +1259,7 @@
             }
           },
           "block_order": [
-            "video_wrist_demo"
+            "image_gdMie6"
           ]
         },
         "column_benefits_right": {
