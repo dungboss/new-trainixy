@@ -392,7 +392,7 @@
             "append": "option_1_label_container",
             "swatches_size": "small",
             "swatches_custom_colors": "custom",
-            "swatches_custom_colors_list": "White A = #f5f5f5, White B = #e8e8e8, Pink A = #FFB6C1, Pink B = #FF69B4",
+            "swatches_custom_colors_list": "Pink = #C56857, White = #FÈ4F2",
             "full_width_dropdowns": false,
             "breaks_style": "normal",
             "breaks_headline": "BUNDLE & SAVE",
