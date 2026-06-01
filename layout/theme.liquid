@@ -142,10 +142,12 @@
         {% if template.name == 'product' and template.suffix == '360-rotating-wrist-forearm-trainer' %}
           --color-base-background-1: 254, 244, 242;
           --color-base-accent-1: 197, 104, 87;
+          --color-base-accent-2: 197, 104, 87;
           --color-base-outline-button-labels: 197, 104, 87;
           --payment-terms-background-color: #FEF4F2;
           --gradient-base-background-1: #FEF4F2;
           --gradient-base-accent-1: #C56857;
+          --gradient-base-accent-2: #C56857;
         {% endif %}
 
         --media-padding: {{ settings.media_padding }}px;
@@ -493,9 +495,13 @@
     {% section 'promo-popup' %}
     {% section 'scroll-to-top-btn' %}
     {% section 'global-music-player' %}
-    {% unless template == 'product.travel-bottle' or template == 'product.under-eye-red-light' %}
+    {% if template == 'product.360-rotating-wrist-forearm-trainer' %}
+      {% sections 'footer-group-360-rotating-wrist-forearm-trainer' %}
+    {% elsif template == 'product.travel-bottle' or template == 'product.under-eye-red-light' %}
+      {% comment %}No footer for these products{% endcomment %}
+    {% else %}
       {% sections 'footer-group' %}
-    {% endunless %}
+    {% endif %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
