@@ -139,6 +139,15 @@
         --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
         --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
 
+        {% if template.name == 'product' and template.suffix == '360-rotating-wrist-forearm-trainer' %}
+          --color-base-background-1: 254, 244, 242;
+          --color-base-accent-1: 197, 104, 87;
+          --color-base-outline-button-labels: 197, 104, 87;
+          --payment-terms-background-color: #FEF4F2;
+          --gradient-base-background-1: #FEF4F2;
+          --gradient-base-accent-1: #C56857;
+        {% endif %}
+
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
         --media-border-width: {{ settings.media_border_thickness }}px;
@@ -360,6 +369,12 @@
           font-size: 1.6rem;
         }
       }
+
+      {% if template.name == 'product' and template.suffix == '360-rotating-wrist-forearm-trainer' %}
+        .header__heading-link .h2 {
+          color: #C56857;
+        }
+      {% endif %}
 
       /* fallback */
       @font-face {
