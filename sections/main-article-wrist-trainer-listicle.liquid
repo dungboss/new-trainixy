@@ -34,7 +34,7 @@
     --wl-highlight: {{ section.settings.highlight_color }};
     --wl-success: {{ section.settings.success_color }};
     --wl-danger: {{ section.settings.danger_color }};
-    --wl-text-scale: 1.1;
+    --wl-text-scale: {{ section.settings.font_scale | divided_by: 100.0 }};
     background: var(--wl-bg);
     color: var(--wl-ink);
   }
@@ -273,104 +273,115 @@
   }
 
   .ranking-intro {
-    margin-bottom: 32px;
-    padding: 24px 26px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, #1a1410, #302318);
-    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 26px;
   }
 
   .ranking-intro .rte p,
   .ranking-intro p {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--wl-muted);
   }
 
   .ranking-intro strong {
-    color: var(--wl-accent-soft);
+    color: var(--wl-ink);
   }
 
   .product-card {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
     overflow: hidden;
     border: 1px solid var(--wl-border);
-    border-radius: 22px;
+    border-radius: 10px;
     background: #fff;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
     animation: fadeUp 0.5s ease both;
   }
 
+  .product-card.is-top-pick {
+    box-shadow: 0 4px 24px rgba(44, 117, 55, 0.1);
+  }
+
   .product-card__header {
+    padding: 28px 28px 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .product-card__rankline {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 16px 22px 12px;
-    border-bottom: 1px solid var(--wl-border);
-    background: var(--wl-surface);
+    gap: 6px;
   }
 
   .product-card__rank {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: auto;
+    height: auto;
+    border-radius: 0;
     font-weight: 700;
-    font-size: calc(0.95rem * var(--wl-text-scale));
+    font-size: calc(0.92rem * var(--wl-text-scale));
     flex-shrink: 0;
-    color: #fff;
-    background: var(--wl-accent);
+    color: #2c7537;
+    background: transparent;
   }
 
   .product-card__rank.tone-silver {
-    background: #b0b8c1;
+    color: #2c7537;
+    background: transparent;
   }
 
   .product-card__rank.tone-bronze {
-    background: #cd7f32;
+    color: #2c7537;
+    background: transparent;
   }
 
   .product-card__rank.tone-neutral {
-    color: var(--wl-ink);
-    background: var(--wl-surface-alt);
-    border: 1px solid var(--wl-border);
+    color: #2c7537;
+    background: transparent;
+    border: 0;
   }
 
   .product-card__rank.tone-dark {
-    background: #4b4038;
+    color: #2c7537;
+    background: transparent;
   }
 
   .product-card__label {
-    font-size: calc(0.8rem * var(--wl-text-scale));
+    font-size: calc(0.92rem * var(--wl-text-scale));
     font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--wl-muted);
+    letter-spacing: 0.08em;
+    text-transform: none;
+    color: #2c7537;
   }
 
   .product-card__label.is-pick {
-    color: var(--wl-accent);
+    color: #2c7537;
   }
 
   .product-card__body {
-    padding: 28px 24px 0;
+    padding: 12px 28px 0;
   }
 
   .product-card__title {
-    margin: 0 0 4px;
+    margin: 0 0 8px;
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(1.75rem, 2.4vw, 2.25rem);
+    font-size: clamp(2rem, 3vw, 2.55rem);
     line-height: 1.2;
     color: var(--wl-ink);
   }
 
+  .product-card.is-top-pick .product-card__title {
+    font-size: clamp(2.25rem, 3.3vw, 2.85rem);
+  }
+
   .product-card__tagline {
-    margin: 0 0 22px;
+    margin: 0 0 20px;
     color: var(--wl-muted);
-    font-size: calc(1.02rem * var(--wl-text-scale));
-    font-style: italic;
+    font-size: calc(1.06rem * var(--wl-text-scale));
+    font-style: normal;
     line-height: 1.6;
   }
 
@@ -381,12 +392,13 @@
     align-items: center;
     justify-content: center;
     min-height: 200px;
-    margin-bottom: 22px;
-    border-radius: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
     background: linear-gradient(135deg, #f5f0e8 0%, #ede8e0 100%);
   }
 
   .product-visual__inner {
+    width: 100%;
     text-align: center;
     padding: 32px 24px;
   }
@@ -397,6 +409,8 @@
     justify-content: center;
     margin-bottom: 10px;
     color: var(--wl-ink);
+    font-size: 54px;
+    line-height: 1;
   }
 
   .product-visual__icon .material-icon {
@@ -457,11 +471,11 @@
     width: 100%;
     margin-bottom: 24px;
     border-collapse: collapse;
-    font-size: calc(0.96rem * var(--wl-text-scale));
+    font-size: calc(0.98rem * var(--wl-text-scale));
   }
 
   .specs-table td {
-    padding: 9px 12px;
+    padding: 10px 14px;
     border-bottom: 1px solid #f0ebe5;
     vertical-align: top;
   }
@@ -475,6 +489,10 @@
 
   .score-grid {
     margin: 20px 0 28px;
+    padding: 18px;
+    border: 1px solid var(--wl-border);
+    border-radius: 16px;
+    background: #fff;
   }
 
   .score-row {
@@ -487,7 +505,7 @@
 
   .score-label {
     color: var(--wl-muted);
-    font-size: calc(0.92rem * var(--wl-text-scale));
+    font-size: calc(0.96rem * var(--wl-text-scale));
     font-weight: 600;
   }
 
@@ -509,7 +527,7 @@
   .score-val {
     text-align: right;
     color: var(--wl-ink);
-    font-size: calc(0.9rem * var(--wl-text-scale));
+    font-size: calc(0.96rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
@@ -549,7 +567,7 @@
   .pros h4,
   .cons h4 {
     margin: 0 0 12px;
-    font-size: calc(0.92rem * var(--wl-text-scale));
+    font-size: calc(0.9rem * var(--wl-text-scale));
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -579,7 +597,7 @@
     padding: 5px 0;
     color: var(--wl-muted);
     line-height: 1.6;
-    font-size: calc(0.96rem * var(--wl-text-scale));
+    font-size: calc(0.98rem * var(--wl-text-scale));
   }
 
   .pros li::before {
@@ -598,8 +616,15 @@
 
   .testimonial-strip {
     padding: 18px 20px;
-    margin: 20px 0;
+    margin: 14px 0;
     background: var(--wl-surface-alt);
+  }
+
+  .testimonial-stars {
+    margin-bottom: 8px;
+    color: #d09b29;
+    font-size: calc(0.88rem * var(--wl-text-scale));
+    letter-spacing: 0.08em;
   }
 
   .testimonial-strip p {
@@ -613,6 +638,24 @@
   .testimonial-strip .attr {
     color: var(--wl-accent);
     font-size: calc(0.88rem * var(--wl-text-scale));
+    font-weight: 700;
+  }
+
+  .product-card__subheading {
+    margin: 26px 0 16px;
+    font-size: calc(1.12rem * var(--wl-text-scale));
+    line-height: 1.3;
+    color: var(--wl-ink);
+  }
+
+  .verdict-box {
+    padding: 18px 20px;
+  }
+
+  .verdict-box h4 {
+    margin: 0 0 10px;
+    color: var(--wl-ink);
+    font-size: calc(1rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
@@ -915,6 +958,59 @@
     line-height: 1.6;
   }
 
+  .ranking-section .final-cta {
+    margin: 0;
+    padding: 24px 28px;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+  }
+
+  .ranking-section .final-cta .cta-btn {
+    display: inline-flex;
+    width: auto;
+    min-width: 280px;
+    padding: 14px 24px;
+    border-radius: 6px;
+    background: var(--wl-accent);
+    color: #fff;
+  }
+
+  .ranking-section .final-cta__meta {
+    text-align: left;
+    margin-top: 10px;
+    font-size: calc(0.82rem * var(--wl-text-scale));
+  }
+
+  .ranking-section .final-cta.is-secondary .cta-btn {
+    background: #888;
+    color: #fff;
+  }
+
+  .ranking-section .final-cta.is-secondary .cta-btn:hover {
+    background: #888;
+    color: #fff;
+  }
+
+  .ranking-section .final-cta.is-muted .cta-btn {
+    background: #3a2020;
+    color: #fff;
+  }
+
+  .ranking-section .final-cta.is-muted .cta-btn:hover {
+    background: #3a2020;
+    color: #fff;
+  }
+
+  .ranking-section .final-cta.is-meta-only {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .ranking-section .final-cta.is-meta-only .final-cta__meta {
+    margin-top: 0;
+    font-size: calc(0.88rem * var(--wl-text-scale));
+  }
+
   .author-bio {
     display: flex;
     gap: 18px;
@@ -998,9 +1094,18 @@
       padding: 20px 18px 0;
     }
 
+    .product-card__header {
+      padding: 22px 18px 0;
+    }
+
     .final-cta,
     .why-section {
       padding: 28px 20px;
+    }
+
+    .ranking-section .final-cta .cta-btn {
+      width: 100%;
+      min-width: 0;
     }
 
     .author-bio {
@@ -1113,7 +1218,9 @@
           <span>{{ section.settings.ranking_eyebrow | escape }}</span>
         </div>
         <div class="wrist-listicle__section-inner">
-          <h2 class="wrist-listicle__section-title">{{ section.settings.ranking_title | escape }}</h2>
+          {%- if section.settings.ranking_title != blank -%}
+            <h2 class="wrist-listicle__section-title">{{ section.settings.ranking_title | escape }}</h2>
+          {%- endif -%}
 
           {%- if section.settings.ranking_intro != blank -%}
             <div class="ranking-intro rte">
@@ -1122,12 +1229,12 @@
           {%- endif -%}
 
           {%- for block in ranking_cards -%}
-            <div class="product-card" {{ block.shopify_attributes }} style="animation-delay: {{ forloop.index0 | times: 0.08 }}s;">
+            <div class="product-card{% if block.settings.comparison_top_pick %} is-top-pick{% endif %}" {{ block.shopify_attributes }} style="animation-delay: {{ forloop.index0 | times: 0.08 }}s;">
               <div class="product-card__header">
-                {%- if block.settings.rank_text != blank -%}
-                  <div class="product-card__rank tone-{{ block.settings.tone }}">{{ block.settings.rank_text | escape }}</div>
-                {%- endif -%}
-                <div>
+                <div class="product-card__rankline">
+                  {%- if block.settings.rank_text != blank -%}
+                    <div class="product-card__rank tone-{{ block.settings.tone }}">{{ block.settings.rank_text | escape }}</div>
+                  {%- endif -%}
                   <div class="product-card__label{% if block.settings.comparison_top_pick %} is-pick{% endif %}">
                     {{ block.settings.label | escape }}
                   </div>
@@ -1144,7 +1251,9 @@
 
                 <div class="product-visual">
                   <div class="product-visual__inner">
-                    {%- if block.settings.icon != blank -%}
+                    {%- if block.settings.visual_emoji != blank -%}
+                      <div class="product-visual__icon">{{ block.settings.visual_emoji | escape }}</div>
+                    {%- elsif block.settings.icon != blank -%}
                       <div class="product-visual__icon">
                         {% render 'material-icon', icon: block.settings.icon, filled: true %}
                       </div>
@@ -1162,7 +1271,7 @@
                 </div>
 
                 {%- if block.settings.specs != blank -%}
-                  {%- assign spec_lines = block.settings.specs | split: '\n' -%}
+                  {%- assign spec_lines = block.settings.specs | newline_to_br | split: '<br />' -%}
                   <table class="specs-table">
                     {%- for spec_line in spec_lines -%}
                       {%- assign spec_line = spec_line | strip -%}
@@ -1178,7 +1287,14 @@
                 {%- endif -%}
 
                 {%- if block.settings.summary != blank -%}
+                  {%- assign show_summary_heading = false -%}
+                  {%- if section.settings.summary_heading != blank and block.settings.callout != blank -%}
+                    {%- assign show_summary_heading = true -%}
+                  {%- endif -%}
                   <div class="rte">
+                    {%- if show_summary_heading -%}
+                      <h4 class="product-card__subheading">{{ section.settings.summary_heading | escape }}</h4>
+                    {%- endif -%}
                     {{ block.settings.summary }}
                   </div>
                 {%- endif -%}
@@ -1190,8 +1306,8 @@
                 {%- endif -%}
 
                 {%- if block.settings.how_steps != blank -%}
-                  {%- assign step_lines = block.settings.how_steps | split: '\n' -%}
-                  <h4 class="wrist-listicle__section-title" style="font-size: 1.3rem; margin-top: 26px;">How It Works</h4>
+                  {%- assign step_lines = block.settings.how_steps | newline_to_br | split: '<br />' -%}
+                  <h4 class="product-card__subheading">{{ section.settings.how_it_works_heading | escape }}</h4>
                   <div class="how-steps">
                     {%- for step_line in step_lines -%}
                       {%- assign step_line = step_line | strip -%}
@@ -1212,12 +1328,14 @@
                 {%- endif -%}
 
                 {%- if block.settings.testimonials != blank -%}
-                  {%- assign testimonial_lines = block.settings.testimonials | split: '\n' -%}
+                  {%- assign testimonial_lines = block.settings.testimonials | newline_to_br | split: '<br />' -%}
+                  <h4 class="product-card__subheading">{{ section.settings.testimonials_heading | escape }}</h4>
                   {%- for testimonial_line in testimonial_lines -%}
                     {%- assign testimonial_line = testimonial_line | strip -%}
                     {%- if testimonial_line != blank -%}
                       {%- assign testimonial_parts = testimonial_line | split: '|' -%}
                       <div class="testimonial-strip">
+                        <div class="testimonial-stars">★★★★★</div>
                         <p>"{{ testimonial_parts[0] | strip | escape }}"</p>
                         {%- if testimonial_parts[1] != blank -%}
                           <div class="attr">— {{ testimonial_parts[1] | strip | escape }}</div>
@@ -1228,19 +1346,32 @@
                 {%- endif -%}
 
                 {%- if block.settings.metrics != blank -%}
-                  {%- assign metric_lines = block.settings.metrics | split: '\n' -%}
-                  <h4 class="wrist-listicle__section-title" style="font-size: 1.3rem; margin-top: 26px;">Scores</h4>
+                  {%- assign metric_lines = block.settings.metrics | newline_to_br | split: '<br />' -%}
+                  <h4 class="product-card__subheading">{{ section.settings.scores_heading | escape }}</h4>
                   <div class="score-grid">
                     {%- for metric_line in metric_lines -%}
                       {%- assign metric_line = metric_line | strip -%}
                       {%- if metric_line != blank -%}
                         {%- assign metric_parts = metric_line | split: '|' -%}
-                        {%- assign metric_width = metric_parts[1] | default: '0' | strip -%}
-                        {%- assign metric_value = metric_parts[2] | default: metric_width | strip -%}
+                        {%- assign metric_percent_raw = metric_parts[1] | default: '0' | strip -%}
+                        {%- assign metric_score_raw = metric_parts[2] | default: metric_percent_raw | strip -%}
+                        {%- assign metric_percent_num = metric_percent_raw | plus: 0 -%}
+                        {%- assign metric_score_num = metric_score_raw | plus: 0 -%}
+                        {%- assign metric_width_num = metric_percent_num -%}
+                        {%- if metric_parts[2] != blank or metric_percent_num <= 10 -%}
+                          {%- assign metric_width_num = metric_score_num | times: 10 -%}
+                        {%- endif -%}
+                        {%- if metric_width_num > 100 -%}
+                          {%- assign metric_width_num = 100 -%}
+                        {%- elsif metric_width_num < 0 -%}
+                          {%- assign metric_width_num = 0 -%}
+                        {%- endif -%}
+                        {%- assign metric_width = metric_width_num | append: '%' -%}
+                        {%- assign metric_value = metric_score_raw -%}
                         <div class="score-row">
                           <span class="score-label">{{ metric_parts[0] | strip | escape }}</span>
                           <div class="score-bar-bg">
-                            <div class="score-bar" data-width="{{ metric_width }}%"></div>
+                            <div class="score-bar" data-width="{{ metric_width }}"></div>
                           </div>
                           <span class="score-val">{{ metric_value | escape }}</span>
                         </div>
@@ -1250,11 +1381,13 @@
                 {%- endif -%}
 
                 {%- if block.settings.pros != blank or block.settings.cons != blank -%}
+                  {%- assign pros_heading = block.settings.pros_heading_override | default: section.settings.pros_heading -%}
+                  {%- assign cons_heading = block.settings.cons_heading_override | default: section.settings.cons_heading -%}
                   <div class="pros-cons"{% unless block.settings.pros != blank and block.settings.cons != blank %} style="grid-template-columns: 1fr;"{% endunless %}>
                     {%- if block.settings.pros != blank -%}
-                      {%- assign pros_lines = block.settings.pros | split: '\n' -%}
+                      {%- assign pros_lines = block.settings.pros | newline_to_br | split: '<br />' -%}
                       <div class="pros">
-                        <h4>What I Liked</h4>
+                        <h4>{{ pros_heading | escape }}</h4>
                         <ul>
                           {%- for pros_line in pros_lines -%}
                             {%- assign pros_line = pros_line | strip -%}
@@ -1267,9 +1400,9 @@
                     {%- endif -%}
 
                     {%- if block.settings.cons != blank -%}
-                      {%- assign cons_lines = block.settings.cons | split: '\n' -%}
+                      {%- assign cons_lines = block.settings.cons | newline_to_br | split: '<br />' -%}
                       <div class="cons">
-                        <h4>What Held It Back</h4>
+                        <h4>{{ cons_heading | escape }}</h4>
                         <ul>
                           {%- for cons_line in cons_lines -%}
                             {%- assign cons_line = cons_line | strip -%}
@@ -1285,21 +1418,30 @@
 
                 {%- if block.settings.bottom_line != blank -%}
                   <div class="verdict-box rte">
+                    <h4>{{ section.settings.bottom_line_heading | escape }}</h4>
                     {{ block.settings.bottom_line }}
                   </div>
                 {%- endif -%}
               </div>
 
+              {%- assign show_ranking_cta = false -%}
               {%- if block.settings.cta_variant != 'hidden' and block.settings.cta_label != blank -%}
-                <div class="final-cta" style="margin: 0; border-radius: 0 0 22px 22px; background: {% if block.settings.cta_variant == 'primary' %}var(--wl-accent){% elsif block.settings.cta_variant == 'secondary' %}#888{% else %}#3a2020{% endif %};">
-                  {%- if block.settings.cta_link != blank -%}
-                    <a href="{{ block.settings.cta_link }}" class="cta-btn">
-                      {{ block.settings.cta_label | escape }}
-                    </a>
-                  {%- else -%}
-                    <span class="cta-btn" role="link" aria-disabled="true">
-                      {{ block.settings.cta_label | escape }}
-                    </span>
+                {%- assign show_ranking_cta = true -%}
+              {%- elsif block.settings.cta_variant != 'hidden' and block.settings.cta_meta != blank -%}
+                {%- assign show_ranking_cta = true -%}
+              {%- endif -%}
+              {%- if show_ranking_cta -%}
+                <div class="final-cta is-{{ block.settings.cta_variant }}{% if block.settings.cta_label == blank %} is-meta-only{% endif %}" style="background: {% if block.settings.cta_variant == 'primary' %}linear-gradient(135deg,#2d2926,#3d2d20){% elsif block.settings.cta_variant == 'secondary' %}linear-gradient(135deg,#2d2926,#3d2d20){% else %}linear-gradient(135deg,#3a2020,#4a2a2a){% endif %};">
+                  {%- if block.settings.cta_label != blank -%}
+                    {%- if block.settings.cta_link != blank -%}
+                      <a href="{{ block.settings.cta_link }}" class="cta-btn">
+                        {{ block.settings.cta_label | escape }}
+                      </a>
+                    {%- else -%}
+                      <span class="cta-btn" role="link" aria-disabled="true">
+                        {{ block.settings.cta_label | escape }}
+                      </span>
+                    {%- endif -%}
                   {%- endif -%}
                   {%- if block.settings.cta_meta != blank -%}
                     <div class="final-cta__meta">{{ block.settings.cta_meta | escape }}</div>
@@ -1534,10 +1676,10 @@
       "id": "font_scale",
       "label": "Font size",
       "min": 100,
-      "max": 130,
+      "max": 150,
       "step": 2,
       "unit": "%",
-      "default": 110,
+      "default": 120,
       "info": "Increase this if the article text feels too small."
     },
     {
@@ -1732,19 +1874,61 @@
       "type": "text",
       "id": "ranking_eyebrow",
       "label": "Rankings eyebrow",
-      "default": "The rankings"
+      "default": "The Rankings"
     },
     {
       "type": "text",
       "id": "ranking_title",
       "label": "Rankings title",
-      "default": "The Devices, Ranked"
+      "default": "The Rankings"
     },
     {
       "type": "richtext",
       "id": "ranking_intro",
       "label": "Ranking intro",
-      "default": "<p>Use this space to introduce the comparison list.</p>"
+      "default": "<p>Five devices made the final list worth discussing. Four didn't make it — I'll tell you why at the end. Here's what I found, starting with the device that genuinely surprised me.</p><p>Ranked by <strong>real-world results for women who want slimmer, more toned arms</strong> — not by how they performed in theoretical testing conditions.</p>"
+    },
+    {
+      "type": "text",
+      "id": "summary_heading",
+      "label": "Summary heading",
+      "default": "My Take"
+    },
+    {
+      "type": "text",
+      "id": "how_it_works_heading",
+      "label": "How it works heading",
+      "default": "How It Works"
+    },
+    {
+      "type": "text",
+      "id": "testimonials_heading",
+      "label": "Testimonials heading",
+      "default": "What My Test Group Said"
+    },
+    {
+      "type": "text",
+      "id": "scores_heading",
+      "label": "Scores heading",
+      "default": "Scores"
+    },
+    {
+      "type": "text",
+      "id": "pros_heading",
+      "label": "Pros heading",
+      "default": "What I Liked"
+    },
+    {
+      "type": "text",
+      "id": "cons_heading",
+      "label": "Cons heading",
+      "default": "What Held It Back"
+    },
+    {
+      "type": "text",
+      "id": "bottom_line_heading",
+      "label": "Bottom line heading",
+      "default": "Bottom Line"
     },
     {
       "type": "header",
@@ -2009,6 +2193,11 @@
         },
         {
           "type": "text",
+          "id": "visual_emoji",
+          "label": "Visual emoji"
+        },
+        {
+          "type": "text",
           "id": "visual_title",
           "label": "Visual title",
           "default": "Product name"
@@ -2081,10 +2270,20 @@
           "default": "Pros item"
         },
         {
+          "type": "text",
+          "id": "pros_heading_override",
+          "label": "Pros heading override"
+        },
+        {
           "type": "textarea",
           "id": "cons",
           "label": "Cons",
           "default": "Cons item"
+        },
+        {
+          "type": "text",
+          "id": "cons_heading_override",
+          "label": "Cons heading override"
         },
         {
           "type": "richtext",
