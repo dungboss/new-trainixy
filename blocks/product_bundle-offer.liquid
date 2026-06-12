@@ -16,6 +16,14 @@
     assign product = section.settings.product
   endif
   assign main_product_handle = product.handle
+  assign bundle_tag = 'main-bundle-offer'
+  if is_separate
+    assign bundle_tag = 'bundle-deals'
+  endif
+  assign upsell_tag = 'div'
+  if is_main
+    assign upsell_tag = 'product-info-upsell'
+  endif
 %}
 <div 
   class='bundle-offer' 
@@ -41,7 +49,7 @@
       {{ block.settings.title_text }}
     </h3>
   {% endif %}
-  <{% if is_separate %}bundle-deals id="bundle-deals-{{ section.id }}-{{ block.id }}"{% else %}main-bundle-offer id="MainBundleOffer-{{ section.id }}-{{ block.id }}"{% endif %} 
+  <{{ bundle_tag }} id="{% if is_separate %}bundle-deals-{{ section.id }}-{{ block.id }}{% else %}MainBundleOffer-{{ section.id }}-{{ block.id }}{% endif %}"
     data-section="{{ section.id }}-{{ block.id }}"
     data-percentage-left="{{ total_percentage_left_multiplier }}" 
     data-fixed-discount="{{ total_fixed_discount }}" 
@@ -68,7 +76,7 @@
         assign total_price = total_price | plus: price
         assign total_compare_price = total_compare_price | plus: compare_price
       %}
-      <{% if is_main %}product-info-upsell{% else %}div{% endif %}
+      <{{ upsell_tag }}
         class='upsell{% if is_main %} main-offer-item main-offer-item-{{ section.id }}{% endif %}'
         data-selected="true"
         data-id="{{ current_product.first_available_variant.id }}"
@@ -235,7 +243,7 @@
             {% endif %}
           </div>
         </div>
-      </{% if is_main %}product-info-upsell{% else %}div{% endif %}>
+      </{{ upsell_tag }}>
     {% endif %}
     {% if block.settings.product_2 != blank %}
       {% liquid
@@ -253,7 +261,7 @@
         assign total_price = total_price | plus: price
         assign total_compare_price = total_compare_price | plus: compare_price
       %}
-      <{% if is_main %}product-info-upsell{% else %}div{% endif %}
+      <{{ upsell_tag }}
         class='upsell{% if is_main %} main-offer-item main-offer-item-{{ section.id }}{% endif %}'
         data-selected="true"
         data-id="{{ current_product.first_available_variant.id }}"
@@ -427,7 +435,7 @@
             {% endif %}
           </div>
         </div>
-      </{% if is_main %}product-info-upsell{% else %}div{% endif %}>
+      </{{ upsell_tag }}>
     {% endif %}
     {% if block.settings.product_3 != blank %}
       {% liquid
@@ -445,7 +453,7 @@
         assign total_price = total_price | plus: price
         assign total_compare_price = total_compare_price | plus: compare_price
       %}
-      <{% if is_main %}product-info-upsell{% else %}div{% endif %}
+      <{{ upsell_tag }}
         class='upsell{% if is_main %} main-offer-item main-offer-item-{{ section.id }}{% endif %}'
         data-selected="true"
         data-id="{{ current_product.first_available_variant.id }}"
@@ -619,7 +627,7 @@
             {% endif %}
           </div>
         </div>
-      </{% if is_main %}product-info-upsell{% else %}div{% endif %}>
+      </{{ upsell_tag }}>
     {% endif %}
     {% if is_separate or block.settings.show_footer %}
       <div class="bundle-offer__footer flex-space-between">
@@ -638,7 +646,7 @@
         </div>
       </div>
     {% endif %}
-  </{% if is_separate %}bundle-deals{% else %}main-bundle-offer{% endif %}>
+  </{{ bundle_tag }}>
   {% if is_separate %}
     <product-form class="product-form" data-section="{{ section.id }}-{{ block.id }}" data-include-pdp-upsells="{{ block.settings.include_pdp_upsells }}">
       <div class="product-form__error-message-wrapper" role="alert" hidden>

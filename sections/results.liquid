@@ -180,7 +180,13 @@
               assign delay = delay | plus: settings.animation_duration
             endif
           %}
-          <{% if section.settings.enable_animations %}results-container{% else %}div{% endif %}
+          {% liquid
+            assign results_container_tag = 'div'
+            if section.settings.enable_animations
+              assign results_container_tag = 'results-container'
+            endif
+          %}
+          <{{ results_container_tag }}
             class="results__rows-container display-block"
             data-style="{{ section.settings.style }}"
             data-duration="{{ section.settings.animation_duration }}"
@@ -272,7 +278,7 @@
                 </div>
               </div>
             {%- endfor -%}
-          </{% if section.settings.enable_animations %}results-container{% else %}div{% endif %}>
+          </{{ results_container_tag }}>
           {%- unless section.settings.caption == blank -%}
             <div class="results__caption">
               {{ section.settings.caption }}

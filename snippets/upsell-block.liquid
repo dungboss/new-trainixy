@@ -31,7 +31,13 @@
   endif
 %}
 
-<{% if is_recommendation %}product-recommendations{% else %}div{% endif %}
+{% liquid
+  assign upsell_container_tag = 'div'
+  if is_recommendation
+    assign upsell_container_tag = 'product-recommendations'
+  endif
+%}
+<{{ upsell_container_tag }}
   class='{{ type }}-upsells-container upsells-container{% if item_count > 1 and block.settings.stacking == 'column' %} upsells-container--stacked-columns{% endif %}{% if item_count > 1 and block.settings.stacking == 'slider' %} side-margins-negative{% endif %}{% if is_recommendation %} display-block{% endif %}'
   style="
     --item-count: {{ item_count }};
@@ -387,7 +393,7 @@
         </div>
       </splide-component>
     {% endif %}
-</{% if is_recommendation %}product-recommendations{% else %}div{% endif %}>
+</{{ upsell_container_tag }}>
 
 {% if product_list.count == hidden_products and product_list.count > 0 %}
   <style>

@@ -7,7 +7,14 @@
         assign logo_link = request.locale.root_url
       endif
     %}
-    <{% if section.settings.logo_link != blank %}a href="{{ logo_link }}"{% else %}div{% endif %}
+    {% liquid
+      assign logo_tag = 'div'
+      if section.settings.logo_link != blank
+        assign logo_tag = 'a'
+      endif
+    %}
+    <{{ logo_tag }}
+        {% if section.settings.logo_link != blank %}href="{{ logo_link }}"{% endif %}
         class="header__heading-link{% if section.settings.logo_link != blank %} link link--text focus-inset{% endif %}{% if settings.logo != blank %} media media--transparent ratio{% endif %}"
         {%- if settings.logo != blank -%}
             style="--ratio-percent: {{ 1 | divided_by: settings.logo.aspect_ratio | times: 100 }}%"
@@ -84,7 +91,7 @@
         {%- else -%}
             <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
-    </{% if section.settings.logo_link != blank %}a{% else %}div{% endif %}>
+    </{{ logo_tag }}>
 {%- if request.page_type == 'index' -%}
     </h1>
 {%- endif -%}
