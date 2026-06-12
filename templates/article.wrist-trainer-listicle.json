@@ -13,6 +13,7 @@
       "type": "main-article-wrist-trainer-listicle",
       "settings": {
         "page_width": "narrow",
+        "font_scale": 110,
         "background_color": "#faf8f4",
         "surface_color": "#fff9f2",
         "surface_alt_color": "#f0e8e0",

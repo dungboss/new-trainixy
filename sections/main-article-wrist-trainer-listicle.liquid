@@ -34,6 +34,7 @@
     --wl-highlight: {{ section.settings.highlight_color }};
     --wl-success: {{ section.settings.success_color }};
     --wl-danger: {{ section.settings.danger_color }};
+    --wl-text-scale: 1.1;
     background: var(--wl-bg);
     color: var(--wl-ink);
   }
@@ -52,6 +53,11 @@
   .wrist-listicle .rte ul:last-child,
   .wrist-listicle .rte ol:last-child {
     margin-bottom: 0;
+  }
+
+  .wrist-listicle .rte {
+    font-size: calc(1rem * var(--wl-text-scale));
+    line-height: 1.85;
   }
 
   .wrist-listicle__stack {
@@ -94,7 +100,7 @@
     border-radius: 999px;
     background: rgba(200, 145, 42, 0.18);
     color: var(--wl-accent-soft);
-    font-size: 0.72rem;
+    font-size: calc(0.8rem * var(--wl-text-scale));
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -106,7 +112,7 @@
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(2.1rem, 5vw, 4rem);
+    font-size: clamp(2.35rem, 5vw, 4.4rem);
     line-height: 1.12;
     letter-spacing: calc(var(--font-heading-letter-spacing) * 0.7);
     color: #fff;
@@ -119,7 +125,7 @@
 
   .wrist-listicle__byline {
     color: rgba(255, 255, 255, 0.72);
-    font-size: 0.95rem;
+    font-size: calc(1.02rem * var(--wl-text-scale));
     line-height: 1.6;
     max-width: 860px;
     margin: 0 auto;
@@ -139,7 +145,7 @@
     border: 1px solid rgba(255, 255, 255, 0.14);
     background: rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.85);
-    font-size: 0.82rem;
+    font-size: calc(0.9rem * var(--wl-text-scale));
     font-weight: 600;
   }
 
@@ -165,7 +171,7 @@
   .wrist-listicle__section-label span {
     white-space: nowrap;
     color: var(--wl-accent);
-    font-size: 0.72rem;
+    font-size: calc(0.8rem * var(--wl-text-scale));
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -176,15 +182,15 @@
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(1.7rem, 3vw, 2.45rem);
+    font-size: clamp(1.95rem, 3vw, 2.8rem);
     line-height: 1.2;
     color: var(--wl-ink);
   }
 
   .wrist-listicle__section-intro {
     color: var(--wl-muted);
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: calc(1.08rem * var(--wl-text-scale));
+    line-height: 1.8;
     margin-bottom: 24px;
   }
 
@@ -196,8 +202,8 @@
 
   .wrist-listicle__intro-copy {
     color: var(--wl-muted);
-    font-size: 1.03rem;
-    line-height: 1.8;
+    font-size: calc(1.12rem * var(--wl-text-scale));
+    line-height: 1.82;
   }
 
   .wrist-listicle__pullquote {
@@ -213,8 +219,8 @@
     color: var(--wl-ink);
     font-family: var(--font-heading-family);
     font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.65;
+    font-size: calc(1.24rem * var(--wl-text-scale));
+    line-height: 1.7;
   }
 
   .method-grid {
@@ -250,7 +256,7 @@
 
   .method-card__title {
     margin: 0 0 8px;
-    font-size: 1rem;
+    font-size: calc(1.08rem * var(--wl-text-scale));
     line-height: 1.35;
     color: var(--wl-ink);
   }
@@ -258,8 +264,8 @@
   .method-card__text {
     margin: 0;
     color: var(--wl-muted);
-    font-size: 0.9rem;
-    line-height: 1.65;
+    font-size: calc(0.98rem * var(--wl-text-scale));
+    line-height: 1.7;
   }
 
   .ranking-section {
@@ -310,7 +316,7 @@
     height: 40px;
     border-radius: 50%;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: calc(0.95rem * var(--wl-text-scale));
     flex-shrink: 0;
     color: #fff;
     background: var(--wl-accent);
@@ -335,7 +341,7 @@
   }
 
   .product-card__label {
-    font-size: 0.72rem;
+    font-size: calc(0.8rem * var(--wl-text-scale));
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -355,7 +361,7 @@
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    font-size: clamp(1.75rem, 2.4vw, 2.25rem);
     line-height: 1.2;
     color: var(--wl-ink);
   }
@@ -363,7 +369,7 @@
   .product-card__tagline {
     margin: 0 0 22px;
     color: var(--wl-muted);
-    font-size: 0.95rem;
+    font-size: calc(1.02rem * var(--wl-text-scale));
     font-style: italic;
     line-height: 1.6;
   }
@@ -401,14 +407,14 @@
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-    font-size: 1.1rem;
+    font-size: calc(1.18rem * var(--wl-text-scale));
     color: var(--wl-ink);
   }
 
   .product-visual__note {
     margin-top: 6px;
     color: #777;
-    font-size: 0.82rem;
+    font-size: calc(0.9rem * var(--wl-text-scale));
     line-height: 1.5;
   }
 
@@ -424,7 +430,7 @@
     border-radius: 50%;
     color: #fff;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: calc(1.05rem * var(--wl-text-scale));
   }
 
   .tone-gold {
@@ -451,7 +457,7 @@
     width: 100%;
     margin-bottom: 24px;
     border-collapse: collapse;
-    font-size: 0.88rem;
+    font-size: calc(0.96rem * var(--wl-text-scale));
   }
 
   .specs-table td {
@@ -481,7 +487,7 @@
 
   .score-label {
     color: var(--wl-muted);
-    font-size: 0.84rem;
+    font-size: calc(0.92rem * var(--wl-text-scale));
     font-weight: 600;
   }
 
@@ -503,7 +509,7 @@
   .score-val {
     text-align: right;
     color: var(--wl-ink);
-    font-size: 0.82rem;
+    font-size: calc(0.9rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
@@ -543,7 +549,7 @@
   .pros h4,
   .cons h4 {
     margin: 0 0 12px;
-    font-size: 0.84rem;
+    font-size: calc(0.92rem * var(--wl-text-scale));
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -573,7 +579,7 @@
     padding: 5px 0;
     color: var(--wl-muted);
     line-height: 1.6;
-    font-size: 0.88rem;
+    font-size: calc(0.96rem * var(--wl-text-scale));
   }
 
   .pros li::before {
@@ -600,13 +606,13 @@
     margin: 0 0 8px;
     color: var(--wl-muted);
     font-style: italic;
-    font-size: 0.9rem;
-    line-height: 1.65;
+    font-size: calc(0.98rem * var(--wl-text-scale));
+    line-height: 1.7;
   }
 
   .testimonial-strip .attr {
     color: var(--wl-accent);
-    font-size: 0.8rem;
+    font-size: calc(0.88rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
@@ -617,8 +623,8 @@
     border: 1px solid rgba(200, 145, 42, 0.3);
     background: var(--wl-highlight);
     color: #5a4500;
-    font-size: 0.92rem;
-    line-height: 1.7;
+    font-size: calc(1rem * var(--wl-text-scale));
+    line-height: 1.75;
   }
 
   .highlight-box strong {
@@ -650,22 +656,22 @@
     justify-content: center;
     color: #fff;
     background: var(--wl-accent);
-    font-size: 0.85rem;
+    font-size: calc(0.92rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
   .how-step h5 {
     margin: 0 0 8px;
     color: var(--wl-ink);
-    font-size: 0.88rem;
+    font-size: calc(0.96rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
   .how-step p {
     margin: 0;
     color: var(--wl-muted);
-    font-size: 0.82rem;
-    line-height: 1.55;
+    font-size: calc(0.9rem * var(--wl-text-scale));
+    line-height: 1.65;
   }
 
   .compare-table-wrap {
@@ -680,7 +686,7 @@
     width: 100%;
     min-width: 720px;
     border-collapse: collapse;
-    font-size: 0.85rem;
+    font-size: calc(0.92rem * var(--wl-text-scale));
   }
 
   .compare-table th {
@@ -688,7 +694,7 @@
     background: #2d2926;
     color: #ddd;
     white-space: nowrap;
-    font-size: 0.78rem;
+    font-size: calc(0.86rem * var(--wl-text-scale));
     font-weight: 700;
     letter-spacing: 0.04em;
     text-align: left;
@@ -722,7 +728,7 @@
     border-radius: 999px;
     color: #fff;
     background: var(--wl-success);
-    font-size: 0.78rem;
+    font-size: calc(0.86rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
@@ -799,7 +805,7 @@
 
   .guide-card__title {
     margin: 0 0 10px;
-    font-size: 0.9rem;
+    font-size: calc(0.98rem * var(--wl-text-scale));
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -832,7 +838,7 @@
     border: 0;
     background: transparent;
     color: var(--wl-ink);
-    font-size: 1rem;
+    font-size: calc(1.08rem * var(--wl-text-scale));
     font-weight: 700;
     text-align: left;
   }
@@ -855,8 +861,8 @@
     display: none;
     padding-top: 14px;
     color: var(--wl-muted);
-    font-size: 0.92rem;
-    line-height: 1.75;
+    font-size: calc(1rem * var(--wl-text-scale));
+    line-height: 1.8;
   }
 
   .faq-item.is-open .faq-a {
@@ -879,8 +885,8 @@
 
   .final-cta p {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 0.95rem;
-    line-height: 1.75;
+    font-size: calc(1.05rem * var(--wl-text-scale));
+    line-height: 1.8;
   }
 
   .final-cta .cta-btn {
@@ -891,7 +897,7 @@
     border-radius: 10px;
     background: #fff;
     color: var(--wl-accent);
-    font-size: 0.95rem;
+    font-size: calc(1.02rem * var(--wl-text-scale));
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
@@ -905,7 +911,7 @@
   .final-cta__meta {
     margin-top: 12px;
     color: rgba(255, 255, 255, 0.76);
-    font-size: 0.82rem;
+    font-size: calc(0.9rem * var(--wl-text-scale));
     line-height: 1.6;
   }
 
@@ -936,29 +942,29 @@
   .author-bio__title {
     margin: 0 0 4px;
     color: var(--wl-ink);
-    font-size: 1rem;
+    font-size: calc(1.08rem * var(--wl-text-scale));
     font-weight: 700;
   }
 
   .author-bio__role {
     margin: 0 0 10px;
     color: var(--wl-accent);
-    font-size: 0.8rem;
+    font-size: calc(0.88rem * var(--wl-text-scale));
     font-weight: 700;
     line-height: 1.5;
   }
 
   .author-bio__text {
     color: var(--wl-muted);
-    font-size: 0.88rem;
-    line-height: 1.7;
+    font-size: calc(0.96rem * var(--wl-text-scale));
+    line-height: 1.8;
   }
 
   .footer-note {
     margin-top: 18px;
     color: var(--wl-muted);
-    font-size: 0.82rem;
-    line-height: 1.7;
+    font-size: calc(0.9rem * var(--wl-text-scale));
+    line-height: 1.75;
     text-align: center;
   }
 
@@ -1007,7 +1013,7 @@
     }
 
     .faq-q {
-      font-size: 0.95rem;
+      font-size: calc(1rem * var(--wl-text-scale));
     }
   }
 
@@ -1185,7 +1191,7 @@
 
                 {%- if block.settings.how_steps != blank -%}
                   {%- assign step_lines = block.settings.how_steps | split: '\n' -%}
-                  <h4 class="wrist-listicle__section-title" style="font-size: 1.15rem; margin-top: 26px;">How It Works</h4>
+                  <h4 class="wrist-listicle__section-title" style="font-size: 1.3rem; margin-top: 26px;">How It Works</h4>
                   <div class="how-steps">
                     {%- for step_line in step_lines -%}
                       {%- assign step_line = step_line | strip -%}
@@ -1223,7 +1229,7 @@
 
                 {%- if block.settings.metrics != blank -%}
                   {%- assign metric_lines = block.settings.metrics | split: '\n' -%}
-                  <h4 class="wrist-listicle__section-title" style="font-size: 1.15rem; margin-top: 26px;">Scores</h4>
+                  <h4 class="wrist-listicle__section-title" style="font-size: 1.3rem; margin-top: 26px;">Scores</h4>
                   <div class="score-grid">
                     {%- for metric_line in metric_lines -%}
                       {%- assign metric_line = metric_line | strip -%}
@@ -1431,7 +1437,7 @@
           {%- if section.settings.final_cta_title != blank or section.settings.final_cta_text != blank -%}
             <div class="verdict-box" style="margin-top: 24px; text-align: center;">
               {%- if section.settings.final_cta_title != blank -%}
-                <h3 class="product-card__title" style="font-size: 1.4rem; color: inherit; margin-bottom: 8px;">{{ section.settings.final_cta_title | escape }}</h3>
+                <h3 class="product-card__title" style="font-size: 1.55rem; color: inherit; margin-bottom: 8px;">{{ section.settings.final_cta_title | escape }}</h3>
               {%- endif -%}
               {%- if section.settings.final_cta_text != blank -%}
                 <p style="margin-bottom: 18px; color: inherit;">{{ section.settings.final_cta_text | escape }}</p>
@@ -1522,6 +1528,17 @@
         { "value": "normal", "label": "Normal" },
         { "value": "narrow", "label": "Narrow" }
       ]
+    },
+    {
+      "type": "range",
+      "id": "font_scale",
+      "label": "Font size",
+      "min": 100,
+      "max": 130,
+      "step": 2,
+      "unit": "%",
+      "default": 110,
+      "info": "Increase this if the article text feels too small."
     },
     {
       "type": "header",
