@@ -1,0 +1,333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article-wrist-trainer-listicle",
+      "settings": {
+        "page_width": "narrow",
+        "background_color": "#faf8f4",
+        "surface_color": "#fff9f2",
+        "surface_alt_color": "#f0e8e0",
+        "ink_color": "#1a1410",
+        "muted_color": "#3d3530",
+        "accent_color": "#c8912a",
+        "accent_soft_color": "#e8b84b",
+        "border_color": "#e8ddd4",
+        "highlight_color": "#fff3cd",
+        "success_color": "#7a9e8a",
+        "danger_color": "#d4756a",
+        "hero_badge": "Buyer's guide",
+        "hero_title": "I Tried 9 Arm Toning Gadgets So You Don't Have To.",
+        "hero_title_emphasis": "Only One Actually Slimmed My Arms.",
+        "hero_byline": "By Morgan Ellis | Certified Personal Trainer | Wrist Rehab Specialist | June 2026",
+        "hero_pill_1": "9 devices tested",
+        "hero_pill_2": "12 weeks of testing",
+        "hero_pill_3": "No sponsorships",
+        "hero_pill_4": "8 years of training",
+        "intro_content": "<p>I spent 12 weeks testing arm-toning tools with a group of busy women who needed something they could actually stick with.</p><p>Some devices were fine. Some were painful. A few were marketing in a box. One product stood out because it was the only one people kept using.</p><p>This guide breaks down what worked, what failed, and what I would buy again.</p>",
+        "intro_pull_quote": "The best tool is the one you actually use after a long day.",
+        "methodology_eyebrow": "My methodology",
+        "methodology_title": "What I Looked For",
+        "methodology_description": "<p>I ranked each device on results, comfort, ease of use, and whether it fit real life.</p>",
+        "ranking_eyebrow": "The rankings",
+        "ranking_title": "The Devices, Ranked",
+        "ranking_intro": "<p>Five products made the final cut. Four did not.</p><p>I ranked them by real-world use, not hype.</p>",
+        "comparison_eyebrow": "Side-by-side comparison",
+        "comparison_title": "Quick comparison",
+        "comparison_intro": "The five contenders across the criteria that actually predict results.",
+        "comparison_note": "Consistency rate = percentage of participants still using the device at week 12.",
+        "why_eyebrow": "Why it matters",
+        "why_title": "Why Your Arms Are the Last Thing to Change",
+        "why_content": "<p>You cannot spot-reduce fat. So when someone says they want slimmer arms, what they really want is less body fat overall plus more muscle tone in the upper arm.</p><p>That is where most gadgets fail. They look active, but they do not create enough resistance or consistency to change anything.</p><p>The best device in this test worked because it was easy to repeat, easy to track, and easy to keep using after work.</p>",
+        "guide_eyebrow": "Buying guide",
+        "guide_title": "What to Look For",
+        "guide_good_title": "What Actually Matters",
+        "guide_good_content": "<p><strong>Full arm engagement.</strong> Look for movement that reaches beyond one muscle group.</p><p><strong>Progress tracking.</strong> A counter or display turns a toy into a tool.</p><p><strong>Wrist comfort.</strong> If it irritates your wrists, you will stop using it.</p><p><strong>Real portability.</strong> It has to work at a desk, on a couch, or in a waiting room.</p>",
+        "guide_bad_title": "What to Walk Away From",
+        "guide_bad_content": "<p>Any claim that promises fat loss without muscle work.</p><p>Any gadget that sells sweat as proof of slimming.</p><p>Any device you already know you will not pick up again tomorrow.</p>",
+        "faq_eyebrow": "FAQ",
+        "faq_title": "Frequently Asked Questions",
+        "faq_intro": "Short answers to the questions people ask most often.",
+        "verdict_eyebrow": "My verdict",
+        "verdict_title": "The Bottom Line",
+        "verdict_content": "<p>I tested nine arm-toning devices over 12 weeks with real women, tracked consistency, and watched what people were still using at the end.</p><p>Four products failed to deliver anything measurable. One was just marketing. Three were useful. Only one was easy enough to stick with for the long haul.</p>",
+        "final_cta_title": "The 360-degree Rotating Wrist and Forearm Trainer",
+        "final_cta_text": "The best all-around pick if you want a desk-friendly tool that people actually keep using.",
+        "final_cta_button": "Check latest price",
+        "final_cta_link": "",
+        "final_cta_meta": "Free shipping | 30-day guarantee | 4.8 from verified buyers",
+        "author_avatar_icon": "fitness_center",
+        "author_title": "About the Author - Morgan Ellis",
+        "author_role": "Certified Personal Trainer | Women's Wellness Specialist | Wrist Rehab Coach",
+        "author_bio": "<p>Morgan Ellis has spent eight years training women with a focus on upper body conditioning and desk-worker rehabilitation. Before moving into independent fitness writing, she worked with a corporate wellness program serving over 300 women annually.</p>",
+        "footer_note": "<p>Affiliate disclosure: Some links on this page may be affiliate links. We only recommend products we tested and believe in.</p><p>Product names and trademarks belong to their respective owners.</p>"
+      },
+      "blocks": {
+        "method_1": {
+          "type": "method_card",
+          "settings": {
+            "icon": "autorenew",
+            "title": "The Mechanics of Arm Fat",
+            "description": "Does the device actually engage the muscles responsible for arm slimming, or just move around harmlessly?"
+          }
+        },
+        "method_2": {
+          "type": "method_card",
+          "settings": {
+            "icon": "query_stats",
+            "title": "Measurable Progress",
+            "description": "Can users track improvement? I tracked rotations, session time, and weekly changes."
+          }
+        },
+        "method_3": {
+          "type": "method_card",
+          "settings": {
+            "icon": "schedule",
+            "title": "Real-World Usability",
+            "description": "Can you use it at your desk or while watching TV, or does it require a full workout session?"
+          }
+        },
+        "method_4": {
+          "type": "method_card",
+          "settings": {
+            "icon": "self_improvement",
+            "title": "Stress on the Body",
+            "description": "Does it aggravate wrists or elbows, or does it feel good enough to use again tomorrow?"
+          }
+        },
+        "method_5": {
+          "type": "method_card",
+          "settings": {
+            "icon": "savings",
+            "title": "True Cost Over Time",
+            "description": "Some devices are cheap upfront but become expensive once replacements and extras are added."
+          }
+        },
+        "method_6": {
+          "type": "method_card",
+          "settings": {
+            "icon": "favorite",
+            "title": "The Keep-Using-It Factor",
+            "description": "The best device is the one you actually reach for again after a long day."
+          }
+        },
+        "rank_1": {
+          "type": "ranking_card",
+          "settings": {
+            "rank_text": "#1",
+            "label": "Editor's Pick | Our top recommendation",
+            "title": "360-degree Rotating Wrist and Forearm Trainer",
+            "tagline": "The only device that combined full-arm engagement, tracking, and daily use.",
+            "icon": "fitness_center",
+            "visual_title": "360-degree Wrist and Forearm Trainer",
+            "visual_note": "LED ball + smart display",
+            "grade": "A+",
+            "tone": "gold",
+            "specs": "Technology|Centrifugal rotation with self-regulating resistance\nDisplay|LCD counter\nLED ball|Color-shifting light synced to speed\nTarget areas|Forearms, wrists, triceps, shoulder stabilizers\nSession time|5-15 minutes\nBest for|Busy women who want a desk-friendly tool",
+            "summary": "<p>When people first described this device to me, it sounded like a toy. Then I watched what happened in testing.</p><p>The women who used it were the ones who kept using it. The counter gave them a number to beat, and the movement felt natural enough to become a habit.</p>",
+            "callout": "<p><strong>Why it worked:</strong> continuous rotation engages the whole arm while the feedback loop keeps you going.</p>",
+            "how_steps": "Hold and start|Slip your wrist through the ring and give the ball a small push.\nControl the spin|Keep the rotation steady with smooth wrist movement.\nWatch the numbers|Use the display and light feedback to chase a better session.",
+            "metrics": "Arm toning results|98|9.8\nEase of use|96|9.6\nConsistency rate|97|9.7\nWrist comfort|95|9.5\nStress relief|96|9.6\nValue for money|97|9.7",
+            "testimonials": "I've been doing it every night while watching Netflix.|Sarah M., 38, Marketing Manager\nIt actually made my wrists feel better.|Jenna R., 44, Accountant",
+            "pros": "Full 360-degree resistance works the forearm and stabilizers\nLCD counter makes progress visible\nDesk-friendly and fast to use\nGentle on wrists for most people\nNo subscription or replacement parts\nHighest consistency rate in the test group",
+            "cons": "Takes a couple of sessions to find the rhythm\nNot a replacement for a full strength program\nThe light is distracting in meetings",
+            "bottom_line": "<p><strong>This was the only device that was still being used at the end of the test.</strong> It combined real resistance, easy tracking, and a habit loop that made people want to pick it up again.</p>",
+            "cta_label": "Check latest price",
+            "cta_link": "",
+            "cta_meta": "Free shipping | 30-day guarantee | 4.8 from verified buyers",
+            "cta_variant": "primary",
+            "comparison_engagement": "Full 360 degrees",
+            "comparison_tracking": "LCD counter",
+            "comparison_desk": "Yes",
+            "comparison_wrist": "Excellent",
+            "comparison_consistency": "86%",
+            "comparison_score": "9.7",
+            "comparison_top_pick": true
+          }
+        },
+        "rank_2": {
+          "type": "ranking_card",
+          "settings": {
+            "rank_text": "#2",
+            "label": "Closest competitor | Good but limited",
+            "title": "NSD Powerball Gyroscope",
+            "tagline": "Strong grip training, but it stops there.",
+            "icon": "radio_button_checked",
+            "visual_title": "NSD Powerball",
+            "visual_note": "Manual start | no display",
+            "grade": "B+",
+            "tone": "silver",
+            "specs": "Technology|Gyroscopic rotor ball\nDisplay|Optional extra\nTarget areas|Wrists, forearms, grip\nBest for|Grip strength and rehab\nScore|7.8 out of 10",
+            "summary": "<p>The Powerball has a legitimate track record and it does build grip strength.</p><p>The problem is that it stays focused on the wrist and forearm, so it misses the upper-arm goal most people want.</p>",
+            "pros": "Proven gyroscopic technology\nExcellent for wrist rehabilitation\nVery durable construction\nWide range of resistance levels",
+            "cons": "Does not engage the triceps\nNo progress tracking without paying extra\nCan feel uncomfortable at higher speeds\nLower consistency than the top pick",
+            "bottom_line": "<p>Great for grip strength and wrist rehab. Less useful if your main goal is slimmer, more defined arms.</p>",
+            "cta_label": "Check price",
+            "cta_link": "",
+            "cta_meta": "Available on Amazon",
+            "cta_variant": "secondary",
+            "comparison_engagement": "Wrist / grip only",
+            "comparison_tracking": "Extra cost",
+            "comparison_desk": "Yes",
+            "comparison_wrist": "Can be uncomfortable",
+            "comparison_consistency": "54%",
+            "comparison_score": "7.8",
+            "comparison_top_pick": false
+          }
+        },
+        "rank_3": {
+          "type": "ranking_card",
+          "settings": {
+            "rank_text": "#3",
+            "label": "Budget option | Practical but basic",
+            "title": "Resistance Band Arm Set",
+            "tagline": "Cheap, flexible, and easy to abandon.",
+            "icon": "change_circle",
+            "visual_title": "Resistance Band Set",
+            "visual_note": "3 resistance levels",
+            "grade": "B",
+            "tone": "bronze",
+            "specs": "Technology|Static elastic resistance\nDisplay|None\nTarget areas|Triceps and biceps with proper form\nBest for|Home workouts with guidance\nScore|6.5 out of 10",
+            "summary": "<p>Resistance bands do work if you follow a structured plan and use them consistently.</p><p>The problem is that most people do not want to manage the setup, the form, and the repetition required to make them work.</p>",
+            "pros": "Inexpensive upfront cost\nVery versatile\nTargets triceps directly when used correctly",
+            "cons": "Lowest consistency in the test group\nRequires a structured program\nEasy to put down and not pick up again\nBands lose tension over time",
+            "bottom_line": "<p>A valid training tool, but it asks for more discipline than most busy people want to give.</p>",
+            "cta_label": "Check price",
+            "cta_link": "",
+            "cta_meta": "Multiple brands available",
+            "cta_variant": "secondary",
+            "comparison_engagement": "With proper form",
+            "comparison_tracking": "None",
+            "comparison_desk": "No",
+            "comparison_wrist": "Good",
+            "comparison_consistency": "31%",
+            "comparison_score": "6.5",
+            "comparison_top_pick": false
+          }
+        },
+        "rank_4": {
+          "type": "ranking_card",
+          "settings": {
+            "rank_text": "#4",
+            "label": "Mostly marketing | Not recommended",
+            "title": "Neoprene Arm Trimmer Sleeves",
+            "tagline": "Sweat is not the same as slimming.",
+            "icon": "science",
+            "visual_title": "Arm Trimmer Sleeves",
+            "visual_note": "Heat compression",
+            "grade": "C+",
+            "tone": "neutral",
+            "summary": "<p>Arm trimmer sleeves create heat and increase sweat around the arm. That part is real.</p><p>What is not real is the idea that more sweat means more fat loss. The water comes back as soon as you rehydrate.</p>",
+            "cons": "Sweat is not the same as fat loss\nNo actual muscle engagement\nMisleading marketing claims",
+            "bottom_line": "<p>They feel active, but they are not doing the work you actually need.</p>",
+            "cta_variant": "hidden",
+            "comparison_engagement": "Zero muscle work",
+            "comparison_tracking": "None",
+            "comparison_desk": "Yes",
+            "comparison_wrist": "Passive",
+            "comparison_consistency": "22%",
+            "comparison_score": "4.0",
+            "comparison_top_pick": false
+          }
+        },
+        "rank_5": {
+          "type": "ranking_card",
+          "settings": {
+            "rank_text": "#5",
+            "label": "Skip this one",
+            "title": "Vibration Arm Massager Belts",
+            "tagline": "A massage, not a workout.",
+            "icon": "vibration",
+            "visual_title": "Vibration Arm Belt",
+            "visual_note": "EMS claims",
+            "grade": "C",
+            "tone": "dark",
+            "summary": "<p>I included a vibration-based device because it is marketed aggressively as a passive workout.</p><p>Vibration can feel relaxing, but it does not create the muscle engagement needed to change arm composition.</p>",
+            "cons": "Passive devices do not build definition\nNo measurable arm changes in the test\nMostly useful as a relaxation tool",
+            "bottom_line": "<p>Nice for a massage. Not a serious option if your goal is toned arms.</p>",
+            "cta_variant": "hidden",
+            "comparison_engagement": "None",
+            "comparison_tracking": "None",
+            "comparison_desk": "Yes",
+            "comparison_wrist": "Passive",
+            "comparison_consistency": "18%",
+            "comparison_score": "3.5",
+            "comparison_top_pick": false
+          }
+        },
+        "faq_1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long before I see results?",
+            "answer": "<p>Most people noticed improved tone and better consistency around weeks four to six with regular use.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the top pick safe for sore wrists?",
+            "answer": "<p>For general desk-worker wrist fatigue, it was a net positive in my testing. If you have an acute injury, check with a doctor first.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will this make my arms bulky?",
+            "answer": "<p>No. These tools are about endurance and tone, not heavy muscle gain.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need to stop other exercise?",
+            "answer": "<p>No. The top pick works well as a standalone tool or as a supplement to a regular workout plan.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What does the LED ball do?",
+            "answer": "<p>It adds visual feedback. That simple feedback loop makes it easier to stay consistent.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How much time do I need each day?",
+            "answer": "<p>Ten to fifteen minutes a day was the sweet spot in this test.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "method_1",
+        "method_2",
+        "method_3",
+        "method_4",
+        "method_5",
+        "method_6",
+        "rank_1",
+        "rank_2",
+        "rank_3",
+        "rank_4",
+        "rank_5",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ]
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

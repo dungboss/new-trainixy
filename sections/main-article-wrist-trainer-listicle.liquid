@@ -1,0 +1,2181 @@
+{%- liquid
+  assign page_narrow_class = ''
+  if section.settings.page_width == 'narrow'
+    assign page_narrow_class = ' page-width--narrow'
+  endif
+
+  assign method_cards = section.blocks | where: 'type', 'method_card'
+  assign ranking_cards = section.blocks | where: 'type', 'ranking_card'
+  assign faq_items = section.blocks | where: 'type', 'faq_item'
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .wrist-listicle {
+    --wl-bg: {{ section.settings.background_color }};
+    --wl-surface: {{ section.settings.surface_color }};
+    --wl-surface-alt: {{ section.settings.surface_alt_color }};
+    --wl-ink: {{ section.settings.ink_color }};
+    --wl-muted: {{ section.settings.muted_color }};
+    --wl-accent: {{ section.settings.accent_color }};
+    --wl-accent-soft: {{ section.settings.accent_soft_color }};
+    --wl-border: {{ section.settings.border_color }};
+    --wl-highlight: {{ section.settings.highlight_color }};
+    --wl-success: {{ section.settings.success_color }};
+    --wl-danger: {{ section.settings.danger_color }};
+    background: var(--wl-bg);
+    color: var(--wl-ink);
+  }
+
+  .wrist-listicle * {
+    box-sizing: border-box;
+  }
+
+  .wrist-listicle .rte p,
+  .wrist-listicle .rte ul,
+  .wrist-listicle .rte ol {
+    margin: 0 0 1rem;
+  }
+
+  .wrist-listicle .rte p:last-child,
+  .wrist-listicle .rte ul:last-child,
+  .wrist-listicle .rte ol:last-child {
+    margin-bottom: 0;
+  }
+
+  .wrist-listicle__stack {
+    display: grid;
+    gap: 48px;
+  }
+
+  .wrist-listicle__hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    padding: 48px 28px 42px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1410 0%, #2d2318 52%, #1a1410 100%);
+    color: #fff;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  }
+
+  .wrist-listicle__hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 25% 30%, rgba(200, 145, 42, 0.16), transparent 42%),
+      radial-gradient(circle at 80% 40%, rgba(122, 158, 138, 0.12), transparent 45%);
+    pointer-events: none;
+  }
+
+  .wrist-listicle__hero-inner,
+  .wrist-listicle__section-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .wrist-listicle__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(200, 145, 42, 0.18);
+    color: var(--wl-accent-soft);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .wrist-listicle__title {
+    margin: 18px auto 14px;
+    max-width: 900px;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(2.1rem, 5vw, 4rem);
+    line-height: 1.12;
+    letter-spacing: calc(var(--font-heading-letter-spacing) * 0.7);
+    color: #fff;
+  }
+
+  .wrist-listicle__title em {
+    color: var(--wl-accent-soft);
+    font-style: italic;
+  }
+
+  .wrist-listicle__byline {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .wrist-listicle__pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .wrist-listicle__pill {
+    padding: 8px 15px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .wrist-listicle__section {
+    margin-top: 48px;
+  }
+
+  .wrist-listicle__section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .wrist-listicle__section-label::before,
+  .wrist-listicle__section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--wl-border);
+  }
+
+  .wrist-listicle__section-label span {
+    white-space: nowrap;
+    color: var(--wl-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .wrist-listicle__section-title {
+    margin: 0 0 16px;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(1.7rem, 3vw, 2.45rem);
+    line-height: 1.2;
+    color: var(--wl-ink);
+  }
+
+  .wrist-listicle__section-intro {
+    color: var(--wl-muted);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .wrist-listicle__intro {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 4px;
+  }
+
+  .wrist-listicle__intro-copy {
+    color: var(--wl-muted);
+    font-size: 1.03rem;
+    line-height: 1.8;
+  }
+
+  .wrist-listicle__pullquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-radius: 18px;
+    border-left: 4px solid var(--wl-accent);
+    background: var(--wl-surface-alt);
+  }
+
+  .wrist-listicle__pullquote p {
+    margin: 0;
+    color: var(--wl-ink);
+    font-family: var(--font-heading-family);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.65;
+  }
+
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .method-card {
+    padding: 20px;
+    border: 1px solid var(--wl-border);
+    border-radius: 18px;
+    background: var(--wl-surface);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.04);
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .method-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(200, 145, 42, 0.12);
+    color: var(--wl-accent);
+    margin-bottom: 12px;
+  }
+
+  .method-card__icon .material-icon {
+    font-size: 22px;
+  }
+
+  .method-card__title {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: var(--wl-ink);
+  }
+
+  .method-card__text {
+    margin: 0;
+    color: var(--wl-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .ranking-section {
+    padding-top: 8px;
+  }
+
+  .ranking-intro {
+    margin-bottom: 32px;
+    padding: 24px 26px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #1a1410, #302318);
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .ranking-intro .rte p,
+  .ranking-intro p {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .ranking-intro strong {
+    color: var(--wl-accent-soft);
+  }
+
+  .product-card {
+    margin-bottom: 36px;
+    overflow: hidden;
+    border: 1px solid var(--wl-border);
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .product-card__header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 22px 12px;
+    border-bottom: 1px solid var(--wl-border);
+    background: var(--wl-surface);
+  }
+
+  .product-card__rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    color: #fff;
+    background: var(--wl-accent);
+  }
+
+  .product-card__rank.tone-silver {
+    background: #b0b8c1;
+  }
+
+  .product-card__rank.tone-bronze {
+    background: #cd7f32;
+  }
+
+  .product-card__rank.tone-neutral {
+    color: var(--wl-ink);
+    background: var(--wl-surface-alt);
+    border: 1px solid var(--wl-border);
+  }
+
+  .product-card__rank.tone-dark {
+    background: #4b4038;
+  }
+
+  .product-card__label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--wl-muted);
+  }
+
+  .product-card__label.is-pick {
+    color: var(--wl-accent);
+  }
+
+  .product-card__body {
+    padding: 28px 24px 0;
+  }
+
+  .product-card__title {
+    margin: 0 0 4px;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    line-height: 1.2;
+    color: var(--wl-ink);
+  }
+
+  .product-card__tagline {
+    margin: 0 0 22px;
+    color: var(--wl-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .product-visual {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f5f0e8 0%, #ede8e0 100%);
+  }
+
+  .product-visual__inner {
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .product-visual__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--wl-ink);
+  }
+
+  .product-visual__icon .material-icon {
+    font-size: 54px;
+  }
+
+  .product-visual__title {
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    font-size: 1.1rem;
+    color: var(--wl-ink);
+  }
+
+  .product-visual__note {
+    margin-top: 6px;
+    color: #777;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .grade-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .tone-gold {
+    background: #2e7d32;
+  }
+
+  .tone-silver {
+    background: #5d8a3c;
+  }
+
+  .tone-bronze {
+    background: #9e6a1a;
+  }
+
+  .tone-neutral {
+    background: #c0392b;
+  }
+
+  .tone-dark {
+    background: #4b4038;
+  }
+
+  .specs-table {
+    width: 100%;
+    margin-bottom: 24px;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+
+  .specs-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #f0ebe5;
+    vertical-align: top;
+  }
+
+  .specs-table td:first-child {
+    width: 38%;
+    background: var(--wl-surface);
+    color: var(--wl-muted);
+    font-weight: 700;
+  }
+
+  .score-grid {
+    margin: 20px 0 28px;
+  }
+
+  .score-row {
+    display: grid;
+    grid-template-columns: minmax(120px, 160px) 1fr 42px;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .score-label {
+    color: var(--wl-muted);
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .score-bar-bg {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #ede8e0;
+  }
+
+  .score-bar {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--wl-success), #b5d4c3);
+    transition: width 0.9s ease;
+  }
+
+  .score-val {
+    text-align: right;
+    color: var(--wl-ink);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .pros,
+  .cons,
+  .testimonial-strip,
+  .verdict-box,
+  .guide-card,
+  .author-bio {
+    border: 1px solid var(--wl-border);
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .pros,
+  .cons {
+    padding: 18px 20px;
+  }
+
+  .pros {
+    background: #f0f7f3;
+    border-color: rgba(122, 158, 138, 0.45);
+  }
+
+  .cons {
+    background: #fdf4f3;
+    border-color: rgba(212, 117, 106, 0.35);
+  }
+
+  .pros h4,
+  .cons h4 {
+    margin: 0 0 12px;
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pros h4 {
+    color: var(--wl-success);
+  }
+
+  .cons h4 {
+    color: var(--wl-danger);
+  }
+
+  .pros ul,
+  .cons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pros li,
+  .cons li {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 0;
+    padding: 5px 0;
+    color: var(--wl-muted);
+    line-height: 1.6;
+    font-size: 0.88rem;
+  }
+
+  .pros li::before {
+    content: '+';
+    color: var(--wl-success);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .cons li::before {
+    content: 'x';
+    color: var(--wl-danger);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .testimonial-strip {
+    padding: 18px 20px;
+    margin: 20px 0;
+    background: var(--wl-surface-alt);
+  }
+
+  .testimonial-strip p {
+    margin: 0 0 8px;
+    color: var(--wl-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .testimonial-strip .attr {
+    color: var(--wl-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .highlight-box {
+    margin: 20px 0;
+    padding: 16px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(200, 145, 42, 0.3);
+    background: var(--wl-highlight);
+    color: #5a4500;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .highlight-box strong {
+    color: #3a2c00;
+  }
+
+  .how-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 22px 0 8px;
+  }
+
+  .how-step {
+    text-align: center;
+    padding: 18px 16px;
+    border: 1px solid var(--wl-border);
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .step-num {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: var(--wl-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .how-step h5 {
+    margin: 0 0 8px;
+    color: var(--wl-ink);
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .how-step p {
+    margin: 0;
+    color: var(--wl-muted);
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .compare-table-wrap {
+    overflow-x: auto;
+    margin: 28px 0 10px;
+    border-radius: 18px;
+    border: 1px solid var(--wl-border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .compare-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  .compare-table th {
+    padding: 13px 16px;
+    background: #2d2926;
+    color: #ddd;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .compare-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--wl-border);
+    color: var(--wl-muted);
+  }
+
+  .compare-table tr:nth-child(even) td {
+    background: var(--wl-surface);
+  }
+
+  .compare-table tr.top-pick td {
+    background: #fff9ee;
+  }
+
+  .product-name-cell {
+    color: var(--wl-ink);
+    font-weight: 700;
+  }
+
+  .score-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--wl-success);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .score-chip.tone-silver {
+    background: #5d8a3c;
+  }
+
+  .score-chip.tone-bronze {
+    background: #9e6a1a;
+  }
+
+  .score-chip.tone-neutral {
+    background: #c0392b;
+  }
+
+  .score-chip.tone-dark {
+    background: #4b4038;
+  }
+
+  .why-section {
+    padding: 36px 32px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #1a1410, #2a1e14);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .why-section::before {
+    content: '';
+    position: absolute;
+    top: -36px;
+    right: -36px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 145, 42, 0.15), transparent 66%);
+    pointer-events: none;
+  }
+
+  .why-section .wrist-listicle__section-title {
+    color: #fff;
+  }
+
+  .why-section .rte,
+  .why-section p {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .why-section strong {
+    color: var(--wl-accent-soft);
+  }
+
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .guide-card {
+    padding: 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .guide-card--good {
+    background: #f0f7f3;
+    border-color: rgba(122, 158, 138, 0.45);
+  }
+
+  .guide-card--bad {
+    background: #fff7f5;
+    border-color: rgba(212, 117, 106, 0.3);
+  }
+
+  .guide-card__title {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .guide-card--good .guide-card__title {
+    color: var(--wl-success);
+  }
+
+  .guide-card--bad .guide-card__title {
+    color: var(--wl-danger);
+  }
+
+  .faq-section {
+    margin-top: 48px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--wl-border);
+    padding: 20px 0;
+  }
+
+  .faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--wl-ink);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .faq-q::after {
+    content: '+';
+    flex-shrink: 0;
+    color: var(--wl-accent);
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item.is-open .faq-q::after {
+    transform: rotate(45deg);
+  }
+
+  .faq-a {
+    display: none;
+    padding-top: 14px;
+    color: var(--wl-muted);
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .faq-item.is-open .faq-a {
+    display: block;
+  }
+
+  .final-cta {
+    margin-top: 48px;
+    padding: 40px 32px;
+    border-radius: 22px;
+    text-align: center;
+    background: var(--wl-accent);
+    color: #fff;
+  }
+
+  .final-cta .wrist-listicle__section-title {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .final-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .final-cta .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    border-radius: 10px;
+    background: #fff;
+    color: var(--wl-accent);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  }
+
+  .final-cta .cta-btn:hover {
+    background: #2d2926;
+    color: var(--wl-accent-soft);
+  }
+
+  .final-cta__meta {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  .author-bio {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 22px;
+    margin-top: 28px;
+  }
+
+  .author-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--wl-accent), var(--wl-danger));
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .author-avatar .material-icon {
+    font-size: 28px;
+  }
+
+  .author-bio__title {
+    margin: 0 0 4px;
+    color: var(--wl-ink);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .author-bio__role {
+    margin: 0 0 10px;
+    color: var(--wl-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .author-bio__text {
+    color: var(--wl-muted);
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .footer-note {
+    margin-top: 18px;
+    color: var(--wl-muted);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 990px) {
+    .method-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .how-steps,
+    .guide-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .wrist-listicle__hero {
+      padding: 38px 18px 32px;
+      border-radius: 22px;
+    }
+
+    .wrist-listicle__section {
+      margin-top: 38px;
+    }
+
+    .method-grid,
+    .pros-cons {
+      grid-template-columns: 1fr;
+    }
+
+    .product-card__body {
+      padding: 20px 18px 0;
+    }
+
+    .final-cta,
+    .why-section {
+      padding: 28px 20px;
+    }
+
+    .author-bio {
+      padding: 18px;
+      flex-direction: column;
+    }
+
+    .score-row {
+      grid-template-columns: minmax(100px, 120px) 1fr 40px;
+    }
+
+    .faq-q {
+      font-size: 0.95rem;
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+{%- endstyle -%}
+
+<article class="wrist-listicle section-{{ section.id }}-padding">
+  <div class="page-width{{ page_narrow_class }}">
+    <div class="wrist-listicle__stack">
+      <header class="wrist-listicle__hero">
+        <div class="wrist-listicle__hero-inner">
+          {%- if section.settings.hero_badge != blank -%}
+            <div class="wrist-listicle__eyebrow">{{ section.settings.hero_badge | escape }}</div>
+          {%- endif -%}
+
+          {%- assign hero_title = section.settings.hero_title -%}
+          {%- if hero_title == blank -%}
+            {%- assign hero_title = article.title -%}
+          {%- endif -%}
+          <h1 class="wrist-listicle__title">
+            {{ hero_title | escape }}
+            {%- if section.settings.hero_title_emphasis != blank -%}
+              <br><em>{{ section.settings.hero_title_emphasis | escape }}</em>
+            {%- endif -%}
+          </h1>
+
+          {%- if section.settings.hero_byline != blank -%}
+            <p class="wrist-listicle__byline">{{ section.settings.hero_byline | escape }}</p>
+          {%- endif -%}
+
+          <div class="wrist-listicle__pills" aria-label="Highlights">
+            {%- if section.settings.hero_pill_1 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_1 | escape }}</span>{%- endif -%}
+            {%- if section.settings.hero_pill_2 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_2 | escape }}</span>{%- endif -%}
+            {%- if section.settings.hero_pill_3 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_3 | escape }}</span>{%- endif -%}
+            {%- if section.settings.hero_pill_4 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_4 | escape }}</span>{%- endif -%}
+          </div>
+        </div>
+      </header>
+
+      <section class="wrist-listicle__intro">
+        {%- if section.settings.intro_content != blank -%}
+          <div class="wrist-listicle__intro-copy rte">
+            {{ section.settings.intro_content }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.intro_pull_quote != blank -%}
+          <div class="wrist-listicle__pullquote">
+            <p>{{ section.settings.intro_pull_quote | escape }}</p>
+          </div>
+        {%- endif -%}
+      </section>
+
+      <section class="wrist-listicle__section">
+        <div class="wrist-listicle__section-label">
+          <span>{{ section.settings.methodology_eyebrow | escape }}</span>
+        </div>
+        <div class="wrist-listicle__section-inner">
+          <h2 class="wrist-listicle__section-title">{{ section.settings.methodology_title | escape }}</h2>
+          {%- if section.settings.methodology_description != blank -%}
+            <div class="wrist-listicle__section-intro rte">
+              {{ section.settings.methodology_description }}
+            </div>
+          {%- endif -%}
+
+          <div class="method-grid">
+            {%- for block in method_cards -%}
+              <div class="method-card" {{ block.shopify_attributes }} style="animation-delay: {{ forloop.index0 | times: 0.06 }}s;">
+                {%- if block.settings.icon != blank -%}
+                  <div class="method-card__icon">
+                    {% render 'material-icon', icon: block.settings.icon, filled: true %}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <h3 class="method-card__title">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <p class="method-card__text">{{ block.settings.description | escape | newline_to_br }}</p>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </section>
+
+      <section class="wrist-listicle__section ranking-section">
+        <div class="wrist-listicle__section-label">
+          <span>{{ section.settings.ranking_eyebrow | escape }}</span>
+        </div>
+        <div class="wrist-listicle__section-inner">
+          <h2 class="wrist-listicle__section-title">{{ section.settings.ranking_title | escape }}</h2>
+
+          {%- if section.settings.ranking_intro != blank -%}
+            <div class="ranking-intro rte">
+              {{ section.settings.ranking_intro }}
+            </div>
+          {%- endif -%}
+
+          {%- for block in ranking_cards -%}
+            <div class="product-card" {{ block.shopify_attributes }} style="animation-delay: {{ forloop.index0 | times: 0.08 }}s;">
+              <div class="product-card__header">
+                {%- if block.settings.rank_text != blank -%}
+                  <div class="product-card__rank tone-{{ block.settings.tone }}">{{ block.settings.rank_text | escape }}</div>
+                {%- endif -%}
+                <div>
+                  <div class="product-card__label{% if block.settings.comparison_top_pick %} is-pick{% endif %}">
+                    {{ block.settings.label | escape }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__body">
+                {%- if block.settings.title != blank -%}
+                  <h3 class="product-card__title">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+                {%- if block.settings.tagline != blank -%}
+                  <p class="product-card__tagline">{{ block.settings.tagline | escape }}</p>
+                {%- endif -%}
+
+                <div class="product-visual">
+                  <div class="product-visual__inner">
+                    {%- if block.settings.icon != blank -%}
+                      <div class="product-visual__icon">
+                        {% render 'material-icon', icon: block.settings.icon, filled: true %}
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.visual_title != blank -%}
+                      <div class="product-visual__title">{{ block.settings.visual_title | escape }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.visual_note != blank -%}
+                      <div class="product-visual__note">{{ block.settings.visual_note | escape | newline_to_br }}</div>
+                    {%- endif -%}
+                  </div>
+                  {%- if block.settings.grade != blank -%}
+                    <div class="grade-badge tone-{{ block.settings.tone }}">{{ block.settings.grade | escape }}</div>
+                  {%- endif -%}
+                </div>
+
+                {%- if block.settings.specs != blank -%}
+                  {%- assign spec_lines = block.settings.specs | split: '\n' -%}
+                  <table class="specs-table">
+                    {%- for spec_line in spec_lines -%}
+                      {%- assign spec_line = spec_line | strip -%}
+                      {%- if spec_line != blank -%}
+                        {%- assign spec_parts = spec_line | split: '|' -%}
+                        <tr>
+                          <td>{{ spec_parts[0] | strip | escape }}</td>
+                          <td>{{ spec_parts[1] | default: '' | strip | escape }}</td>
+                        </tr>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </table>
+                {%- endif -%}
+
+                {%- if block.settings.summary != blank -%}
+                  <div class="rte">
+                    {{ block.settings.summary }}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.callout != blank -%}
+                  <div class="highlight-box rte">
+                    {{ block.settings.callout }}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.how_steps != blank -%}
+                  {%- assign step_lines = block.settings.how_steps | split: '\n' -%}
+                  <h4 class="wrist-listicle__section-title" style="font-size: 1.15rem; margin-top: 26px;">How It Works</h4>
+                  <div class="how-steps">
+                    {%- for step_line in step_lines -%}
+                      {%- assign step_line = step_line | strip -%}
+                      {%- if step_line != blank -%}
+                        {%- assign step_parts = step_line | split: '|' -%}
+                        <div class="how-step">
+                          <div class="step-num">{{ forloop.index }}</div>
+                          {%- if step_parts[0] != blank -%}
+                            <h5>{{ step_parts[0] | strip | escape }}</h5>
+                          {%- endif -%}
+                          {%- if step_parts[1] != blank -%}
+                            <p>{{ step_parts[1] | strip | escape }}</p>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.testimonials != blank -%}
+                  {%- assign testimonial_lines = block.settings.testimonials | split: '\n' -%}
+                  {%- for testimonial_line in testimonial_lines -%}
+                    {%- assign testimonial_line = testimonial_line | strip -%}
+                    {%- if testimonial_line != blank -%}
+                      {%- assign testimonial_parts = testimonial_line | split: '|' -%}
+                      <div class="testimonial-strip">
+                        <p>"{{ testimonial_parts[0] | strip | escape }}"</p>
+                        {%- if testimonial_parts[1] != blank -%}
+                          <div class="attr">— {{ testimonial_parts[1] | strip | escape }}</div>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+
+                {%- if block.settings.metrics != blank -%}
+                  {%- assign metric_lines = block.settings.metrics | split: '\n' -%}
+                  <h4 class="wrist-listicle__section-title" style="font-size: 1.15rem; margin-top: 26px;">Scores</h4>
+                  <div class="score-grid">
+                    {%- for metric_line in metric_lines -%}
+                      {%- assign metric_line = metric_line | strip -%}
+                      {%- if metric_line != blank -%}
+                        {%- assign metric_parts = metric_line | split: '|' -%}
+                        {%- assign metric_width = metric_parts[1] | default: '0' | strip -%}
+                        {%- assign metric_value = metric_parts[2] | default: metric_width | strip -%}
+                        <div class="score-row">
+                          <span class="score-label">{{ metric_parts[0] | strip | escape }}</span>
+                          <div class="score-bar-bg">
+                            <div class="score-bar" data-width="{{ metric_width }}%"></div>
+                          </div>
+                          <span class="score-val">{{ metric_value | escape }}</span>
+                        </div>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.pros != blank or block.settings.cons != blank -%}
+                  <div class="pros-cons"{% unless block.settings.pros != blank and block.settings.cons != blank %} style="grid-template-columns: 1fr;"{% endunless %}>
+                    {%- if block.settings.pros != blank -%}
+                      {%- assign pros_lines = block.settings.pros | split: '\n' -%}
+                      <div class="pros">
+                        <h4>What I Liked</h4>
+                        <ul>
+                          {%- for pros_line in pros_lines -%}
+                            {%- assign pros_line = pros_line | strip -%}
+                            {%- if pros_line != blank -%}
+                              <li>{{ pros_line | escape }}</li>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    {%- endif -%}
+
+                    {%- if block.settings.cons != blank -%}
+                      {%- assign cons_lines = block.settings.cons | split: '\n' -%}
+                      <div class="cons">
+                        <h4>What Held It Back</h4>
+                        <ul>
+                          {%- for cons_line in cons_lines -%}
+                            {%- assign cons_line = cons_line | strip -%}
+                            {%- if cons_line != blank -%}
+                              <li>{{ cons_line | escape }}</li>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.bottom_line != blank -%}
+                  <div class="verdict-box rte">
+                    {{ block.settings.bottom_line }}
+                  </div>
+                {%- endif -%}
+              </div>
+
+              {%- if block.settings.cta_variant != 'hidden' and block.settings.cta_label != blank -%}
+                <div class="final-cta" style="margin: 0; border-radius: 0 0 22px 22px; background: {% if block.settings.cta_variant == 'primary' %}var(--wl-accent){% elsif block.settings.cta_variant == 'secondary' %}#888{% else %}#3a2020{% endif %};">
+                  {%- if block.settings.cta_link != blank -%}
+                    <a href="{{ block.settings.cta_link }}" class="cta-btn">
+                      {{ block.settings.cta_label | escape }}
+                    </a>
+                  {%- else -%}
+                    <span class="cta-btn" role="link" aria-disabled="true">
+                      {{ block.settings.cta_label | escape }}
+                    </span>
+                  {%- endif -%}
+                  {%- if block.settings.cta_meta != blank -%}
+                    <div class="final-cta__meta">{{ block.settings.cta_meta | escape }}</div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </section>
+
+      <section class="wrist-listicle__section">
+        <div class="wrist-listicle__section-label">
+          <span>{{ section.settings.comparison_eyebrow | escape }}</span>
+        </div>
+        <div class="wrist-listicle__section-inner">
+          <h2 class="wrist-listicle__section-title">{{ section.settings.comparison_title | escape }}</h2>
+          {%- if section.settings.comparison_intro != blank -%}
+            <p class="wrist-listicle__section-intro">{{ section.settings.comparison_intro | escape }}</p>
+          {%- endif -%}
+
+          <div class="compare-table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Device</th>
+                  <th>Full Arm Engagement?</th>
+                  <th>Progress Tracking</th>
+                  <th>Desk-Friendly?</th>
+                  <th>Wrist-Safe?</th>
+                  <th>12-Week Consistency</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for block in ranking_cards -%}
+                  <tr class="{% if block.settings.comparison_top_pick %}top-pick{% endif %}">
+                    <td class="product-name-cell">{{ block.settings.title | escape }}</td>
+                    <td>{{ block.settings.comparison_engagement | escape }}</td>
+                    <td>{{ block.settings.comparison_tracking | escape }}</td>
+                    <td>{{ block.settings.comparison_desk | escape }}</td>
+                    <td>{{ block.settings.comparison_wrist | escape }}</td>
+                    <td>{{ block.settings.comparison_consistency | escape }}</td>
+                    <td>
+                      <span class="score-chip tone-{{ block.settings.tone }}">
+                        {{ block.settings.comparison_score | escape }}
+                      </span>
+                    </td>
+                  </tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+
+          {%- if section.settings.comparison_note != blank -%}
+            <p class="footer-note" style="text-align: left; margin-top: 8px;">{{ section.settings.comparison_note | escape }}</p>
+          {%- endif -%}
+        </div>
+      </section>
+
+      <section class="why-section">
+        <div class="wrist-listicle__section-inner">
+          <div class="wrist-listicle__section-label">
+            <span>{{ section.settings.why_eyebrow | escape }}</span>
+          </div>
+          <h2 class="wrist-listicle__section-title">{{ section.settings.why_title | escape }}</h2>
+          {%- if section.settings.why_content != blank -%}
+            <div class="rte">
+              {{ section.settings.why_content }}
+            </div>
+          {%- endif -%}
+        </div>
+      </section>
+
+      <section class="wrist-listicle__section">
+        <div class="wrist-listicle__section-label">
+          <span>{{ section.settings.guide_eyebrow | escape }}</span>
+        </div>
+        <div class="wrist-listicle__section-inner">
+          <h2 class="wrist-listicle__section-title">{{ section.settings.guide_title | escape }}</h2>
+          <div class="guide-grid">
+            <div class="guide-card guide-card--good">
+              <h3 class="guide-card__title">{{ section.settings.guide_good_title | escape }}</h3>
+              {%- if section.settings.guide_good_content != blank -%}
+                <div class="rte">{{ section.settings.guide_good_content }}</div>
+              {%- endif -%}
+            </div>
+            <div class="guide-card guide-card--bad">
+              <h3 class="guide-card__title">{{ section.settings.guide_bad_title | escape }}</h3>
+              {%- if section.settings.guide_bad_content != blank -%}
+                <div class="rte">{{ section.settings.guide_bad_content }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="wrist-listicle__section-label">
+          <span>{{ section.settings.faq_eyebrow | escape }}</span>
+        </div>
+        <div class="wrist-listicle__section-inner">
+          <h2 class="wrist-listicle__section-title">{{ section.settings.faq_title | escape }}</h2>
+          {%- if section.settings.faq_intro != blank -%}
+            <p class="wrist-listicle__section-intro">{{ section.settings.faq_intro | escape }}</p>
+          {%- endif -%}
+
+          {%- for block in faq_items -%}
+            <div class="faq-item{% if forloop.first %} is-open{% endif %}" {{ block.shopify_attributes }}>
+              <button type="button" class="faq-q">
+                <span>{{ block.settings.question | escape }}</span>
+              </button>
+              {%- if block.settings.answer != blank -%}
+                <div class="faq-a rte">
+                  {{ block.settings.answer }}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="wrist-listicle__section-inner">
+          <div class="wrist-listicle__section-label" style="margin-bottom: 18px;">
+            <span>{{ section.settings.verdict_eyebrow | escape }}</span>
+          </div>
+          <h2 class="wrist-listicle__section-title">{{ section.settings.verdict_title | escape }}</h2>
+          {%- if section.settings.verdict_content != blank -%}
+            <div class="rte">
+              {{ section.settings.verdict_content }}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.final_cta_title != blank or section.settings.final_cta_text != blank -%}
+            <div class="verdict-box" style="margin-top: 24px; text-align: center;">
+              {%- if section.settings.final_cta_title != blank -%}
+                <h3 class="product-card__title" style="font-size: 1.4rem; color: inherit; margin-bottom: 8px;">{{ section.settings.final_cta_title | escape }}</h3>
+              {%- endif -%}
+              {%- if section.settings.final_cta_text != blank -%}
+                <p style="margin-bottom: 18px; color: inherit;">{{ section.settings.final_cta_text | escape }}</p>
+              {%- endif -%}
+              {%- if section.settings.final_cta_link != blank and section.settings.final_cta_button != blank -%}
+                <a href="{{ section.settings.final_cta_link }}" class="cta-btn">{{ section.settings.final_cta_button | escape }}</a>
+              {%- elsif section.settings.final_cta_button != blank -%}
+                <span class="cta-btn" role="link" aria-disabled="true">{{ section.settings.final_cta_button | escape }}</span>
+              {%- endif -%}
+              {%- if section.settings.final_cta_meta != blank -%}
+                <div class="final-cta__meta" style="color: inherit; opacity: 0.8;">{{ section.settings.final_cta_meta | escape }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.author_title != blank or section.settings.author_bio != blank -%}
+            <div class="author-bio">
+              <div class="author-avatar">
+                {% render 'material-icon', icon: section.settings.author_avatar_icon, filled: true %}
+              </div>
+              <div>
+                {%- if section.settings.author_title != blank -%}
+                  <h3 class="author-bio__title">{{ section.settings.author_title | escape }}</h3>
+                {%- endif -%}
+                {%- if section.settings.author_role != blank -%}
+                  <p class="author-bio__role">{{ section.settings.author_role | escape }}</p>
+                {%- endif -%}
+                {%- if section.settings.author_bio != blank -%}
+                  <div class="author-bio__text rte">{{ section.settings.author_bio }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.footer_note != blank -%}
+            <div class="footer-note rte">{{ section.settings.footer_note }}</div>
+          {%- endif -%}
+        </div>
+      </section>
+    </div>
+  </div>
+</article>
+
+<script type="module">
+  const sectionRoot = document.querySelector('.wrist-listicle');
+  if (sectionRoot) {
+    const faqItems = sectionRoot.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-q');
+      if (!button) return;
+
+      button.addEventListener('click', () => {
+        const wasOpen = item.classList.contains('is-open');
+        faqItems.forEach((other) => other.classList.remove('is-open'));
+        if (!wasOpen) item.classList.add('is-open');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = entry.target.dataset.width;
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sectionRoot.querySelectorAll('.score-bar').forEach((bar) => {
+      const width = bar.dataset.width;
+      if (!width) return;
+      observer.observe(bar);
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Wrist listicle",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page width",
+      "default": "normal",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "narrow", "label": "Narrow" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#faf8f4"
+    },
+    {
+      "type": "color",
+      "id": "surface_color",
+      "label": "Surface color",
+      "default": "#fff9f2"
+    },
+    {
+      "type": "color",
+      "id": "surface_alt_color",
+      "label": "Alternate surface color",
+      "default": "#f0e8e0"
+    },
+    {
+      "type": "color",
+      "id": "ink_color",
+      "label": "Text color",
+      "default": "#1a1410"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Muted text color",
+      "default": "#3d3530"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#c8912a"
+    },
+    {
+      "type": "color",
+      "id": "accent_soft_color",
+      "label": "Accent soft color",
+      "default": "#e8b84b"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e8ddd4"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight color",
+      "default": "#fff3cd"
+    },
+    {
+      "type": "color",
+      "id": "success_color",
+      "label": "Success color",
+      "default": "#7a9e8a"
+    },
+    {
+      "type": "color",
+      "id": "danger_color",
+      "label": "Danger color",
+      "default": "#d4756a"
+    },
+    {
+      "type": "header",
+      "content": "Hero"
+    },
+    {
+      "type": "text",
+      "id": "hero_badge",
+      "label": "Hero badge",
+      "default": "Buyer's guide"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero title",
+      "default": "I Tried 9 Arm Toning Gadgets So You Don't Have To."
+    },
+    {
+      "type": "text",
+      "id": "hero_title_emphasis",
+      "label": "Hero title emphasis",
+      "default": "Only One Actually Slimmed My Arms."
+    },
+    {
+      "type": "text",
+      "id": "hero_byline",
+      "label": "Hero byline",
+      "default": "By Morgan Ellis | Certified Personal Trainer | Wrist Rehab Specialist | June 2026"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_1",
+      "label": "Hero pill 1",
+      "default": "9 devices tested"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_2",
+      "label": "Hero pill 2",
+      "default": "12 weeks of testing"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_3",
+      "label": "Hero pill 3",
+      "default": "No sponsorships"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_4",
+      "label": "Hero pill 4",
+      "default": "8 years of training"
+    },
+    {
+      "type": "header",
+      "content": "Intro"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_content",
+      "label": "Intro content",
+      "default": "<p>Enter your introduction here.</p><p>Add a second paragraph if you need more context.</p>"
+    },
+    {
+      "type": "text",
+      "id": "intro_pull_quote",
+      "label": "Intro pull quote",
+      "default": "Enter your pull quote here."
+    },
+    {
+      "type": "header",
+      "content": "Methodology"
+    },
+    {
+      "type": "text",
+      "id": "methodology_eyebrow",
+      "label": "Methodology eyebrow",
+      "default": "My methodology"
+    },
+    {
+      "type": "text",
+      "id": "methodology_title",
+      "label": "Methodology title",
+      "default": "What I Looked For"
+    },
+    {
+      "type": "richtext",
+      "id": "methodology_description",
+      "label": "Methodology description",
+      "default": "<p>Explain the criteria you used to test each product.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Rankings"
+    },
+    {
+      "type": "text",
+      "id": "ranking_eyebrow",
+      "label": "Rankings eyebrow",
+      "default": "The rankings"
+    },
+    {
+      "type": "text",
+      "id": "ranking_title",
+      "label": "Rankings title",
+      "default": "The Devices, Ranked"
+    },
+    {
+      "type": "richtext",
+      "id": "ranking_intro",
+      "label": "Ranking intro",
+      "default": "<p>Use this space to introduce the comparison list.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Comparison"
+    },
+    {
+      "type": "text",
+      "id": "comparison_eyebrow",
+      "label": "Comparison eyebrow",
+      "default": "Side-by-side comparison"
+    },
+    {
+      "type": "text",
+      "id": "comparison_title",
+      "label": "Comparison title",
+      "default": "Quick comparison"
+    },
+    {
+      "type": "text",
+      "id": "comparison_intro",
+      "label": "Comparison intro",
+      "default": "Short note for the comparison table."
+    },
+    {
+      "type": "text",
+      "id": "comparison_note",
+      "label": "Comparison note",
+      "default": "Add a small note under the table."
+    },
+    {
+      "type": "header",
+      "content": "Why it matters"
+    },
+    {
+      "type": "text",
+      "id": "why_eyebrow",
+      "label": "Why eyebrow",
+      "default": "Why it matters"
+    },
+    {
+      "type": "text",
+      "id": "why_title",
+      "label": "Why title",
+      "default": "Why Your Arms Are the Last Thing to Change"
+    },
+    {
+      "type": "richtext",
+      "id": "why_content",
+      "label": "Why content",
+      "default": "<p>Enter your supporting explanation here.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Buying guide"
+    },
+    {
+      "type": "text",
+      "id": "guide_eyebrow",
+      "label": "Guide eyebrow",
+      "default": "Buying guide"
+    },
+    {
+      "type": "text",
+      "id": "guide_title",
+      "label": "Guide title",
+      "default": "What to Look For"
+    },
+    {
+      "type": "text",
+      "id": "guide_good_title",
+      "label": "Good card title",
+      "default": "What Actually Matters"
+    },
+    {
+      "type": "richtext",
+      "id": "guide_good_content",
+      "label": "Good card content",
+      "default": "<p>Enter the useful criteria here.</p>"
+    },
+    {
+      "type": "text",
+      "id": "guide_bad_title",
+      "label": "Bad card title",
+      "default": "What to Walk Away From"
+    },
+    {
+      "type": "richtext",
+      "id": "guide_bad_content",
+      "label": "Bad card content",
+      "default": "<p>Enter the things to avoid here.</p>"
+    },
+    {
+      "type": "header",
+      "content": "FAQ"
+    },
+    {
+      "type": "text",
+      "id": "faq_eyebrow",
+      "label": "FAQ eyebrow",
+      "default": "FAQ"
+    },
+    {
+      "type": "text",
+      "id": "faq_title",
+      "label": "FAQ title",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "text",
+      "id": "faq_intro",
+      "label": "FAQ intro",
+      "default": "Add a short intro to the FAQ section."
+    },
+    {
+      "type": "header",
+      "content": "Verdict"
+    },
+    {
+      "type": "text",
+      "id": "verdict_eyebrow",
+      "label": "Verdict eyebrow",
+      "default": "My verdict"
+    },
+    {
+      "type": "text",
+      "id": "verdict_title",
+      "label": "Verdict title",
+      "default": "The Bottom Line"
+    },
+    {
+      "type": "richtext",
+      "id": "verdict_content",
+      "label": "Verdict content",
+      "default": "<p>Summarize your conclusion here.</p>"
+    },
+    {
+      "type": "text",
+      "id": "final_cta_title",
+      "label": "Final CTA title",
+      "default": "The Best Device"
+    },
+    {
+      "type": "text",
+      "id": "final_cta_text",
+      "label": "Final CTA text",
+      "default": "Use this space for the final call to action."
+    },
+    {
+      "type": "text",
+      "id": "final_cta_button",
+      "label": "Final CTA button",
+      "default": "Check latest price"
+    },
+    {
+      "type": "url",
+      "id": "final_cta_link",
+      "label": "Final CTA link"
+    },
+    {
+      "type": "text",
+      "id": "final_cta_meta",
+      "label": "Final CTA meta",
+      "default": "Add a short trust line under the button."
+    },
+    {
+      "type": "header",
+      "content": "Author"
+    },
+    {
+      "type": "text",
+      "id": "author_avatar_icon",
+      "label": "Author avatar icon",
+      "default": "fitness_center"
+    },
+    {
+      "type": "text",
+      "id": "author_title",
+      "label": "Author title",
+      "default": "About the Author"
+    },
+    {
+      "type": "text",
+      "id": "author_role",
+      "label": "Author role",
+      "default": "Certified trainer | Women's wellness specialist"
+    },
+    {
+      "type": "richtext",
+      "id": "author_bio",
+      "label": "Author bio",
+      "default": "<p>Enter the author bio here.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_note",
+      "label": "Footer note",
+      "default": "<p>Add an affiliate disclosure or any closing note here.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "method_card",
+      "name": "Method card",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "default": "autorenew",
+          "info": "Use a Material Symbols icon name."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Enter a title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Enter a short description."
+        }
+      ]
+    },
+    {
+      "type": "ranking_card",
+      "name": "Ranking card",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "rank_text",
+          "label": "Rank label",
+          "default": "#1"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Editor pick"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Product title"
+        },
+        {
+          "type": "text",
+          "id": "tagline",
+          "label": "Tagline",
+          "default": "Short tagline"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "default": "fitness_center",
+          "info": "Use a Material Symbols icon name."
+        },
+        {
+          "type": "text",
+          "id": "visual_title",
+          "label": "Visual title",
+          "default": "Product name"
+        },
+        {
+          "type": "text",
+          "id": "visual_note",
+          "label": "Visual note",
+          "default": "Short note under the visual"
+        },
+        {
+          "type": "text",
+          "id": "grade",
+          "label": "Grade",
+          "default": "A+"
+        },
+        {
+          "type": "select",
+          "id": "tone",
+          "label": "Tone",
+          "default": "gold",
+          "options": [
+            { "value": "gold", "label": "Gold" },
+            { "value": "silver", "label": "Silver" },
+            { "value": "bronze", "label": "Bronze" },
+            { "value": "neutral", "label": "Neutral" },
+            { "value": "dark", "label": "Dark" }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "specs",
+          "label": "Specs",
+          "default": "Spec label|Spec value"
+        },
+        {
+          "type": "richtext",
+          "id": "summary",
+          "label": "Summary",
+          "default": "<p>Enter a short summary here.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "callout",
+          "label": "Callout",
+          "default": "<p>Enter a callout here.</p>"
+        },
+        {
+          "type": "textarea",
+          "id": "how_steps",
+          "label": "How it works steps",
+          "default": "Step title|Step description"
+        },
+        {
+          "type": "textarea",
+          "id": "metrics",
+          "label": "Score metrics",
+          "default": "Metric label|80|8.0"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonials",
+          "label": "Testimonials",
+          "default": "Quote text|Attribution"
+        },
+        {
+          "type": "textarea",
+          "id": "pros",
+          "label": "Pros",
+          "default": "Pros item"
+        },
+        {
+          "type": "textarea",
+          "id": "cons",
+          "label": "Cons",
+          "default": "Cons item"
+        },
+        {
+          "type": "richtext",
+          "id": "bottom_line",
+          "label": "Bottom line",
+          "default": "<p>Enter the bottom line here.</p>"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "CTA label",
+          "default": "Check it out"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "CTA link"
+        },
+        {
+          "type": "text",
+          "id": "cta_meta",
+          "label": "CTA meta",
+          "default": "Add a short meta line."
+        },
+        {
+          "type": "select",
+          "id": "cta_variant",
+          "label": "CTA variant",
+          "default": "primary",
+          "options": [
+            { "value": "primary", "label": "Primary" },
+            { "value": "secondary", "label": "Secondary" },
+            { "value": "muted", "label": "Muted" },
+            { "value": "hidden", "label": "Hidden" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "comparison_engagement",
+          "label": "Comparison: full engagement",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "comparison_tracking",
+          "label": "Comparison: tracking",
+          "default": "Basic"
+        },
+        {
+          "type": "text",
+          "id": "comparison_desk",
+          "label": "Comparison: desk friendly",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "comparison_wrist",
+          "label": "Comparison: wrist safe",
+          "default": "Good"
+        },
+        {
+          "type": "text",
+          "id": "comparison_consistency",
+          "label": "Comparison: consistency",
+          "default": "50%"
+        },
+        {
+          "type": "text",
+          "id": "comparison_score",
+          "label": "Comparison: score",
+          "default": "8.0"
+        },
+        {
+          "type": "checkbox",
+          "id": "comparison_top_pick",
+          "label": "Top pick row",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "faq_item",
+      "name": "FAQ item",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Enter your question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Enter your answer here.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wrist listicle",
+      "blocks": []
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}
