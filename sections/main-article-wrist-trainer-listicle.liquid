@@ -1249,7 +1249,7 @@
                   <p class="product-card__tagline">{{ block.settings.tagline | escape }}</p>
                 {%- endif -%}
 
-                <div class="product-visual">
+                <div class="product-visual"{% if block.settings.visual_background != blank %} style="background: {{ block.settings.visual_background | escape }};"{% endif %}>
                   <div class="product-visual__inner">
                     {%- if block.settings.visual_emoji != blank -%}
                       <div class="product-visual__icon">{{ block.settings.visual_emoji | escape }}</div>
@@ -2195,6 +2195,11 @@
           "type": "text",
           "id": "visual_emoji",
           "label": "Visual emoji"
+        },
+        {
+          "type": "text",
+          "id": "visual_background",
+          "label": "Visual background"
         },
         {
           "type": "text",
