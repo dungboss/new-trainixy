@@ -1371,7 +1371,7 @@
                         <div class="score-row">
                           <span class="score-label">{{ metric_parts[0] | strip | escape }}</span>
                           <div class="score-bar-bg">
-                            <div class="score-bar" data-width="{{ metric_width }}"></div>
+                            <div class="score-bar" data-width="{{ metric_width }}" style="width: {{ metric_width }};"></div>
                           </div>
                           <span class="score-val">{{ metric_value | escape }}</span>
                         </div>
