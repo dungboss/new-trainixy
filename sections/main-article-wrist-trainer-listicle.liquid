@@ -118,7 +118,19 @@
     color: #fff;
   }
 
-  .wrist-listicle__title em {
+  .wrist-listicle__title-main {
+    display: inline-block;
+    font-size: clamp(2.8rem, 6vw, 5.05rem);
+    line-height: 1.06;
+  }
+
+  .wrist-listicle__title-emphasis {
+    display: inline-block;
+    margin-top: 0.14em;
+    font-size: clamp(0.98rem, 3vw, 2.05rem);
+    line-height: 1.1;
+    letter-spacing: calc(var(--font-heading-letter-spacing) * 0.35);
+    white-space: nowrap;
     color: var(--wl-accent-soft);
     font-style: italic;
   }
@@ -140,6 +152,9 @@
   }
 
   .wrist-listicle__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px 15px;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.14);
@@ -147,6 +162,11 @@
     color: rgba(255, 255, 255, 0.85);
     font-size: calc(0.9rem * var(--wl-text-scale));
     font-weight: 600;
+  }
+
+  .wrist-listicle__pill-icon {
+    color: var(--wl-accent-soft);
+    line-height: 1;
   }
 
   .wrist-listicle__section {
@@ -1128,6 +1148,10 @@
       border-radius: 22px;
     }
 
+    .wrist-listicle__title-emphasis {
+      font-size: clamp(0.92rem, 4vw, 1.22rem);
+    }
+
     .wrist-listicle__section {
       margin-top: 38px;
     }
@@ -1195,9 +1219,9 @@
             {%- assign hero_title = article.title -%}
           {%- endif -%}
           <h1 class="wrist-listicle__title">
-            {{ hero_title | escape }}
+            <span class="wrist-listicle__title-main">{{ hero_title | escape | newline_to_br }}</span>
             {%- if section.settings.hero_title_emphasis != blank -%}
-              <br><em>{{ section.settings.hero_title_emphasis | escape }}</em>
+              <br><em class="wrist-listicle__title-emphasis">{{ section.settings.hero_title_emphasis | escape }}</em>
             {%- endif -%}
           </h1>
 
@@ -1206,10 +1230,30 @@
           {%- endif -%}
 
           <div class="wrist-listicle__pills" aria-label="Highlights">
-            {%- if section.settings.hero_pill_1 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_1 | escape }}</span>{%- endif -%}
-            {%- if section.settings.hero_pill_2 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_2 | escape }}</span>{%- endif -%}
-            {%- if section.settings.hero_pill_3 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_3 | escape }}</span>{%- endif -%}
-            {%- if section.settings.hero_pill_4 != blank -%}<span class="wrist-listicle__pill">{{ section.settings.hero_pill_4 | escape }}</span>{%- endif -%}
+            {%- if section.settings.hero_pill_1 != blank -%}
+              <span class="wrist-listicle__pill">
+                {%- if section.settings.hero_pill_1_icon != blank -%}<span class="wrist-listicle__pill-icon" aria-hidden="true">{{ section.settings.hero_pill_1_icon | escape }}</span>{%- endif -%}
+                <span>{{ section.settings.hero_pill_1 | escape }}</span>
+              </span>
+            {%- endif -%}
+            {%- if section.settings.hero_pill_2 != blank -%}
+              <span class="wrist-listicle__pill">
+                {%- if section.settings.hero_pill_2_icon != blank -%}<span class="wrist-listicle__pill-icon" aria-hidden="true">{{ section.settings.hero_pill_2_icon | escape }}</span>{%- endif -%}
+                <span>{{ section.settings.hero_pill_2 | escape }}</span>
+              </span>
+            {%- endif -%}
+            {%- if section.settings.hero_pill_3 != blank -%}
+              <span class="wrist-listicle__pill">
+                {%- if section.settings.hero_pill_3_icon != blank -%}<span class="wrist-listicle__pill-icon" aria-hidden="true">{{ section.settings.hero_pill_3_icon | escape }}</span>{%- endif -%}
+                <span>{{ section.settings.hero_pill_3 | escape }}</span>
+              </span>
+            {%- endif -%}
+            {%- if section.settings.hero_pill_4 != blank -%}
+              <span class="wrist-listicle__pill">
+                {%- if section.settings.hero_pill_4_icon != blank -%}<span class="wrist-listicle__pill-icon" aria-hidden="true">{{ section.settings.hero_pill_4_icon | escape }}</span>{%- endif -%}
+                <span>{{ section.settings.hero_pill_4 | escape }}</span>
+              </span>
+            {%- endif -%}
           </div>
         </div>
       </header>
@@ -1843,7 +1887,7 @@
       "default": "Buyer's guide"
     },
     {
-      "type": "text",
+      "type": "textarea",
       "id": "hero_title",
       "label": "Hero title",
       "default": "I Tried 9 Arm Toning Gadgets So You Don't Have To."
@@ -1862,27 +1906,51 @@
     },
     {
       "type": "text",
+      "id": "hero_pill_1_icon",
+      "label": "Hero pill 1 icon",
+      "default": "💪"
+    },
+    {
+      "type": "text",
       "id": "hero_pill_1",
       "label": "Hero pill 1",
-      "default": "9 devices tested"
+      "default": "9 Devices Tested"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_2_icon",
+      "label": "Hero pill 2 icon",
+      "default": "📅"
     },
     {
       "type": "text",
       "id": "hero_pill_2",
       "label": "Hero pill 2",
-      "default": "12 weeks of testing"
+      "default": "12 Weeks · 47 Women"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_3_icon",
+      "label": "Hero pill 3 icon",
+      "default": "🚫"
     },
     {
       "type": "text",
       "id": "hero_pill_3",
       "label": "Hero pill 3",
-      "default": "No sponsorships"
+      "default": "No Brand Sponsorships"
+    },
+    {
+      "type": "text",
+      "id": "hero_pill_4_icon",
+      "label": "Hero pill 4 icon",
+      "default": "✅"
     },
     {
       "type": "text",
       "id": "hero_pill_4",
       "label": "Hero pill 4",
-      "default": "8 years of training"
+      "default": "8-Year Training Background"
     },
     {
       "type": "header",
