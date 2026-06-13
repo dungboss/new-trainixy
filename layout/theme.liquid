@@ -492,10 +492,16 @@
       {{ content_for_layout }}
     </main>
 
+    {% assign hide_blog_chrome_for_wrist_listicle = template == 'article.wrist-trainer-listicle' %}
+
     {% section 'promo-popup' %}
-    {% section 'scroll-to-top-btn' %}
+    {% unless hide_blog_chrome_for_wrist_listicle %}
+      {% section 'scroll-to-top-btn' %}
+    {% endunless %}
     {% section 'global-music-player' %}
-    {% if template == 'product.360-rotating-wrist-forearm-trainer' %}
+    {% if hide_blog_chrome_for_wrist_listicle %}
+      {% comment %}No footer for this article template{% endcomment %}
+    {% elsif template == 'product.360-rotating-wrist-forearm-trainer' %}
       {% sections 'footer-group-360-rotating-wrist-forearm-trainer' %}
     {% elsif template == 'product.travel-bottle' or template == 'product.under-eye-red-light' %}
       {% comment %}No footer for these products{% endcomment %}
