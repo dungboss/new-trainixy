@@ -493,7 +493,7 @@
             "display_when": "after_scroll",
             "button_label": "Add to cart",
             "enable_custom_btn_color": true,
-            "custom_btn_color": "#c56857",
+            "custom_btn_color": "#0837F3",
             "color_scheme": "background-1",
             "star_color": "#c56857",
             "stars_label": "(xxxx Reviews)",
