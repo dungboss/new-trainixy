@@ -29,7 +29,7 @@
           "type": "rating-stars",
           "settings": {
             "rating": 4.9,
-            "star_color": "#0011FF",
+            "star_color": "#0837F3",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
             "label": "(3,638 Reviews)",
