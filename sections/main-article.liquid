@@ -3,6 +3,8 @@
   assign page_narrow_class = ''
   assign is_seniors_fall_warning = false
   assign has_sticky = false
+  assign sticky_product_handle = ''
+  assign sticky_product = blank
   assign check_availability_cta_link = ''
   assign check_availability_cta_label = 'Check Availability'
   if section.settings.page_width == 'narrow'
@@ -10,6 +12,8 @@
   endif
   if template.suffix == 'seniors-fall-warning'
     assign is_seniors_fall_warning = true
+    assign sticky_product_handle = '360-rotating-wrist-forearm-trainer'
+    assign sticky_product = all_products[sticky_product_handle]
   endif
   for b in section.blocks
     if b.type == 'sticky_promotion'
@@ -24,6 +28,9 @@
       endif
     endif
   endfor
+  if is_seniors_fall_warning and sticky_product != blank
+    assign check_availability_cta_link = sticky_product.url
+  endif
 %}
 
 <article class="article-template content-for-grouping" itemscope itemtype="http://schema.org/BlogPosting">
@@ -348,7 +355,16 @@
                       {{ block.settings.content }}
                     </div>
 
-                    {%- if block.settings.middle_image_url != blank -%}
+                    {%- if is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image -%}
+                      <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
+                        {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
+                        {{
+                          sticky_product.featured_image
+                          | image_url: width: 1500
+                          | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500', alt: sticky_product.title
+                        }}
+                      </div>
+                    {%- elsif block.settings.middle_image_url != blank -%}
                       <div class="sticky-promotion__middle-image">
                         <img src="{{ block.settings.middle_image_url }}" alt="" loading="lazy" style="width:100%;display:block;border-radius:6px;">
                       </div>
@@ -375,7 +391,9 @@
                   <div class="sticky-promotion__cta">
                     {% if block.settings.cta_function == 'link' %}
                       <a
-                        {% if block.settings.cta_link == blank %}
+                        {% if is_seniors_fall_warning and check_availability_cta_link != blank %}
+                          href="{{ check_availability_cta_link }}"
+                        {% elsif block.settings.cta_link == blank %}
                           role="link" aria-disabled="true"
                         {% else %}
                           href="{{ block.settings.cta_link }}"
@@ -574,7 +592,15 @@
             <div class="sticky-promotion__content rte {{ block.settings.content_alignment }}" style="--spacing:{{ block.settings.content_spacing | divided_by: 10.0 }}rem;">
               {{ block.settings.content }}
             </div>
-            {%- if block.settings.middle_image_url != blank %}
+            {%- if is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image %}
+              <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
+                {{
+                  sticky_product.featured_image
+                  | image_url: width: 800
+                  | image_tag: loading: 'lazy', alt: sticky_product.title
+                }}
+              </div>
+            {%- elsif block.settings.middle_image_url != blank %}
               <div class="sticky-promotion__middle-image">
                 <img src="{{ block.settings.middle_image_url }}" alt="" loading="lazy" style="width:100%;display:block;border-radius:6px;">
               </div>
@@ -587,7 +613,7 @@
           </div>
           <div class="sticky-promotion__cta">
             {%- if block.settings.cta_function == 'link' %}
-              <a {% if block.settings.cta_link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.cta_link }}"{% endif %} class="button">{{ block.settings.cta_label }}</a>
+              <a {% if check_availability_cta_link == blank %}role="link" aria-disabled="true"{% else %}href="{{ check_availability_cta_link }}"{% endif %} class="button">{{ block.settings.cta_label }}</a>
             {%- endif %}
           </div>
         </div>
