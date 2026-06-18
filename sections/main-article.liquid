@@ -1,9 +1,29 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {% liquid
   assign page_narrow_class = ''
+  assign is_seniors_fall_warning = false
+  assign has_sticky = false
+  assign check_availability_cta_link = ''
+  assign check_availability_cta_label = 'Check Availability'
   if section.settings.page_width == 'narrow'
     assign page_narrow_class = ' page-width--narrow'
   endif
+  if template.suffix == 'seniors-fall-warning'
+    assign is_seniors_fall_warning = true
+  endif
+  for b in section.blocks
+    if b.type == 'sticky_promotion'
+      if check_availability_cta_link == blank and b.settings.cta_link != blank
+        assign check_availability_cta_link = b.settings.cta_link
+      endif
+      if b.settings.cta_label != blank
+        assign check_availability_cta_label = b.settings.cta_label
+      endif
+      if is_seniors_fall_warning
+        assign has_sticky = true
+      endif
+    endif
+  endfor
 %}
 
 <article class="article-template content-for-grouping" itemscope itemtype="http://schema.org/BlogPosting">
@@ -24,7 +44,7 @@
           </div>
         </div>
       {%- when 'featured_image' -%}
-        {%- if article.image -%}
+        {%- if article.image and has_sticky == false -%}
           <div class="article-template__hero-container{% if block.settings.full_width %} article-template__hero-container--full{% endif %}" {{ block.shopify_attributes }}>
             <div
               class="article-template__hero-{{ block.settings.image_height }} media"
@@ -88,6 +108,7 @@
       {%- when 'title' -%}
         {% assign desktop_image = block.settings.desktop_image %}
         {% assign mobile_image = block.settings.mobile_image %}
+        {%- unless has_sticky -%}
         <header class="color-{{ block.settings.color_scheme }} article-block-padding" style="--padding-top:{{ block.settings.padding_top }}px;--padding-bottom:{{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
           <div class="article-header__container page-width{{ page_narrow_class }} article-header__container--desktop-image-{{ desktop_image }} article-header__container--desktop-image-{{ block.settings.desktop_image_alignment }} article-header__container--mobile-image-{{ mobile_image }}">
             <div class="article-header__content">
@@ -176,6 +197,7 @@
             {% endif %}
           </div>
         </header>
+        {%- endunless -%}
       {%- when 'content' -%}
         <style>
           #BlogContent-{{ section.id }} img {
@@ -189,6 +211,35 @@
               font-size: {{ 1.6 | times: block.settings.body_scale | divided_by: 100.0 }}rem;
             }
           }
+          {% if is_seniors_fall_warning %}
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: fit-content;
+              min-width: 220px;
+              max-width: 100%;
+              margin: 1.6rem auto 0;
+              padding: 1.4rem 2rem;
+              color: #fff !important;
+              text-align: center !important;
+              white-space: normal;
+              gap: 0 !important;
+              background-image: none !important;
+            }
+
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn::before,
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn::after {
+              content: none !important;
+              display: none !important;
+            }
+
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn .icon,
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn .icon-wrap,
+            #BlogContent-{{ section.id }} .article-template__check-availability-btn svg {
+              display: none !important;
+            }
+          {% endif %}
         </style>
         <div class="color-{{ block.settings.color_scheme }} article-block-padding" style="--padding-top:{{ block.settings.padding_top }}px;--padding-bottom:{{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
           <div class="article-template__content-container page-width{{ page_narrow_class }}">
@@ -197,7 +248,34 @@
               class="article-template__content rte"
               itemprop="articleBody"
             >
+              {%- if has_sticky -%}
+                <h1 class="article-template__title" itemprop="headline" style="font-size:2.2rem;margin-bottom:1rem;">{{ article.title | escape }}</h1>
+                {%- if article.image -%}
+                  <div style="margin-bottom:1.2rem;">
+                    <img
+                      src="{{ article.image | image_url: width: 800 }}"
+                      alt="{{ article.image.alt | escape }}"
+                      loading="lazy"
+                      style="width:100%;border-radius:8px;display:block;"
+                    >
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
               {{ article.content }}
+              {%- if is_seniors_fall_warning -%}
+                <a
+                  {% if check_availability_cta_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ check_availability_cta_link }}"
+                  {% endif %}
+                  class="button button--primary article-template__check-availability-btn"
+                  data-check-availability-button
+                  hidden
+                >
+                  {{ check_availability_cta_label }}
+                </a>
+              {%- endif -%}
             </div>
             {% assign promotions = section.blocks | where: 'type', 'sticky_promotion' %}
             {% for block in promotions %}
@@ -210,6 +288,10 @@
               style="
                 --desktop-width: {{ block.settings.desktop_width }}px;
                 --border-radius: {{ block.settings.corner_radius }}px;
+                --fs-avatar-label: {{ block.settings.fs_avatar_label | default: 12 }}px;
+                --fs-content-p: {{ block.settings.fs_content_p | default: 12 }}px;
+                --fs-heading: {{ block.settings.fs_heading | default: 22 }}px;
+                --fs-content-after: {{ block.settings.fs_content_after | default: 14 }}px;
               "
               {{ block.shopify_attributes }}
             >
@@ -243,10 +325,41 @@
                     }}
                   </div>
                 {%- endif %}
+
+                {%- if block.settings.avatar_1 or block.settings.avatar_2 or block.settings.avatar_3 -%}
+                  <div class="sticky-promotion__avatars">
+                    <div class="sticky-promotion__avatar-images">
+                      {%- if block.settings.avatar_1 -%}
+                        {{ block.settings.avatar_1 | image_url: width: 80 | image_tag: loading: 'lazy', class: 'sticky-promotion__avatar-img' }}
+                      {%- endif -%}
+                      {%- if block.settings.avatar_2 -%}
+                        {{ block.settings.avatar_2 | image_url: width: 80 | image_tag: loading: 'lazy', class: 'sticky-promotion__avatar-img' }}
+                      {%- endif -%}
+                      {%- if block.settings.avatar_3 -%}
+                        {{ block.settings.avatar_3 | image_url: width: 80 | image_tag: loading: 'lazy', class: 'sticky-promotion__avatar-img' }}
+                      {%- endif -%}
+                    </div>
+                    {%- if block.settings.avatar_label != blank -%}
+                      <span class="sticky-promotion__avatar-label">{{ block.settings.avatar_label }}</span>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
             
                 <div class="sticky-promotion__content rte {{ block.settings.content_alignment }}" style="--spacing:{{ block.settings.content_spacing | divided_by: 10.0 }}rem;">
                   {{ block.settings.content }}
                 </div>
+
+                {%- if block.settings.middle_image_url != blank -%}
+                  <div class="sticky-promotion__middle-image">
+                    <img src="{{ block.settings.middle_image_url }}" alt="" loading="lazy" style="width:100%;display:block;border-radius:6px;">
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.content_after != blank -%}
+                  <div class="sticky-promotion__content sticky-promotion__content--after rte {{ block.settings.content_alignment }}" style="--spacing:{{ block.settings.content_spacing | divided_by: 10.0 }}rem;">
+                    {{ block.settings.content_after }}
+                  </div>
+                {%- endif -%}
             
                 {%- if block.settings.content_bottom_image %}
                   <div class="sticky-promotion__bottom-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.content_bottom_image.aspect_ratio | times: 100 }}%">
@@ -534,6 +647,62 @@
 
   customElements.define('blog-contents', BlogContents);
 </script>
+
+{% if is_seniors_fall_warning %}
+  <script>
+    (() => {
+      const content = document.getElementById('BlogContent-{{ section.id }}');
+      if (!content) return;
+
+      const targetImageKeys = [
+        '2aOboQZJXUCMz2nhNU1OYmwxy9S0ty1gEhNCB2FE.jpg',
+        'z7871234320341_46ded545606557f99f081f7964df7b13.jpg'
+      ];
+      const button = content.querySelector('[data-check-availability-button]');
+      if (!button) return;
+
+      const matchesTargetImage = (img, imageKey) => {
+        const candidates = [
+          img.getAttribute('src'),
+          img.currentSrc,
+          img.getAttribute('data-src'),
+          img.getAttribute('data-lazy-src')
+        ].filter(Boolean);
+
+        return candidates.some((value) => value.includes(imageKey));
+      };
+
+      const getTarget = () => {
+        const images = Array.from(content.querySelectorAll('img'));
+
+        for (const imageKey of targetImageKeys) {
+          const img = images.find((candidate) => matchesTargetImage(candidate, imageKey));
+          if (!img) continue;
+
+          return img.closest('figure') || img.closest('a') || img.closest('p') || img.parentElement || img;
+        }
+
+        return null;
+      };
+
+      const positionButton = () => {
+        const target = getTarget();
+        if (!target || !target.parentNode) return;
+
+        button.hidden = false;
+        target.insertAdjacentElement('afterend', button);
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', positionButton, { once: true });
+      } else {
+        positionButton();
+      }
+
+      setTimeout(positionButton, 500);
+    })();
+  </script>
+{% endif %}
 
 
 <script type="application/ld+json">
@@ -1321,6 +1490,28 @@
           "default": 30,
           "unit": "%"
         },
+        { "type": "header", "content": "Customer Avatars" },
+        {
+          "type": "image_picker",
+          "id": "avatar_1",
+          "label": "Avatar 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar_2",
+          "label": "Avatar 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar_3",
+          "label": "Avatar 3"
+        },
+        {
+          "type": "text",
+          "id": "avatar_label",
+          "label": "Avatar label",
+          "default": "14,900+ SATISFIED CUSTOMERS"
+        },
         { "type": "header", "content": "Content" },
         {
           "type": "image_picker",
@@ -1337,6 +1528,58 @@
           "id": "content",
           "label": "Content",
           "default": "<p>Write a shot text to promote your product or service.</p><p>Make the customer click the CTA.</p>"
+        },
+        {
+          "type": "text",
+          "id": "middle_image_url",
+          "label": "Middle image URL",
+          "info": "External image URL displayed between Content and Content After."
+        },
+        {
+          "type": "richtext",
+          "id": "content_after",
+          "label": "Content after"
+        },
+        { "type": "header", "content": "Font sizes" },
+        {
+          "type": "range",
+          "id": "fs_avatar_label",
+          "label": "Satisfied customers font size",
+          "min": 10,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "fs_content_p",
+          "label": "Content paragraph font size",
+          "min": 10,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "fs_heading",
+          "label": "Content heading font size",
+          "min": 14,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        },
+        {
+          "type": "range",
+          "id": "fs_content_after",
+          "label": "Content after font size",
+          "min": 10,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 14
         },
         {
           "type": "select",
