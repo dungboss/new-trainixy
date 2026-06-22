@@ -38,13 +38,6 @@
             "padding_bottom": 30
           }
         },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt",
-            "full_width": false
-          }
-        },
         "sticky_promotion_LiwxVa": {
           "type": "sticky_promotion",
           "settings": {
@@ -95,7 +88,6 @@
       },
       "block_order": [
         "title",
-        "featured_image",
         "sticky_promotion_LiwxVa",
         "content",
         "share"
