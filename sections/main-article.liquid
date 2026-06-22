@@ -364,6 +364,15 @@
                           | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500', alt: sticky_product.title
                         }}
                       </div>
+                    {%- elsif block.settings.middle_image != blank -%}
+                      <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.middle_image.aspect_ratio | times: 100 }}%">
+                        {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
+                        {{
+                          block.settings.middle_image
+                          | image_url: width: 1500
+                          | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500'
+                        }}
+                      </div>
                     {%- elsif block.settings.middle_image_url != blank -%}
                       <div class="sticky-promotion__middle-image">
                         <img src="{{ block.settings.middle_image_url }}" alt="" loading="lazy" style="width:100%;display:block;border-radius:6px;">
@@ -489,7 +498,16 @@
                       {{ block.settings.content }}
                     </div>
 
-                    {%- if block.settings.middle_image_url != blank -%}
+                    {%- if block.settings.middle_image != blank -%}
+                      <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.middle_image.aspect_ratio | times: 100 }}%">
+                        {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
+                        {{
+                          block.settings.middle_image
+                          | image_url: width: 1500
+                          | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500'
+                        }}
+                      </div>
+                    {%- elsif block.settings.middle_image_url != blank -%}
                       <div class="sticky-promotion__middle-image">
                         <img src="{{ block.settings.middle_image_url }}" alt="" loading="lazy" style="width:100%;display:block;border-radius:6px;">
                       </div>
@@ -598,6 +616,14 @@
                   sticky_product.featured_image
                   | image_url: width: 800
                   | image_tag: loading: 'lazy', alt: sticky_product.title
+                }}
+              </div>
+            {%- elsif block.settings.middle_image != blank %}
+              <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.middle_image.aspect_ratio | times: 100 }}%">
+                {{
+                  block.settings.middle_image
+                  | image_url: width: 800
+                  | image_tag: loading: 'lazy'
                 }}
               </div>
             {%- elsif block.settings.middle_image_url != blank %}
@@ -1739,10 +1765,16 @@
           "default": "<p>Write a shot text to promote your product or service.</p><p>Make the customer click the CTA.</p>"
         },
         {
+          "type": "image_picker",
+          "id": "middle_image",
+          "label": "Middle image",
+          "info": "Select an image from the media library. Displayed between Content and Content After."
+        },
+        {
           "type": "text",
           "id": "middle_image_url",
           "label": "Middle image URL",
-          "info": "External image URL displayed between Content and Content After."
+          "info": "External image URL displayed between Content and Content After. Only used if Middle image is not set."
         },
         {
           "type": "richtext",
