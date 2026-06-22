@@ -62,7 +62,7 @@
             "content_spacing": 4,
             "cta_label": "CHECK AVAILABILITY",
             "cta_function": "link",
-            "cta_link": "shopify://products/smart-anti-snoring-devices",
+            "cta_link": "/products/smart-anti-snoring-devices",
             "cta_product": ""
           }
         },
