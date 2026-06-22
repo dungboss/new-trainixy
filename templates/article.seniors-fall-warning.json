@@ -45,21 +45,6 @@
             "full_width": false
           }
         },
-        "table_of_contents_Bc9ymt": {
-          "type": "table_of_contents",
-          "settings": {
-            "color_scheme": "background-1",
-            "table_color_scheme": "background-1",
-            "heading_text": "Table of contents:",
-            "width": "unlimited",
-            "max_width": 500,
-            "corner_radius": 6,
-            "disable_numbers": false,
-            "body_scale": 100,
-            "padding_top": 20,
-            "padding_bottom": 20
-          }
-        },
         "sticky_promotion_LiwxVa": {
           "type": "sticky_promotion",
           "settings": {
@@ -73,9 +58,9 @@
             "logo_width": 80,
             "line_divider_opacity": 0,
             "avatar_label": "14,900+ SATISFIED CUSTOMERS",
-            "content": "<p>🔒 SECURE PAYMENT  ·  ⚡ LIMITED STOCK AVAILABLE  ·  ↩ 30-DAY GUARANTEE</p><h3>Trainixy™ 360° Rotating Wrist & Forearm Trainer</h3>",
+            "content": "<p>🔒 SECURE PAYMENT  ·  ⚡ LIMITED STOCK AVAILABLE  ·  ↩ 30-DAY GUARANTEE</p><h3>Trainixy™ Smart Anti-Snoring Devices</h3>",
             "middle_image_url": "",
-            "content_after": "<p>Build grip strength, improve wrist mobility, and train your forearms with a compact rotating trainer designed for quick daily sessions at home or on the go.</p>",
+            "content_after": "<p>Experience smarter sleep with an adaptive snore therapy device that senses throat vibration and airflow changes in real time, then delivers personalized stimulation to help keep airway muscles engaged. </p>",
             "fs_avatar_label": 10,
             "fs_content_p": 10,
             "fs_heading": 20,
@@ -84,7 +69,7 @@
             "content_spacing": 4,
             "cta_label": "CHECK AVAILABILITY",
             "cta_function": "link",
-            "cta_link": "/products/360-rotating-wrist-forearm-trainer",
+            "cta_link": "shopify://products/smart-anti-snoring-devices",
             "cta_product": ""
           }
         },
@@ -111,7 +96,6 @@
       "block_order": [
         "title",
         "featured_image",
-        "table_of_contents_Bc9ymt",
         "sticky_promotion_LiwxVa",
         "content",
         "share"
