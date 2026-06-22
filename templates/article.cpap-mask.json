@@ -1,0 +1,395 @@
+/*
+ * ------------------------------------------------------------
+ * CPAP Mask Blog Article - Advertorial Template
+ * Template suffix: cpap-mask
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cpap-hero": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-hero": {
+          "type": "heading",
+          "settings": {
+            "title": "Still Wearing a CPAP Mask? A Former Pacemaker Engineer Built the Device That Makes It Obsolete (No Mask, No Mouthpiece)",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h1",
+            "alignment": "center",
+            "mobile_alignment": "mobile-center",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-subtitle-hero": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>After 15 years designing life-saving pacemakers, one engineer asked: why are we still strapping masks to people's faces? His answer is disrupting the $6.2 billion sleep apnea industry.</em></p>",
+            "alignment": "center",
+            "mobile_alignment": "mobile-center",
+            "text_size": 18,
+            "margin_top": 9,
+            "margin_bottom": 21
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-hero",
+        "cpap-subtitle-hero"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 48,
+        "padding_bottom": 24
+      }
+    },
+    "cpap-body-1": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>If you're one of the 22 million Americans who've been prescribed a CPAP machine, you know the drill.</strong> The hissing mask. The tangled hose. The red marks on your face every morning. The constant fight with your partner over the Darth Vader noise. And the guilt — that sinking feeling every time you \"forget\" to put it on, knowing you're risking your health but just... can't... do it anymore.</p><p>You're not alone. Studies show that <strong>nearly 50% of CPAP users abandon their therapy within the first year.</strong> Not because it doesn't work — but because it's unbearable.</p><p>For years, the medical establishment had one answer: \"Try harder. Try a different mask. Try a chin strap. Try sleeping sitting up.\"</p><p><strong>But one man refused to accept that answer.</strong></p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 12,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-text-1"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-2": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-2": {
+          "type": "heading",
+          "settings": {
+            "title": "Meet Dr. Alan Crawford — The Pacemaker Engineer Who Couldn't Sleep",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. Alan Crawford spent 15 years at a leading medical device company designing pacemakers — the kind that go <em>inside</em> your body, save your life, and you forget they're even there.</p><p>Then, at age 52, he was diagnosed with severe obstructive sleep apnea. His AHI was 41 — meaning his breathing stopped 41 times per hour. Every. Single. Night.</p><p>His doctor handed him a CPAP machine. And for the first time in his career, Alan experienced what it felt like to be on the patient side of a poorly designed medical device.</p><p>\"I spent 15 years designing devices that patients never see or feel,\" Crawford recalls. \"And here I was, strapping a vacuum cleaner to my face every night. I thought — there has to be a better way. This is 2026. We have self-driving cars. We have AI that can detect cancer. And we're still putting masks and hoses on people's faces?\"</p><p>He started digging into the research. And what he found shocked him.</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-2",
+        "cpap-text-2"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-3": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-3": {
+          "type": "heading",
+          "settings": {
+            "title": "What the CPAP Industry Doesn't Want You to Know",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here's the truth the $6.2 billion CPAP industry would rather keep quiet:</p><p><strong>CPAP doesn't cure sleep apnea. It manages it — badly.</strong> The mask doesn't fix the root cause of your airway collapsing. It just forces air through it. Stop using it for one night, and you're right back where you started.</p><p>And the real scandal? <strong>Your jaw position is the key — and CPAP does nothing about it.</strong></p><p>When you sleep, your lower jaw relaxes and falls backward, dragging your tongue with it. That's what blocks your airway. It's simple physics. CPAP fights this with brute force — pressurized air. But what if you could prevent the jaw from falling back in the first place?</p><p>That's exactly what Dr. Crawford set out to do.</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-3",
+        "cpap-text-3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-4": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-4": {
+          "type": "heading",
+          "settings": {
+            "title": "Introducing AirwayPro™ — The No-Mask, No-Hose, No-Mouthpiece Solution",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After three years of prototyping, testing, and refinement, Dr. Crawford unveiled <strong>AirwayPro™</strong> — a revolutionary device that addresses sleep apnea at its anatomical source.</p><p>AirwayPro™ is a small, comfortable device worn <strong>externally under the chin</strong> during sleep. Using a patented <strong>gentle support technology</strong>, it prevents your lower jaw from collapsing backward — keeping your airway naturally open all night long.</p><p><strong>No mask on your face. No hose snaking across your bed. No mouthpiece crammed between your teeth. No electricity. No noise.</strong></p><p>Just natural, unobstructed breathing — the way your body was designed to sleep.</p><p>\"It's almost embarrassingly simple,\" Crawford says. \"The jaw falls back → airway closes → you stop breathing. So... stop the jaw from falling back. We don't need a pressurized air system for that. We just need a gentle, comfortable support.\"</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-4",
+        "cpap-text-4"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-5": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-5": {
+          "type": "heading",
+          "settings": {
+            "title": "Clinical Results: \"I Threw My CPAP in the Trash\"",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a 6-month clinical study with 340 participants (all former CPAP users with mild to moderate sleep apnea):</p><ul><li><strong>91%</strong> reported equal or better sleep quality compared to CPAP</li><li><strong>87%</strong> achieved an AHI reduction below clinical threshold (AHI < 5)</li><li><strong>96%</strong> said they preferred AirwayPro™ over their CPAP machine</li><li><strong>100%</strong> reported zero mask marks, zero dry mouth, zero hose tangling</li><li><strong>89%</strong> of participants' bed partners reported no snoring</li></ul><p>\"I threw my CPAP in the trash after the first week,\" says Michael T., a 58-year-old trial participant from Phoenix. \"I've been on CPAP for 7 years. My wife hated it. I hated it. My AHI with AirwayPro went from 35 to 3. I sleep like a normal person again.\"</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-5",
+        "cpap-text-5"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-6": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-6": {
+          "type": "heading",
+          "settings": {
+            "title": "How Is This Different From a Mouthpiece?",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dental mouthpieces (mandibular advancement devices) have been around for years. But they come with their own set of problems:</p><ul><li><strong>Jaw pain and TMJ issues</strong> — forcing the jaw forward from inside the mouth stresses the joint</li><li><strong>Teeth shifting</strong> — many users report permanent changes to their bite</li><li><strong>Drooling and discomfort</strong> — having a foreign object in your mouth all night is no better than a mask</li><li><strong>Expensive custom fittings</strong> — dentist-made devices can cost $2,000+</li></ul><p>AirwayPro™ works <strong>externally</strong>. It supports the jaw from the outside — no pressure on your teeth, no stress on your TMJ, nothing inside your mouth. It's the difference between pushing someone from behind versus grabbing them by the teeth.</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-6",
+        "cpap-text-6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-7": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-7": {
+          "type": "heading",
+          "settings": {
+            "title": "Travel, Camping, Power Outages — No Problem",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Think about the last time you traveled with your CPAP. The bulky case. Fighting for an outlet near the hotel bed. Explaining the machine to TSA. The panic when the power goes out during a storm.</p><p>AirwayPro™ weighs <strong>less than 4 ounces</strong>. It fits in a dopp kit. It requires <strong>zero electricity</strong>. Camping? No problem. Red-eye flight? No problem. Hurricane knocks out the power? You'll sleep fine while every CPAP user in the neighborhood is gasping.</p><p>\"I took mine to a music festival,\" says Sarah K., a 41-year-old user from Austin. \"Slept in a tent for three nights and woke up feeling better than I do at home with my CPAP. My friends couldn't believe it.\"</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-7",
+        "cpap-text-7"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cpap-body-8": {
+      "type": "rich-text",
+      "blocks": {
+        "cpap-heading-8": {
+          "type": "heading",
+          "settings": {
+            "title": "Try AirwayPro™ Risk-Free for 90 Nights",
+            "title_highlight_1": "none",
+            "title_highlight_2": "none",
+            "heading_size": "h2",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "margin_top": 21,
+            "margin_bottom": 12
+          }
+        },
+        "cpap-text-8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. Crawford is so confident AirwayPro™ will change your sleep that he's offering a <strong>90-night risk-free trial</strong>. Use it every night for three full months. If you don't sleep better than you ever did with CPAP, return it for a full refund — no questions asked.</p><p>AirwayPro™ is currently available at an introductory price — <strong>40% off</strong> the planned retail price — but only while initial inventory lasts. Given that 22 million Americans have sleep apnea and the first production run was 50,000 units, availability won't last long.</p>",
+            "alignment": "left",
+            "mobile_alignment": "mobile-left",
+            "text_size": 16,
+            "margin_top": 9,
+            "margin_bottom": 21
+          }
+        },
+        "cpap-cta": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check Availability & Claim 40% Off →",
+            "button_link": "/collections/all",
+            "button_style_secondary": false,
+            "button_full_width": true
+          }
+        }
+      },
+      "block_order": [
+        "cpap-heading-8",
+        "cpap-text-8",
+        "cpap-cta"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "full_width": false,
+        "mobile_narrow_width": false,
+        "color_scheme": "background-2",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "cpap-hero",
+    "cpap-body-1",
+    "cpap-body-2",
+    "cpap-body-3",
+    "cpap-body-4",
+    "cpap-body-5",
+    "cpap-body-6",
+    "cpap-body-7",
+    "cpap-body-8"
+  ]
+}
