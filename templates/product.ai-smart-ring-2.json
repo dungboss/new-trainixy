@@ -64,7 +64,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Tones Soft Arms With Every Easy Spin</strong>",
+            "text_1": "<strong>24/7 Heart Rate Monitoring</strong>",
             "icon_1": "fitness_center",
             "filled_icon_1": false,
             "text_2": "",
@@ -104,7 +104,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Uses 360° spinning motion to activate wrists, forearms, and upper arms — helping soft arms feel firmer with daily use",
+            "text_1": "Track your heart rate throughout the day and gain deeper insight into your overall wellness, workouts, and recovery.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -144,7 +144,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Smart LCD Tracks Every Rep, Calorie & Minute</strong>",
+            "text_1": "<strong>Advanced Sleep Analysis</strong>",
             "icon_1": "monitor_heart",
             "filled_icon_1": false,
             "text_2": "",
@@ -184,7 +184,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Built-in display monitors revolutions, calories burned, and workout time across 3 training modes to keep you on track",
+            "text_1": "Understand your sleep patterns with detailed tracking of deep sleep, light sleep, and nightly recovery scores.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -224,7 +224,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>An Easy Routine That Feels Like Play</strong>",
+            "text_1": "<strong>Blood Oxygen Tracking</strong>",
             "icon_1": "autorenew",
             "filled_icon_1": false,
             "text_2": "",
@@ -264,7 +264,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Skip intimidating weights with this simple 360° arm trainer — the spinning motion makes daily toning feel easy and fun",
+            "text_1": "Monitor your SpO₂ levels and receive valuable health insights directly through the companion app.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -304,7 +304,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "<strong>Premium Polycarbonate - Built For Daily Use</strong>",
+            "text_1": "<strong>Activity & Calorie Tracking</strong>",
             "icon_1": "verified",
             "filled_icon_1": false,
             "text_2": "",
@@ -344,7 +344,7 @@
             "border_color": "#b7b7b7",
             "corner_radius": 40,
             "padding": 3,
-            "text_1": "Durable PC construction withstands continuous spinning momentum — safe, long-lasting, and lightweight at just 1.3 lbs",
+            "text_1": "Automatically track daily steps, distance, calories burned, and active time to help you stay on top of your fitness goals.",
             "icon_1": "",
             "filled_icon_1": false,
             "text_2": "",
@@ -589,7 +589,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "Why People Love The 360° Arm Trainer",
+            "heading": "Why Choose Trainixy™ AI Smart Ring?",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -636,7 +636,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "What Muscles Does It Target",
+            "heading": "What Health Metrics Does It Track?",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -672,7 +672,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>The 360° rotating motion engages the complete upper arm and shoulder muscle group:</p><ul><li><strong>Biceps</strong> - the front of your upper arm, responsible for the toned look most people want</li><li><strong>Triceps</strong> - the back of the upper arm, the area most prone to stubborn flabbiness</li><li><strong>Shoulders (Deltoids)</strong> - all three heads of the shoulder for rounded, sculpted definition</li><li><strong>Forearm Muscles</strong> - wrist flexors and extensors engaged throughout the rotation movement</li><li><strong>Upper Back Stabilizers</strong> - supporting muscles activated to maintain posture during the exercise</li></ul>",
+            "content": "<p>The Trainixy™ AI Smart Ring can monitor:</p><p>• Heart Rate</p><p>• Blood Oxygen (SpO₂)</p><p>• Sleep Quality</p><p>• Daily Steps</p><p>• Calories Burned</p><p>• Activity Levels</p><p>• Recovery & Wellness Insights</p><p>All data is synced directly to the companion app for easy viewing.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -683,7 +683,7 @@
           "type": "collapsible-row",
           "settings": {
             "open": false,
-            "heading": "How to Use",
+            "heading": "Is It Compatible With My Phone?",
             "heading_size": "medium",
             "icon": "",
             "filled_icon": false,
@@ -719,7 +719,7 @@
             "open_state_collapse_bg": "#6d388b",
             "open_state_content_bg": "#fefaff",
             "open_state_content_text": "#121212",
-            "content": "<p>Step 1: Slip the arm cuff onto your wrist or hold it in your hand<br/>Step 2: Select your preferred mode on the LCD display<br/>Step 3: Begin rotating your arm in smooth circular motions, letting the centrifugal force build momentum</p><p>Best used for 5-15 minute sessions, 1-2 times daily. Alternate arms for balanced toning. The LCD will track your progress so you can set daily goals and improve over time.</p>",
+            "content": "<p>Yes. Trainixy™ works with both iOS and Android devices via Bluetooth connection. Simply download the companion app, pair your ring, and start tracking your health data in minutes.<br/><br/></p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -849,9 +849,9 @@
         "desktop_padding_top": 36,
         "desktop_padding_bottom": 36,
         "enabledesktopreview": true,
-        "review_background_color": "#000000",
-        "review_border_color": "#FAFAFA",
-        "star_color": "#0011FF",
+        "review_background_color": "#EDEDED",
+        "review_border_color": "#fafafa",
+        "star_color": "#0011ff",
         "username_color": "#000000",
         "username": "Sarah K.",
         "verified_customer": true,
@@ -928,7 +928,7 @@
         "video_slide_wrist_1": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/7613949982277750030.mp4",
+            "video": "shopify://files/videos/7642013188237692173.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -946,7 +946,7 @@
         "video_slide_wrist_2": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/7605048899576827149.mp4",
+            "video": "shopify://files/videos/7629962136344644877.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -964,7 +964,7 @@
         "video_slide_wrist_3": {
           "type": "video_slide",
           "settings": {
-            "video": "shopify://files/videos/7616848410418711839.mp4",
+            "video": "shopify://files/videos/7645889346117160205.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -988,7 +988,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "<strong>See The Arm Trainer In Action</strong>",
+        "title": "<strong>See Trainixy™ Smart Ring In Everyday Life</strong>",
         "title_highlight_1": "solid-color",
         "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "title_highlight_1_bg-color": "#f9efff",
@@ -1089,7 +1089,7 @@
             "heading_wrist_col": {
               "type": "heading",
               "settings": {
-                "title": "Why They Keep Coming Back",
+                "title": "Why Thousands Choose Trainixy™ AI Smart Ring",
                 "title_highlight_1": "solid-color",
                 "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
                 "title_highlight_1_bg-color": "#f9efff",
@@ -1139,7 +1139,7 @@
             "text_wrist_col": {
               "type": "text",
               "settings": {
-                "text": "<p>A smarter, more enjoyable way to get toned arms without leaving home</p>",
+                "text": "<p>Smarter Health Tracking Without The Bulk<br/><br/></p>",
                 "alignment": "center",
                 "mobile_alignment": "mobile-center",
                 "text_size": 14,
@@ -1178,7 +1178,7 @@
             "icon_content_toning": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "fitness_center",
+                "icon": "",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1187,7 +1187,7 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Tones & Sculpts Upper Arms",
+                "title": "❤️ 24/7 Health Monitoring",
                 "icon_heading_size": "h3",
                 "text": "<p>Centrifugal rotation targets biceps, triceps, and shoulders to reduce flabbiness and build definition</p>",
                 "text_size": 14,
@@ -1199,7 +1199,7 @@
             "icon_content_lcd": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "monitor_heart",
+                "icon": "",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1208,9 +1208,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Smart LCD Progress Tracking",
+                "title": "💎 Premium Ceramic Design",
                 "icon_heading_size": "h3",
-                "text": "<p>Track revolutions, calories, and time across 3 modes so you can set goals and stay motivated</p>",
+                "text": "<p>Crafted from high-quality ceramic with a sleek minimalist look that's comfortable enough to wear day and night.<br/><br/></p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1242,11 +1242,11 @@
             "horizontal_mobile_padding": 14
           },
           "blocks": {
-            "image_gdMie6": {
+            "image_fnLhUD": {
               "type": "image",
               "name": "Image",
               "settings": {
-                "image": "shopify://shop_images/daf280c2-1c22-474d-bce4-b6b323110fa6.webp",
+                "image": "shopify://shop_images/a654eab6-0243-486c-b1e1-256c2d843867.png",
                 "use_product_image_fallback": false,
                 "width": 100,
                 "alignment": "center",
@@ -1259,7 +1259,7 @@
             }
           },
           "block_order": [
-            "image_gdMie6"
+            "image_fnLhUD"
           ]
         },
         "column_benefits_right": {
@@ -1284,7 +1284,7 @@
             "icon_content_fun": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "autorenew",
+                "icon": "",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1293,7 +1293,7 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Fun Enough To Actually Do Daily",
+                "title": "🌙 Better Sleep Insights",
                 "icon_heading_size": "h3",
                 "text": "<p>The spinning centrifugal motion feels engaging and playful — not like a chore you dread</p>",
                 "text_size": 14,
@@ -1305,7 +1305,7 @@
             "icon_content_portable": {
               "type": "icon-with-content",
               "settings": {
-                "icon": "home",
+                "icon": "",
                 "filled_icon": false,
                 "icon_size": "m",
                 "icon_position": "next-to-title",
@@ -1314,9 +1314,9 @@
                 "icon_text_alignment": "left",
                 "text_color": "text",
                 "custom_text_color": "#ff0000",
-                "title": "Compact - Use It Anywhere",
+                "title": "🧠 AI-Powered Wellness Reports",
                 "icon_heading_size": "h3",
-                "text": "<p>7.68 in × 6.69 in and only 1.3 lbs  — fits easily in a bag for home, office, or travel use</p>",
+                "text": "<p>The companion app transforms your daily data into easy-to-understand insights so you can make smarter health and fitness decisions.<br/><br/></p>",
                 "text_size": 14,
                 "margin_top": 15,
                 "margin_bottom": 0
@@ -1368,11 +1368,11 @@
           "type": "column",
           "settings": {
             "post_author": "Jessica M.",
-            "post_author_avatar": "shopify://shop_images/download.jpg",
+            "post_author_avatar": "shopify://shop_images/ChatGPT_Image_Jun_22_2026_04_27_40_PM.png",
             "post_author_verified": false,
             "post_time": "14h ago",
-            "post_text": "<p>i've been using this for a month and my arms look completely different. the flabby part under my arm is visibly smaller and i can actually feel muscle there now. i use it while watching netflix every night for like 10-15 minutes. the screen tracking my calories makes it feel like a little game. so addictive in the best way.</p>",
-            "post_image": "shopify://shop_images/61VGFIAgiL.webp",
+            "post_text": "<p>i've been wearing this ring every day for about a month now and honestly it's become part of my routine. i mainly got it to keep an eye on my sleep and activity levels, but i ended up checking my recovery and heart rate almost every morning. it's comfortable enough that i forget i'm wearing it.<br/><br/></p>",
+            "post_image": "shopify://shop_images/ChatGPT_Image_Jun_22_2026_04_27_40_PM.png",
             "post_reactions": "like, love, care",
             "post_reactions_text": "3.2k",
             "post_comments_text": "618 Comments",
@@ -1393,8 +1393,8 @@
             "post_author_avatar": "shopify://shop_images/autumn-photographer-taking-picture.jpg",
             "post_author_verified": false,
             "post_time": "1 Day ago",
-            "post_text": "<p>bought this after seeing it on social media and honestly it exceeded my expectations. i was skeptical that something this small and fun-looking could actually work, but after 3 weeks i genuinely noticed more definition in my arms. i use it at my desk between meetings. it doesn't take up any space and the pink color is so cute. would 100% recommend.</p>",
-            "post_image": "shopify://shop_images/610usVsuv4L.webp",
+            "post_text": "<p>bought this after seeing it on social media and didn't expect much. setup took less than five minutes and the app is surprisingly easy to use. i like being able to see my sleep, steps, and heart rate all in one place without wearing a bulky smartwatch. definitely exceeded my expectations.<br/><br/></p>",
+            "post_image": "shopify://shop_images/2c074dea5912442284f0d4401deab4e7_tplv-fhlh96nyum-crop-webp_300_300.webp",
             "post_reactions": "like, love, care",
             "post_reactions_text": "2.7k",
             "post_comments_text": "504 Comments",
@@ -1412,11 +1412,11 @@
           "type": "column",
           "settings": {
             "post_author": "Linda C.",
-            "post_author_avatar": "shopify://shop_images/bb10524c-ec71-4ad2-94bd-16e2e76cab43.jpg",
+            "post_author_avatar": "shopify://shop_images/b8de56c5-74eb-4dc0-9078-8fe4fbb6bd3a.png",
             "post_author_verified": false,
             "post_time": "3h ago",
-            "post_text": "<p>gave one to my mom and she loves it. she's 58 and was worried about arm jiggle but didn't want to lift weights. this is perfect for her because it feels gentle but you can still feel it working. s after 6 weeks her arms look noticeably firmer. buying a second one for myself now.</p>",
-            "post_image": "shopify://shop_images/61OtlM-kR1L._SY500.webp",
+            "post_text": "<p>gave one to my friend and she absolutely loves it. she wanted something simple to help her stay more aware of her daily activity and sleep habits. the ring is lightweight, looks nice, and doesn't feel like a fitness device at all. i'm ordering another one for myself now.<br/><br/></p>",
+            "post_image": "shopify://shop_images/b8de56c5-74eb-4dc0-9078-8fe4fbb6bd3a.png",
             "post_reactions": "like, love, care",
             "post_reactions_text": "1.9k",
             "post_comments_text": "371 Comments",
