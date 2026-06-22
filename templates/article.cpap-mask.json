@@ -1,7 +1,10 @@
 /*
  * ------------------------------------------------------------
- * CPAP Mask Blog Article - Advertorial Template
- * Template suffix: cpap-mask
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
 {
@@ -360,8 +363,7 @@
           "settings": {
             "button_label": "Check Availability & Claim 40% Off →",
             "button_link": "/collections/all",
-            "button_style_secondary": false,
-            "button_full_width": true
+            "button_style_secondary": false
           }
         }
       },
