@@ -355,22 +355,22 @@
                       {{ block.settings.content }}
                     </div>
 
-                    {%- if is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image -%}
-                      <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
-                        {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
-                        {{
-                          sticky_product.featured_image
-                          | image_url: width: 1500
-                          | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500', alt: sticky_product.title
-                        }}
-                      </div>
-                    {%- elsif block.settings.middle_image -%}
+                    {%- if block.settings.middle_image -%}
                       <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.middle_image.aspect_ratio | times: 100 }}%">
                         {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
                         {{
                           block.settings.middle_image
                           | image_url: width: 1500
                           | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500'
+                        }}
+                      </div>
+                    {%- elsif is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image -%}
+                      <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
+                        {%- capture sizes -%}(min-width: 750px) {{ block.settings.desktop_width }}px, calc(100vw - 70px){%- endcapture -%}
+                        {{
+                          sticky_product.featured_image
+                          | image_url: width: 1500
+                          | image_tag: loading: 'lazy', sizes: sizes, widths: '550, 720, 990, 1100, 1500', alt: sticky_product.title
                         }}
                       </div>
                     {%- elsif block.settings.middle_image_url != blank -%}
@@ -610,20 +610,20 @@
             <div class="sticky-promotion__content rte {{ block.settings.content_alignment }}" style="--spacing:{{ block.settings.content_spacing | divided_by: 10.0 }}rem;">
               {{ block.settings.content }}
             </div>
-            {%- if is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image %}
-              <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
-                {{
-                  sticky_product.featured_image
-                  | image_url: width: 800
-                  | image_tag: loading: 'lazy', alt: sticky_product.title
-                }}
-              </div>
-            {%- elsif block.settings.middle_image %}
+            {%- if block.settings.middle_image %}
               <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: block.settings.middle_image.aspect_ratio | times: 100 }}%">
                 {{
                   block.settings.middle_image
                   | image_url: width: 800
                   | image_tag: loading: 'lazy'
+                }}
+              </div>
+            {%- elsif is_seniors_fall_warning and sticky_product != blank and sticky_product.featured_image %}
+              <div class="sticky-promotion__middle-image media media--transparent ratio" style="--ratio-percent: {{ 1 | divided_by: sticky_product.featured_image.aspect_ratio | times: 100 }}%">
+                {{
+                  sticky_product.featured_image
+                  | image_url: width: 800
+                  | image_tag: loading: 'lazy', alt: sticky_product.title
                 }}
               </div>
             {%- elsif block.settings.middle_image_url != blank %}
