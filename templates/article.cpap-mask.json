@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "content": {
+          "type": "content",
+          "settings": {
+            "image_radius": 0,
+            "body_scale": 100,
+            "color_scheme": "background-1",
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        },
+        "sticky_promotion_LiwxVa": {
+          "type": "sticky_promotion",
+          "settings": {
+            "color_scheme": "accent-1",
+            "corner_radius": 8,
+            "desktop_width": 320,
+            "desktop_position": "right",
+            "mobile_position": "bottom",
+            "logo_alignment": "center",
+            "logo_width": 80,
+            "line_divider_opacity": 0,
+            "content": "<p>Don't let sleep apnea control your life. Try the CPAP alternative that actually works.</p>",
+            "content_alignment": "left",
+            "content_spacing": 0,
+            "cta_label": "Learn more",
+            "cta_function": "link",
+            "cta_link": "",
+            "cta_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "content",
+        "sticky_promotion_LiwxVa"
+      ],
+      "settings": {
+        "page_width": "normal"
+      }
+    },
     "cpap-hero": {
       "type": "rich-text",
       "blocks": {
@@ -384,6 +426,7 @@
     }
   },
   "order": [
+    "main",
     "cpap-hero",
     "cpap-body-1",
     "cpap-body-2",
