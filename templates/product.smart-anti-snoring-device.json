@@ -524,7 +524,7 @@
           "name": "Icons with text",
           "settings": {
             "layout": "horizontal",
-            "icon_color": "#ffffff",
+            "icon_color": "#0F178A",
             "desktop_icon_size": 48,
             "desktop_spacing": 12,
             "desktop_text_size": 18,
