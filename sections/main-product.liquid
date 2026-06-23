@@ -35,6 +35,39 @@
     }
   {%- endstyle -%}
 
+  {% if template.suffix == 'smart-anti-snoring-device' %}
+    {%- style -%}
+      #MainProduct-{{ section.id }} .product-form__submit.main-product-atc:not(.button--secondary),
+      #MainProduct-{{ section.id }} .sticky-atc__add_button {
+        background-color: #0F178A !important;
+        border-color: #0F178A !important;
+        color: #ffffff !important;
+      }
+
+      #MainProduct-{{ section.id }} .sticky-atc__price .price-item--regular,
+      #MainProduct-{{ section.id }} .sticky-atc__price .price-item--sale {
+        color: #0F178A !important;
+      }
+
+      #MainProduct-{{ section.id }} .price__badge-sale,
+      #MainProduct-{{ section.id }} .price__badge-custom {
+        background-color: #0F178A !important;
+        border-color: #0F178A !important;
+        color: #ffffff !important;
+      }
+
+      #MainProduct-{{ section.id }} .icon-with-text__item .material-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0F178A;
+        border-radius: 999px;
+        line-height: 1;
+        padding: 0.2em 0.28em;
+      }
+    {%- endstyle -%}
+  {% endif %}
+
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
   {% endif %}
