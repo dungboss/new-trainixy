@@ -893,7 +893,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "speed": 3,
+        "speed": 1.5,
         "direction": "normal",
         "stop_on_hover": false,
         "mobile_spacing": 60,
@@ -1272,7 +1272,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "speed": 3,
+        "speed": 1.5,
         "direction": "normal",
         "stop_on_hover": false,
         "mobile_spacing": 60,
@@ -1311,7 +1311,7 @@
             "title_highlight_1": "solid-color",
             "title_highlight_1_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
             "title_highlight_1_bg-color": "#f9efff",
-            "title_highlight_1_color": "#dc6969",
+            "title_highlight_1_color": "#DA9E9E",
             "highlighted-1_border_radius": 8,
             "highlighted-1_border_width": 0,
             "highlighted-1_border": "solid",
