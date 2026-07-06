@@ -893,7 +893,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "speed": 1.5,
+        "speed": 2,
         "direction": "normal",
         "stop_on_hover": false,
         "mobile_spacing": 60,
@@ -1272,7 +1272,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "speed": 1.5,
+        "speed": 2,
         "direction": "normal",
         "stop_on_hover": false,
         "mobile_spacing": 60,
