@@ -1,0 +1,313 @@
+{% liquid
+  assign selected_product = section.settings.product
+  if selected_product != blank
+    assign product_url = selected_product.url
+  else
+    assign product_url = '/products/teeth-color-correcting-tablets'
+  endif
+  assign story_image = 'https://cdn.shopify.com/s/files/1/0984/7603/2311/files/trainixy-sarah-mitchell-advertorial.webp?v=1787216837'
+%}
+
+{% if section.settings.noindex %}
+  <script>
+    (function () {
+      var meta = document.querySelector('meta[name="robots"]');
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.name = 'robots';
+        document.head.appendChild(meta);
+      }
+      meta.content = 'noindex, nofollow';
+    })();
+  </script>
+{% endif %}
+
+<div id="TxAdv-{{ section.id }}" class="tx-advertorial">
+  <div class="tx-progress" data-progress></div>
+
+  {% if section.settings.show_announcement %}
+    <div class="tx-announcement">
+      <span>Free U.S. shipping</span><i></i>
+      <span>30-day money-back guarantee</span><i></i>
+      <span>Peroxide-free</span>
+    </div>
+  {% endif %}
+
+  <header class="tx-header">
+    <div class="tx-header-inner">
+      <a class="tx-brand" href="{{ routes.root_url }}" aria-label="Trainixy home">TRAIN<span>IXY</span></a>
+      <nav aria-label="Article navigation">
+        <a href="#TxStory-{{ section.id }}">Her story</a>
+        <a href="#TxHow-{{ section.id }}">How it works</a>
+        <a href="#TxFaq-{{ section.id }}">Questions</a>
+      </nav>
+      <a class="tx-header-cta" href="{{ product_url }}" data-product-link>See the tablets</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tx-shell tx-hero" id="TxStory-{{ section.id }}">
+      <div class="tx-eyebrow"><span>Advertisement</span><b>Reader story · Sponsored by Trainixy</b></div>
+      <h1>My Hygienist Stopped Halfway Through My Cleaning and Asked,<em> “What Have You Changed?”</em></h1>
+      <p class="tx-dek">After spending more than $300 on whitening products I never finished, the routine I finally stuck with started at just $24.99.</p>
+
+      <div class="tx-byline">
+        <img src="{{ story_image }}" alt="Sarah Mitchell, the fictional composite narrator" width="88" height="88">
+        <div>
+          <strong>By Sarah Mitchell</strong>
+          <span>Composite customer story · Updated August 20, 2026</span>
+        </div>
+        <small>9 min read</small>
+      </div>
+
+      <figure class="tx-hero-visual">
+        <img src="https://cdn.shopify.com/s/files/1/0984/7603/2311/files/9511706e-bfcb-4d94-8ced-62590726d7a5.png?v=1787126642" alt="Purple color-correcting tablets beside a toothbrush" width="1200" height="820">
+        <figcaption>One small purple tablet became the easiest part of my morning routine.</figcaption>
+      </figure>
+    </section>
+
+    <article class="tx-shell tx-body">
+      <p class="tx-lead">Megan, my hygienist, was halfway through my appointment when she stopped, leaned back and looked at me for a second.</p>
+      <blockquote>“Whatever you’ve changed, keep doing it. Your teeth look noticeably brighter than last time.”</blockquote>
+      <p>I laughed because I honestly thought she was just being nice.</p>
+      <p>Then she asked what I had been using.</p>
+      <p>I told her about the little purple tablets sitting next to my toothbrush.</p>
+      <p class="tx-dialogue">“Color correction?” Megan, my hygienist, asked.</p>
+      <p>Exactly.</p>
+
+      <h2>Nothing dramatic had happened to my teeth</h2>
+      <p>I was 37. I brushed twice a day. I went to the dentist. I took care of my teeth.</p>
+      <p>But somewhere over the years, my smile had started looking more yellow than I remembered. Coffee every morning. Usually another cup around 11. Red wine most weekends. A few years of smoking when I was younger. And probably just time doing what time does.</p>
+      <p>It had not happened overnight. It had slowly become more noticeable in photos, on video calls, under restaurant lighting and in the car mirror.</p>
+      <p>Nobody else was studying my teeth as closely as I was. That did not stop me from noticing them every time I smiled.</p>
+
+      <div class="tx-pull"><span>The honest goal</span><p>I did not want veneers or an unnaturally white smile. I just wanted my own teeth to look brighter and less yellow.</p></div>
+
+      <h2>My bathroom cabinet became a graveyard of whitening products</h2>
+      <p>I started with whitening toothpaste because that seemed obvious.</p>
+      <p>I used one tube for a month and could not really tell. So naturally I bought a more expensive one. Then a charcoal one. Then one packaged to look like it belonged in a dental laboratory.</p>
+      <p>Then came the strips.</p>
+      <p>I used them correctly for the first few nights. Then I missed one. Then another. Eventually the box disappeared beneath the sink with strips still inside it.</p>
+      <p>A few months later I convinced myself a different brand would be easier. It was not. Same waiting. Same awkward feeling. Same mirror inspection afterward, trying to decide whether I could see a difference or simply wanted to see one.</p>
+      <p>I bought a whitening pen, an LED tray and more toothpaste. When I finally added everything up, I had spent more than $300 on products I had barely finished.</p>
+
+      <div class="tx-stats" aria-label="What Sarah tried before">
+        <div><b>$300+</b><span>spent trying different products</span></div>
+        <div><b>5+</b><span>routines started and abandoned</span></div>
+        <div><b>0</b><span>habits that fit real life</span></div>
+      </div>
+
+      <p>The problem was not that I had never tried. The problem was that every solution asked me to become a different person: someone who never forgot a whitening session, enjoyed waiting around with plastic on her teeth and was apparently ready to give up coffee forever.</p>
+      <p>That woman did not live in my house.</p>
+
+      <h2>The question that finally changed what I searched for</h2>
+      <p>Eventually I stopped searching for “the strongest teeth whitener” and started asking a different question:</p>
+      <blockquote class="tx-question">Why can clean, healthy teeth still look yellow?</blockquote>
+      <p>That was when I kept seeing the same color: purple. Purple toothpaste, purple serum, purple foam and color-correcting products.</p>
+      <p>I assumed it was another social-media gimmick until I understood the idea. Purple sits opposite yellow on the color wheel. It is the same visual principle behind purple shampoo helping blonde hair look less brassy.</p>
+      <p>This was not permanent bleaching. It was color correction: using purple pigment to help temporarily reduce the appearance of warm yellow tones.</p>
+
+      <div class="tx-mechanism" id="TxHow-{{ section.id }}">
+        <div class="tx-wheel" aria-hidden="true"><i></i><b></b><i></i></div>
+        <div><span>The simple idea</span><h3>Purple visually balances yellow</h3><p>It does not change the natural structure of your teeth or promise a permanent shade change. It helps your smile look cooler and brighter after brushing.</p></div>
+      </div>
+
+      <p>The idea made sense. The formats I found did not. Large bottles, pumps, gels and another separate step were exactly the kind of routine I knew I would abandon.</p>
+
+      <h2>Then I found the format I could actually see myself using</h2>
+      <p>Trainixy’s color-correcting tablets looked almost too simple.</p>
+
+      <ol class="tx-routine">
+        <li><span>1</span><div><strong>Chew one tablet</strong><p>Let it break down into purple foam.</p></div></li>
+        <li><span>2</span><div><strong>Brush gently</strong><p>Use the foam as directed for 2–3 minutes.</p></div></li>
+        <li><span>3</span><div><strong>Spit and rinse</strong><p>No tray, strips, pump or separate timer.</p></div></li>
+      </ol>
+
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/0984/7603/2311/files/2f1c5b0e-d454-4523-9828-c6c5dcfe5193.png?v=1787126642" alt="Three simple steps for using Trainixy color-correcting tablets" width="1200" height="820" loading="lazy">
+        <figcaption>Chew. Brush. Spit and rinse. That is the routine.</figcaption>
+      </figure>
+
+      <p>A bottle contained 30 pre-dosed tablets and started at $24.99. I had spent more than that on a single box of strips I never finished.</p>
+      <p>I did not order them expecting a miracle. I ordered them because the routine looked simple enough to survive a busy morning.</p>
+
+      <div class="tx-inline-offer" data-offer>
+        <div><span>30 pre-dosed tablets</span><strong>One small step. No whitening ritual.</strong></div>
+        <a class="tx-button" href="{{ product_url }}" data-product-link>{{ section.settings.cta_text }}</a>
+      </div>
+
+      <h2>The same-window test</h2>
+      <p>The first time I chewed one, I was not prepared for how purple the foam would look. For a few seconds, I looked ridiculous.</p>
+      <p>But the process was fast, and my mouth felt clean and fresh afterward.</p>
+      <p>The next morning I stood beside the same bathroom window and took a photo before using a tablet. Same phone. Same camera. No filter. Then I used the tablet, rinsed and took another photo.</p>
+      <p>The second image did not look artificially white. It simply looked more balanced and less warm to me.</p>
+
+      <figure class="tx-story-photo">
+        <img src="{{ story_image }}" alt="Illustrative portrait of Sarah beside her bathroom window" width="1024" height="1536" loading="lazy">
+        <figcaption>Sarah’s same-window routine, shown as an illustrative composite image.</figcaption>
+      </figure>
+
+      <p>I repeated the test a few days later because I did not completely trust myself. I noticed the same kind of visual shift, so I kept going.</p>
+
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/0984/7603/2311/files/3605f228-e00f-412d-ba25-263e47af1176.png?v=1787126641" alt="Purple pigment helping balance the appearance of yellow tones" width="1200" height="820" loading="lazy">
+        <figcaption>Color correction is temporary and visual—not permanent bleaching.</figcaption>
+      </figure>
+
+      <p>I did not keep using the tablets because I suddenly became more disciplined. I kept using them because there was almost nothing to remember.</p>
+      <p>The bottle was next to my toothbrush. My coffee stayed. My weekend wine stayed. My life stayed exactly the same.</p>
+
+      <h2>Then Megan stopped halfway through the appointment</h2>
+      <p>A couple of weeks later, I was back in the chair for my regular cleaning. I had not mentioned the tablets or asked anyone to inspect my teeth.</p>
+      <blockquote>“Whatever you’ve changed, keep doing it. Your teeth look noticeably brighter than last time.”</blockquote>
+      <p>That was the first moment I thought: maybe I am not just convincing myself.</p>
+      <p>A little later, my sister Rachel asked which whitening toothpaste I had switched to. My friend Lauren asked whether I had gotten my teeth whitened before we went out.</p>
+      <p>I had not told either of them to look. That was the part that mattered to me. They simply noticed that something looked different.</p>
+
+      <div class="tx-truth">
+        <span>What these tablets are—and what they are not</span>
+        <div>
+          <section><h3>They are</h3><ul><li>Peroxide-free color-correcting oral care</li><li>A simple, pre-dosed tablet format</li><li>Designed to help yellow tones look less noticeable</li><li>Easy to keep beside your toothbrush</li></ul></section>
+          <section><h3>They are not</h3><ul><li>Permanent internal bleaching</li><li>Veneers in a bottle</li><li>A solution for every cause of discoloration</li><li>A replacement for professional dental care</li></ul></section>
+        </div>
+      </div>
+
+      <h2>The strongest product you quit is weaker than the simple one you use</h2>
+      <p>For years, I thought I needed something stronger, more aggressive and more expensive. What I actually needed was something simple enough to become normal.</p>
+      <p>If your smile has started looking more yellow than you remember—from coffee, wine, old habits, time or some combination of all of them—I understand why it gets under your skin.</p>
+      <p>You may not need another half-used whitening kit under the sink. You may simply want a different way to approach the yellow tone that bothers you.</p>
+    </article>
+
+    <section class="tx-offer" data-offer>
+      <div class="tx-offer-copy">
+        <span class="tx-offer-badge">Start with one bottle</span>
+        <h2>Trainixy Teeth Color-Correcting Tablets</h2>
+        <p>30 pre-dosed purple tablets. Peroxide-free color correction in a format designed to fit beside your toothbrush.</p>
+        <div class="tx-price"><span>Starting at</span><strong>{{ section.settings.price_text }}</strong><small>30 tablets</small></div>
+        <a class="tx-offer-button" href="{{ product_url }}" data-product-link>{{ section.settings.cta_text }}<small>View availability on Trainixy.com</small></a>
+        <div class="tx-trust"><span>✓ Free U.S. shipping</span><span>✓ 30-day guarantee</span><span>✓ Secure checkout</span></div>
+      </div>
+      <div class="tx-offer-image"><img src="https://cdn.shopify.com/s/files/1/0984/7603/2311/files/ceed9062-5628-4a69-84b4-62786ca0f9d0.png?v=1787126641" alt="Trainixy Teeth Color-Correcting Tablets" width="760" height="760" loading="lazy"></div>
+    </section>
+
+    <section class="tx-shell tx-faq" id="TxFaq-{{ section.id }}">
+      <div class="tx-section-heading"><span>Before you decide</span><h2>Common questions about color correction</h2></div>
+      <details open><summary>Will these permanently whiten my teeth?</summary><p>No. They are color-correcting oral-care tablets, not a permanent bleaching treatment. Purple pigment is intended to help temporarily reduce the appearance of warm yellow tones after brushing.</p></details>
+      <details><summary>How are they different from whitening strips?</summary><p>Whitening strips commonly use peroxide to create a deeper shade change over a treatment cycle. Trainixy tablets are peroxide-free and use a color-correcting approach in a simple chew-and-brush format.</p></details>
+      <details><summary>How do I use a tablet?</summary><p>Chew one tablet until it forms a fine foam, brush gently as directed for 2–3 minutes, then spit and rinse thoroughly. Do not swallow.</p></details>
+      <details><summary>Can results look different from person to person?</summary><p>Yes. The visible effect can vary with your natural tooth shade, the cause and degree of discoloration, lighting and how regularly you use the product.</p></details>
+      <details><summary>What if I have crowns, veneers or ongoing sensitivity?</summary><p>Dental restorations may respond differently from natural teeth. Ask your dentist before use if you have visible restorations, active dental concerns or persistent sensitivity.</p></details>
+    </section>
+
+    <section class="tx-final" data-offer><div class="tx-shell"><span>Chew. Brush. Smile.</span><h2>Your coffee can stay. Your routine can stay.</h2><p>Start with one small purple tablet beside your toothbrush.</p><a class="tx-button tx-button-gold" href="{{ product_url }}" data-product-link>See the Trainixy tablets</a></div></section>
+  </main>
+
+  <section class="tx-disclaimer"><div class="tx-shell"><strong>ADVERTISEMENT DISCLOSURE</strong><p>This page is a sponsored advertorial. The narrator is a dramatized composite used to illustrate a common customer journey, not a verified customer testimonial. Sarah Mitchell, Megan, Rachel and Lauren are fictional names. Individual experiences vary.</p><p>Trainixy Teeth Color-Correcting Tablets are cosmetic oral-care products. They are not intended to diagnose, treat, cure or prevent disease, do not permanently bleach the internal shade of teeth and are not a substitute for dental care. Do not swallow. Keep out of reach of children.</p></div></section>
+
+  <footer class="tx-footer"><div><a class="tx-brand tx-brand-light" href="{{ routes.root_url }}">TRAIN<span>IXY</span></a><nav><a href="{{ routes.root_url }}policies/refund-policy">Refund policy</a><a href="{{ routes.root_url }}policies/privacy-policy">Privacy policy</a><a href="{{ routes.root_url }}policies/terms-of-service">Terms of service</a><a href="{{ routes.root_url }}policies/shipping-policy">Shipping policy</a><a href="{{ routes.root_url }}pages/contact">Contact</a></nav><p>© {{ 'now' | date: '%Y' }} Trainixy. All rights reserved.</p></div></footer>
+
+  <div class="tx-sticky" data-sticky hidden><div><strong>Color-Correcting Tablets</strong><span>30 tablets · From {{ section.settings.price_text }}</span></div><a href="{{ product_url }}" data-product-link>See options</a></div>
+</div>
+
+<style>
+  body:has(#TxAdv-{{ section.id }}) .shopify-section-group-header-group,
+  body:has(#TxAdv-{{ section.id }}) .shopify-section-group-footer-group,
+  body:has(#TxAdv-{{ section.id }}) .announcement-bar-section { display: none !important; }
+  body:has(#TxAdv-{{ section.id }}) #MainContent,
+  body:has(#TxAdv-{{ section.id }}) .content-for-layout { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+  #TxAdv-{{ section.id }} { --ink:#17131f;--body:#332d3d;--muted:#70687c;--faint:#9e96a8;--purple:#6d28d9;--purple-deep:#42167a;--lavender:#f7f3ff;--gold:#f6b80f;--line:#ebe6f1;--cream:#fffdf9;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; color:var(--body);background:#fff;font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow:hidden;line-height:1.5;}
+  #TxAdv-{{ section.id }} *{box-sizing:border-box} #TxAdv-{{ section.id }} a{color:inherit} #TxAdv-{{ section.id }} img{display:block;max-width:100%;height:auto}
+  #TxAdv-{{ section.id }} .tx-progress{position:fixed;inset:0 auto auto 0;height:3px;z-index:1000;background:linear-gradient(90deg,var(--purple),#8b5cf6,#0f8c88);transition:width .12s linear}
+  #TxAdv-{{ section.id }} .tx-announcement{min-height:36px;padding:9px 18px;display:flex;align-items:center;justify-content:center;gap:13px;background:var(--ink);color:#fff;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+  #TxAdv-{{ section.id }} .tx-announcement i{width:3px;height:3px;border-radius:50%;background:#8b7f98}
+  #TxAdv-{{ section.id }} .tx-header{position:sticky;top:0;z-index:90;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}
+  #TxAdv-{{ section.id }} .tx-header-inner{width:min(1120px,calc(100% - 40px));min-height:66px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+  #TxAdv-{{ section.id }} .tx-brand{color:var(--ink);font-family:var(--serif);font-size:24px;font-weight:800;letter-spacing:-.04em;text-decoration:none} #TxAdv-{{ section.id }} .tx-brand span{color:var(--purple)}
+  #TxAdv-{{ section.id }} .tx-header nav{display:flex;align-items:center;gap:28px} #TxAdv-{{ section.id }} .tx-header nav a{color:var(--muted);font-size:13px;font-weight:650;text-decoration:none}
+  #TxAdv-{{ section.id }} .tx-header-cta{border-radius:999px;background:var(--purple);color:#fff;padding:11px 18px;font-size:12px;font-weight:800;text-decoration:none;text-transform:uppercase;letter-spacing:.035em}
+  #TxAdv-{{ section.id }} .tx-shell{width:min(720px,calc(100% - 40px));margin-inline:auto} #TxAdv-{{ section.id }} [id]{scroll-margin-top:90px}
+  #TxAdv-{{ section.id }} .tx-hero{padding-top:42px} #TxAdv-{{ section.id }} .tx-eyebrow{display:flex;align-items:center;gap:12px;color:var(--purple);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  #TxAdv-{{ section.id }} .tx-eyebrow:after{content:'';flex:1;height:1px;background:var(--line)} #TxAdv-{{ section.id }} .tx-eyebrow span{border-radius:4px;background:var(--purple);color:#fff;padding:4px 7px;font-size:9px}
+  #TxAdv-{{ section.id }} .tx-hero h1{margin:20px 0 0;color:var(--ink);font-family:var(--serif);font-size:clamp(2.55rem,6vw,4rem);font-weight:700;letter-spacing:-.045em;line-height:1.06} #TxAdv-{{ section.id }} .tx-hero h1 em{color:var(--purple-deep);font-weight:700}
+  #TxAdv-{{ section.id }} .tx-dek{margin:22px 0 0;color:var(--muted);font-family:var(--serif);font-size:22px;font-style:italic;line-height:1.5}
+  #TxAdv-{{ section.id }} .tx-byline{margin:28px 0;padding:17px 0;border-block:1px solid var(--line);display:flex;align-items:center;gap:12px} #TxAdv-{{ section.id }} .tx-byline img{flex:0 0 44px;width:44px;height:44px;border-radius:50%;border:2px solid #fff;object-fit:cover;object-position:50% 34%;box-shadow:0 0 0 1px #ded4ed,0 6px 16px rgba(61,33,93,.14)}
+  #TxAdv-{{ section.id }} .tx-byline strong,#TxAdv-{{ section.id }} .tx-byline span{display:block} #TxAdv-{{ section.id }} .tx-byline strong{color:var(--ink);font-size:13px} #TxAdv-{{ section.id }} .tx-byline span{margin-top:2px;color:var(--faint);font-size:11.5px} #TxAdv-{{ section.id }} .tx-byline small{margin-left:auto;border-radius:999px;background:var(--lavender);color:var(--purple-deep);padding:7px 10px;font-size:10px;font-weight:750}
+  #TxAdv-{{ section.id }} figure{margin:38px 0} #TxAdv-{{ section.id }} figure img{width:100%;border:1px solid var(--line);border-radius:18px;background:var(--lavender);box-shadow:0 18px 45px rgba(49,31,75,.08)} #TxAdv-{{ section.id }} figcaption{margin-top:11px;color:var(--faint);font-size:12px;line-height:1.5;text-align:center}
+  #TxAdv-{{ section.id }} .tx-body{padding-bottom:18px} #TxAdv-{{ section.id }} .tx-body>p,#TxAdv-{{ section.id }} .tx-faq details p{margin:0 0 23px;color:var(--body);font-family:var(--serif);font-size:19px;line-height:1.78} #TxAdv-{{ section.id }} .tx-body .tx-lead{color:var(--ink);font-size:22px;font-weight:600}
+  #TxAdv-{{ section.id }} .tx-body h2,#TxAdv-{{ section.id }} .tx-faq h2{margin:52px 0 19px;color:var(--ink);font-family:var(--serif);font-size:31px;letter-spacing:-.025em;line-height:1.2}
+  #TxAdv-{{ section.id }} blockquote{margin:32px 0;border-left:4px solid var(--purple);border-radius:0 16px 16px 0;background:var(--lavender);color:var(--purple-deep);padding:24px 28px;font-family:var(--serif);font-size:25px;font-style:italic;font-weight:650;line-height:1.42} #TxAdv-{{ section.id }} .tx-question{text-align:center;border-left:0;border-top:3px solid var(--purple);border-radius:14px}
+  #TxAdv-{{ section.id }} .tx-dialogue{color:var(--purple-deep)!important;font-style:italic;font-weight:650}
+  #TxAdv-{{ section.id }} .tx-pull{margin:34px 0;border:1px solid #ddcff8;border-radius:18px;background:linear-gradient(145deg,#fbf9ff,#f1eaff);padding:26px 28px} #TxAdv-{{ section.id }} .tx-pull span,#TxAdv-{{ section.id }} .tx-mechanism span,#TxAdv-{{ section.id }} .tx-truth>span{color:var(--purple);font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-pull p{margin:10px 0 0;color:var(--purple-deep);font-family:var(--serif);font-size:22px;font-weight:650;line-height:1.5}
+  #TxAdv-{{ section.id }} .tx-stats{margin:34px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px} #TxAdv-{{ section.id }} .tx-stats div{border-radius:14px;background:var(--lavender);padding:20px 14px;text-align:center} #TxAdv-{{ section.id }} .tx-stats b{display:block;color:var(--purple-deep);font-family:var(--serif);font-size:30px;line-height:1} #TxAdv-{{ section.id }} .tx-stats span{display:block;margin-top:9px;color:var(--muted);font-size:11px;line-height:1.45}
+  #TxAdv-{{ section.id }} .tx-mechanism{margin:38px 0;border:1px solid var(--line);border-radius:20px;display:grid;grid-template-columns:180px 1fr;align-items:center;gap:28px;background:var(--cream);padding:26px 28px;box-shadow:0 14px 40px rgba(53,36,74,.06)} #TxAdv-{{ section.id }} .tx-mechanism h3{margin:6px 0 7px;color:var(--ink);font-family:var(--serif);font-size:24px} #TxAdv-{{ section.id }} .tx-mechanism p{margin:0;color:var(--muted);font-family:var(--serif);font-size:16px;line-height:1.65}
+  #TxAdv-{{ section.id }} .tx-wheel{position:relative;min-height:92px;display:flex;align-items:center;justify-content:space-between} #TxAdv-{{ section.id }} .tx-wheel b{position:absolute;left:28px;right:28px;top:45px;height:2px;background:linear-gradient(90deg,#712bd4,#d1c6c8,#f3c623)} #TxAdv-{{ section.id }} .tx-wheel i{position:relative;z-index:1;width:58px;height:58px;border:7px solid #fff;border-radius:50%;background:#712bd4;box-shadow:0 8px 20px rgba(0,0,0,.12)} #TxAdv-{{ section.id }} .tx-wheel i:last-child{background:#f3c623}
+  #TxAdv-{{ section.id }} .tx-routine{list-style:none;margin:30px 0;padding:0;display:grid;gap:12px} #TxAdv-{{ section.id }} .tx-routine li{border:1px solid var(--line);border-radius:14px;display:flex;gap:15px;align-items:center;padding:16px 18px} #TxAdv-{{ section.id }} .tx-routine li>span{flex:0 0 34px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--purple);color:#fff;font-weight:800} #TxAdv-{{ section.id }} .tx-routine strong{color:var(--ink);font-size:14px} #TxAdv-{{ section.id }} .tx-routine p{margin:2px 0 0;color:var(--muted);font-family:var(--serif);font-size:15px;line-height:1.45}
+  #TxAdv-{{ section.id }} .tx-inline-offer{margin:38px 0;border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;padding:24px 26px} #TxAdv-{{ section.id }} .tx-inline-offer span{display:block;color:#d9c7fb;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-inline-offer strong{display:block;margin-top:4px;font-family:var(--serif);font-size:20px}
+  #TxAdv-{{ section.id }} .tx-button{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;background:#fff;color:var(--purple-deep);padding:15px 20px;font-size:12px;font-weight:850;letter-spacing:.03em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+  #TxAdv-{{ section.id }} .tx-story-photo{width:min(520px,100%);margin-inline:auto} #TxAdv-{{ section.id }} .tx-story-photo img{aspect-ratio:4/5;object-fit:cover;object-position:center}
+  #TxAdv-{{ section.id }} .tx-truth{margin:42px 0;border-radius:20px;background:#f8f6fb;padding:28px} #TxAdv-{{ section.id }} .tx-truth>div{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:16px} #TxAdv-{{ section.id }} .tx-truth section{border-radius:14px;background:#fff;padding:22px} #TxAdv-{{ section.id }} .tx-truth h3{margin:0 0 12px;color:var(--ink);font-family:var(--serif);font-size:21px} #TxAdv-{{ section.id }} .tx-truth ul{margin:0;padding-left:18px;color:var(--muted);font-family:var(--serif);font-size:15px;line-height:1.65}
+  #TxAdv-{{ section.id }} .tx-offer{width:min(980px,calc(100% - 40px));margin:54px auto 64px;border-radius:26px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;overflow:hidden;background:linear-gradient(140deg,#3d126f,#6d28d9 68%,#8151de);color:#fff;box-shadow:0 28px 70px rgba(76,29,149,.23)} #TxAdv-{{ section.id }} .tx-offer-copy{padding:48px 20px 48px 48px} #TxAdv-{{ section.id }} .tx-offer-badge{display:inline-block;border-radius:999px;background:var(--gold);color:#3c2800;padding:6px 12px;font-size:10px;font-weight:850;letter-spacing:.08em;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-offer h2{margin:17px 0 10px;color:#fff;font-family:var(--serif);font-size:37px;letter-spacing:-.025em;line-height:1.15} #TxAdv-{{ section.id }} .tx-offer-copy>p{margin:0;max-width:520px;color:rgba(255,255,255,.78);font-family:var(--serif);font-size:17px;line-height:1.65}
+  #TxAdv-{{ section.id }} .tx-price{margin:25px 0 18px;display:flex;align-items:baseline;gap:10px} #TxAdv-{{ section.id }} .tx-price span{color:rgba(255,255,255,.72);font-size:12px} #TxAdv-{{ section.id }} .tx-price strong{color:#fff;font-family:var(--serif);font-size:42px;line-height:1} #TxAdv-{{ section.id }} .tx-price small{color:#d8c7f5;font-size:11px}
+  #TxAdv-{{ section.id }} .tx-offer-button{display:block;max-width:430px;border-radius:12px;background:var(--gold);color:#312000;padding:17px 22px;text-align:center;font-size:14px;font-weight:900;letter-spacing:.035em;text-decoration:none;text-transform:uppercase;box-shadow:0 12px 26px rgba(18,8,35,.25)} #TxAdv-{{ section.id }} .tx-offer-button small{display:block;margin-top:4px;font-size:9px;font-weight:650;letter-spacing:.04em;text-transform:none;opacity:.68} #TxAdv-{{ section.id }} .tx-trust{margin-top:17px;display:flex;flex-wrap:wrap;gap:8px 16px;color:rgba(255,255,255,.72);font-size:10px;font-weight:650}
+  #TxAdv-{{ section.id }} .tx-offer-image{height:100%;min-height:480px;display:grid;place-items:center;padding:40px 36px 40px 16px;background:radial-gradient(circle at center,rgba(255,255,255,.22),transparent 65%)} #TxAdv-{{ section.id }} .tx-offer-image img{width:min(100%,380px);filter:drop-shadow(0 24px 24px rgba(25,8,51,.28))}
+  #TxAdv-{{ section.id }} .tx-faq{padding:10px 0 64px} #TxAdv-{{ section.id }} .tx-section-heading{text-align:center} #TxAdv-{{ section.id }} .tx-section-heading span{color:var(--purple);font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-section-heading h2{margin:8px auto 26px} #TxAdv-{{ section.id }} .tx-faq details{border-bottom:1px solid var(--line)} #TxAdv-{{ section.id }} .tx-faq summary{position:relative;padding:20px 38px 20px 0;color:var(--ink);cursor:pointer;list-style:none;font-size:15px;font-weight:750;line-height:1.45} #TxAdv-{{ section.id }} .tx-faq summary::-webkit-details-marker{display:none} #TxAdv-{{ section.id }} .tx-faq summary:after{content:'+';position:absolute;top:13px;right:4px;color:var(--purple);font-size:27px;font-weight:400} #TxAdv-{{ section.id }} .tx-faq details[open] summary:after{content:'–'} #TxAdv-{{ section.id }} .tx-faq details p{padding:0 0 20px;color:var(--muted);font-size:16px;line-height:1.65}
+  #TxAdv-{{ section.id }} .tx-final{background:var(--ink);color:#fff;padding:60px 0 64px;text-align:center} #TxAdv-{{ section.id }} .tx-final span{color:#bca5e5;font-size:10px;font-weight:850;letter-spacing:.15em;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-final h2{margin:10px auto 12px;max-width:760px;font-family:var(--serif);font-size:38px;letter-spacing:-.03em;line-height:1.15} #TxAdv-{{ section.id }} .tx-final p{margin:0 0 24px;color:#bcb4c6;font-family:var(--serif);font-size:18px} #TxAdv-{{ section.id }} .tx-button-gold{background:var(--gold);color:#2f2000}
+  #TxAdv-{{ section.id }} .tx-disclaimer{border-top:1px solid var(--line);background:#faf9fb;padding:30px 0;text-align:center} #TxAdv-{{ section.id }} .tx-disclaimer strong{color:var(--muted);font-size:9px;letter-spacing:.12em} #TxAdv-{{ section.id }} .tx-disclaimer p{margin:9px auto 0;color:var(--faint);font-size:10px;line-height:1.7}
+  #TxAdv-{{ section.id }} .tx-footer{background:#110e17;color:#807887;padding:40px 20px;text-align:center} #TxAdv-{{ section.id }} .tx-footer>div{max-width:900px;margin:auto} #TxAdv-{{ section.id }} .tx-brand-light{color:#fff} #TxAdv-{{ section.id }} .tx-footer nav{margin:18px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:9px 22px} #TxAdv-{{ section.id }} .tx-footer nav a{color:#a79ead;font-size:10px;font-weight:650;letter-spacing:.06em;text-decoration:none;text-transform:uppercase} #TxAdv-{{ section.id }} .tx-footer p{margin:0;font-size:10px}
+  #TxAdv-{{ section.id }} .tx-sticky{position:fixed;z-index:100;left:50%;bottom:14px;width:min(560px,calc(100% - 24px));border:1px solid var(--line);border-radius:15px;display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.96);padding:10px 11px 10px 16px;box-shadow:0 16px 45px rgba(29,21,40,.2);backdrop-filter:blur(16px);transform:translateX(-50%)} #TxAdv-{{ section.id }} .tx-sticky[hidden]{display:none} #TxAdv-{{ section.id }} .tx-sticky>div{flex:1;min-width:0} #TxAdv-{{ section.id }} .tx-sticky strong,#TxAdv-{{ section.id }} .tx-sticky span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} #TxAdv-{{ section.id }} .tx-sticky strong{color:var(--ink);font-size:12px} #TxAdv-{{ section.id }} .tx-sticky span{margin-top:2px;color:var(--muted);font-size:10px} #TxAdv-{{ section.id }} .tx-sticky a{border-radius:10px;background:var(--purple);color:#fff;padding:12px 16px;font-size:10px;font-weight:850;letter-spacing:.04em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+  @media(max-width:780px){#TxAdv-{{ section.id }} .tx-header nav{display:none}#TxAdv-{{ section.id }} .tx-header-inner{width:calc(100% - 28px);min-height:59px}#TxAdv-{{ section.id }} .tx-header-cta{min-height:42px;display:inline-flex;align-items:center;padding:10px 14px;font-size:10px}#TxAdv-{{ section.id }} .tx-hero{padding-top:30px}#TxAdv-{{ section.id }} .tx-eyebrow{align-items:flex-start;flex-wrap:wrap;gap:7px 10px}#TxAdv-{{ section.id }} .tx-eyebrow:after{display:none}#TxAdv-{{ section.id }} .tx-hero h1{font-size:clamp(2.2rem,10.6vw,3.2rem)}#TxAdv-{{ section.id }} .tx-dek{font-size:19px}#TxAdv-{{ section.id }} .tx-offer{grid-template-columns:1fr}#TxAdv-{{ section.id }} .tx-offer-copy{padding:36px 28px 22px;text-align:center}#TxAdv-{{ section.id }} .tx-offer h2{font-size:31px}#TxAdv-{{ section.id }} .tx-price,#TxAdv-{{ section.id }} .tx-trust{justify-content:center}#TxAdv-{{ section.id }} .tx-offer-button{margin-inline:auto}#TxAdv-{{ section.id }} .tx-offer-image{min-height:280px;padding:0 30px 32px}#TxAdv-{{ section.id }} .tx-offer-image img{max-height:300px;object-fit:contain}}
+  @media(max-width:620px){#TxAdv-{{ section.id }} .tx-announcement{gap:7px;font-size:8.5px;letter-spacing:.045em}#TxAdv-{{ section.id }} .tx-announcement span:first-child,#TxAdv-{{ section.id }} .tx-announcement span:first-child+i{display:none}#TxAdv-{{ section.id }} .tx-shell{width:calc(100% - 32px)}#TxAdv-{{ section.id }} .tx-byline{align-items:flex-start}#TxAdv-{{ section.id }} .tx-byline small{display:none}#TxAdv-{{ section.id }} .tx-byline img{width:46px;height:46px;flex-basis:46px}#TxAdv-{{ section.id }} .tx-byline strong{font-size:13.5px}#TxAdv-{{ section.id }} .tx-byline span{max-width:230px;line-height:1.4}#TxAdv-{{ section.id }} .tx-body>p{font-size:18px;line-height:1.72}#TxAdv-{{ section.id }} .tx-body .tx-lead{font-size:20px}#TxAdv-{{ section.id }} .tx-body h2,#TxAdv-{{ section.id }} .tx-faq h2{margin-top:44px;font-size:27px}#TxAdv-{{ section.id }} blockquote{padding:21px 20px;font-size:21px}#TxAdv-{{ section.id }} .tx-stats{grid-template-columns:1fr}#TxAdv-{{ section.id }} .tx-stats div{display:flex;align-items:center;gap:16px;text-align:left}#TxAdv-{{ section.id }} .tx-stats b{min-width:72px}#TxAdv-{{ section.id }} .tx-stats span{margin-top:0}#TxAdv-{{ section.id }} .tx-mechanism{grid-template-columns:1fr;gap:16px;padding:24px 22px}#TxAdv-{{ section.id }} .tx-wheel{width:min(200px,100%);margin:auto}#TxAdv-{{ section.id }} .tx-inline-offer{align-items:stretch;flex-direction:column;text-align:center}#TxAdv-{{ section.id }} .tx-truth>div{grid-template-columns:1fr}#TxAdv-{{ section.id }} .tx-truth{padding:23px 18px}#TxAdv-{{ section.id }} .tx-offer{width:100%;border-radius:0;margin-bottom:52px}#TxAdv-{{ section.id }} .tx-offer-copy{padding-inline:20px}#TxAdv-{{ section.id }} .tx-offer h2{font-size:29px}#TxAdv-{{ section.id }} .tx-final h2{font-size:31px}#TxAdv-{{ section.id }} .tx-sticky{bottom:calc(9px + env(safe-area-inset-bottom));width:calc(100% - 18px);padding:9px 9px 9px 13px}#TxAdv-{{ section.id }} .tx-sticky a{min-height:42px;display:inline-flex;align-items:center;padding-inline:14px}}
+  @media(max-width:380px){#TxAdv-{{ section.id }} .tx-announcement{padding-inline:10px}#TxAdv-{{ section.id }} .tx-header-inner{width:calc(100% - 22px)}#TxAdv-{{ section.id }} .tx-brand{font-size:22px}#TxAdv-{{ section.id }} .tx-header-cta{padding-inline:12px}#TxAdv-{{ section.id }} .tx-hero h1{font-size:2.08rem}#TxAdv-{{ section.id }} .tx-sticky span{display:none}#TxAdv-{{ section.id }} .tx-sticky strong{font-size:11px}}
+  @media(prefers-reduced-motion:reduce){#TxAdv-{{ section.id }} .tx-progress{transition:none}}
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('TxAdv-{{ section.id }}');
+    if (!root || root.dataset.ready === 'true') return;
+    root.dataset.ready = 'true';
+    document.body.classList.add('tx-advertorial-page');
+
+    var params = window.location.search;
+    if (params) {
+      root.querySelectorAll('[data-product-link]').forEach(function (link) {
+        var url = new URL(link.href, window.location.origin);
+        var incoming = new URLSearchParams(params);
+        incoming.forEach(function (value, key) { url.searchParams.set(key, value); });
+        link.href = url.toString();
+      });
+    }
+
+    var progress = root.querySelector('[data-progress]');
+    var sticky = root.querySelector('[data-sticky]');
+    var offers = Array.prototype.slice.call(root.querySelectorAll('[data-offer]'));
+    function update() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (max > 0 ? Math.min(100, window.scrollY / max * 100) : 0) + '%';
+      var offerVisible = offers.some(function (offer) {
+        var rect = offer.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      });
+      sticky.hidden = !(window.scrollY > window.innerHeight * 0.9 && !offerVisible);
+    }
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Trainixy advertorial",
+  "tag": "section",
+  "class": "trainixy-advertorial-section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "CTA product" },
+    { "type": "text", "id": "price_text", "label": "Starting price", "default": "$24.99" },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "See today’s bundle options" },
+    { "type": "checkbox", "id": "show_announcement", "label": "Show announcement bar", "default": true },
+    { "type": "checkbox", "id": "noindex", "label": "Hide from search engines while reviewing", "default": true }
+  ],
+  "presets": [{ "name": "Trainixy advertorial" }]
+}
+{% endschema %}
