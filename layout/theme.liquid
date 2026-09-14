@@ -492,7 +492,7 @@
       {{ content_for_layout }}
     </main>
 
-    {% assign hide_blog_chrome_for_wrist_listicle = template == 'article.wrist-trainer-listicle' %}
+    {% assign hide_blog_chrome_for_wrist_listicle = template %}
 
     {% section 'promo-popup' %}
     {% unless hide_blog_chrome_for_wrist_listicle %}
@@ -657,3 +657,14 @@
     {% render 'security-settings' %}
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign hide_blog_chrome_for_wrist_listicle = template == 'article.wrist-trainer-listicle'
+    %}"
+  to: "{% assign hide_blog_chrome_for_wrist_listicle = template %}"
+  position: 28749..28808
+{% endcomment %}
